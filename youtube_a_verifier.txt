@@ -1,0 +1,18 @@
+Titres dont l'appariement YouTube est incertain — à vérifier manuellement.
+Seuil de confiance : 85
+
+#40 Bizzare — Trap King, Djalil Palermo
+    score 81.0 | candidat : Bizzare — Tipo (MUSIC_VIDEO_TYPE_ATV)
+    https://music.youtube.com/watch?v=GjvcYT80Nzo
+
+#41 Elissa fel good — Djamel Milano, Tchikou 22
+    score 81.0 | candidat : Elissa Fel Good — Cheb Hichem Tgv (MUSIC_VIDEO_TYPE_ATV)
+    https://music.youtube.com/watch?v=HiQS6kbrhVM
+
+#47 Ça parle mal — Bouss
+    score 83.0 | candidat : Bouss - Ça Parle Mal — RadioDdt (MUSIC_VIDEO_TYPE_PODCAST_EPISODE)
+    https://music.youtube.com/watch?v=x0jeCs0pm5w
+
+#48 A.E.M - Ya Ritek — El Bobina
+    score 75.0 | candidat : A E M   Ya Ritek   حب و عقلية   يا ريتك — 1 M de vues (MUSIC_VIDEO_TYPE_UGC)
+    https://music.youtube.com/watch?v=WPldglmcpE4

@@ -1,0 +1,51 @@
+﻿rank,song_id,title,artist,weighted_total,weight_total,source_count,sources,metrics,best_rank,score,previous_rank,movement,movement_label
+1,fe2c0a74ddd8,Sabran,Djalil Palermo,100.0,1.0,1,Spotify,playlist_order,1,100.0,,,NEW
+2,6905601e7127,Seknet Marseille,Soolking,99.0,1.0,1,Spotify,playlist_order,2,99.0,,,NEW
+3,cd388c9cadd8,Hakka Hakka,Mohamed Benchenet,98.0,1.0,1,Spotify,playlist_order,3,98.0,,,NEW
+4,c652b762e181,Ayul,"Amine Amirouche, Nassima Ait Ami",97.0,1.0,1,Spotify,playlist_order,4,97.0,,,NEW
+5,e855abf31b86,M7ayni,Didine Canon 16,96.0,1.0,1,Spotify,playlist_order,5,96.0,,,NEW
+6,7f8e645eca63,Edahka,Mouh Milano,95.0,1.0,1,Spotify,playlist_order,6,95.0,,,NEW
+7,c465c74c70f3,Djazaïria (feat. Abdou Gambetta),"Anas, Abdou Gambetta",94.0,1.0,1,Spotify,playlist_order,7,94.0,,,NEW
+8,9e52cb54b205,Sahran lil,"Cheb Momo, Djalil Palermo",93.0,1.0,1,Spotify,playlist_order,8,93.0,,,NEW
+9,66679b36583e,Rani Maghmoum,"Kader Japonais, Reda Soussia",92.0,1.0,1,Spotify,playlist_order,9,92.0,,,NEW
+10,2f8b49bd4723,Mama Cita,Hakim Liberta,91.0,1.0,1,Spotify,playlist_order,10,91.0,,,NEW
+11,f275394ef4a7,Qololo,"Fouzi Torino, Mc Artisan",90.0,1.0,1,Spotify,playlist_order,11,90.0,,,NEW
+12,84abbb50f5b6,Rosalinda,"Didine Canon 16, Flashy OTR",89.0,1.0,1,Spotify,playlist_order,12,89.0,,,NEW
+13,4f458bae3763,Dai Dai,"Shakira, Burna Boy",88.0,1.0,1,Spotify,playlist_order,13,88.0,,,NEW
+14,546d25e0991f,Huracan,Trap King,87.0,1.0,1,Spotify,playlist_order,14,87.0,,,NEW
+15,9098514c85b5,Smaht ou Mchit,Didine Canon 16,86.0,1.0,1,Spotify,playlist_order,15,86.0,,,NEW
+16,2c09cd9acd18,Se9si Liyam,"Numidia Lezoul, Didine Canon 16",85.0,1.0,1,Spotify,playlist_order,16,85.0,,,NEW
+17,3861dc91f863,Namchi Wngoul Ça va,Abdou Gambetta,84.0,1.0,1,Spotify,playlist_order,17,84.0,,,NEW
+18,84fb90147250,Hala Rani Fiha,"Abdou Gambetta, Raouf Samourai",83.0,1.0,1,Spotify,playlist_order,18,83.0,,,NEW
+19,2b62728b477d,Denia,"Djalil Palermo, Zuma Woed",82.0,1.0,1,Spotify,playlist_order,19,82.0,,,NEW
+20,47640aca6069,SAYGA,Didine Canon 16,81.0,1.0,1,Spotify,playlist_order,20,81.0,,,NEW
+21,a37179665dc6,VIANO,"RK, Genezio",80.0,1.0,1,Spotify,playlist_order,21,80.0,,,NEW
+22,756b129ec934,PARISIENNE,"GIMS, La Mano 1.9",79.0,1.0,1,Spotify,playlist_order,22,79.0,,,NEW
+23,2658777e1caf,Match retard,Hakim Liberta,78.0,1.0,1,Spotify,playlist_order,23,78.0,,,NEW
+24,1476e318d2e4,kafini,"TIF, ElGrandeToto",77.0,1.0,1,Spotify,playlist_order,24,77.0,,,NEW
+25,4725b052391c,AIR FORCE BLANCHE,"GIMS, Jul",76.0,1.0,1,Spotify,playlist_order,25,76.0,,,NEW
+26,37ce02a20cbf,Mok ya mok,"Benny Adam, Khadija El Warzazia",75.0,1.0,1,Spotify,playlist_order,26,75.0,,,NEW
+27,354ff21b12fd,Atiteha l'amour عطيتها,Cheb Momo,74.0,1.0,1,Spotify,playlist_order,27,74.0,,,NEW
+28,d9ed3b576237,Jedi ou Jedek,Mounim Slimani,73.0,1.0,1,Spotify,playlist_order,28,73.0,,,NEW
+29,945e98ed7cad,Mahboul Ana,LAZARO,72.0,1.0,1,Spotify,playlist_order,29,72.0,,,NEW
+30,bdc5615fdc33,KYKY2BONDY,Hamza,71.0,1.0,1,Spotify,playlist_order,30,71.0,,,NEW
+31,ff16e0e13c3e,Californication,Trap King,70.0,1.0,1,Spotify,playlist_order,31,70.0,,,NEW
+32,e3b82981fb3e,NINAO,GIMS,69.0,1.0,1,Spotify,playlist_order,32,69.0,,,NEW
+33,704e463e84f8,CARRÉ OK,"Soolking, GIMS",68.0,1.0,1,Spotify,playlist_order,33,68.0,,,NEW
+34,ccda214800cd,Pichichi,Josas,67.0,1.0,1,Spotify,playlist_order,34,67.0,,,NEW
+35,81595d799628,DIPLOMATICO,ElGrandeToto,66.0,1.0,1,Spotify,playlist_order,35,66.0,,,NEW
+36,58c72eff37d5,GALBI RAH MEDRAR,Cheb Hichem TGV,65.0,1.0,1,Spotify,playlist_order,36,65.0,,,NEW
+37,efd4095a9173,No lo sé,Lacrim,64.0,1.0,1,Spotify,playlist_order,37,64.0,,,NEW
+38,04242b239405,SPIDER,"GIMS, DYSTINCT",63.0,1.0,1,Spotify,playlist_order,38,63.0,,,NEW
+39,4bba400a58e1,Hakayet,VEN1,62.0,1.0,1,Spotify,playlist_order,39,62.0,,,NEW
+40,b2bc29840342,Bizzare,"Trap King, Djalil Palermo",61.0,1.0,1,Spotify,playlist_order,40,61.0,,,NEW
+41,6799c943861d,Elissa fel good,"Djamel Milano, Tchikou 22",60.0,1.0,1,Spotify,playlist_order,41,60.0,,,NEW
+42,67fd301122a6,Khelli Zman Ydor,"TiMoh, Djam, Djalil Palermo",59.0,1.0,1,Spotify,playlist_order,42,59.0,,,NEW
+43,3976c84c9459,NANANI NANANA,Gazo,57.99999999999999,1.0,1,Spotify,playlist_order,43,57.99999999999999,,,NEW
+44,886bfa147d04,Allo Omri,"Didou Parisien, Tchikou 22",56.99999999999999,1.0,1,Spotify,playlist_order,44,56.99999999999999,,,NEW
+45,044584221c76,Saroukh Style Manini,"Smaug, Dj Mourad",56.00000000000001,1.0,1,Spotify,playlist_order,45,56.00000000000001,,,NEW
+46,c88bab458d9f,SEYA,"GIMS, SativaMusic, Morad",55.00000000000001,1.0,1,Spotify,playlist_order,46,55.00000000000001,,,NEW
+47,a9b2ef448551,Ça parle mal,Bouss,54.0,1.0,1,Spotify,playlist_order,47,54.0,,,NEW
+48,354b4711a49b,A.E.M - Ya Ritek,El Bobina,53.0,1.0,1,Spotify,playlist_order,48,53.0,,,NEW
+49,9c09ed6b85df,Chwiya Wa9t W Nensak,Sofiane Asla,52.0,1.0,1,Spotify,playlist_order,49,52.0,,,NEW
+50,94fdbfcc76bd,Mélanine,"Heuss L'enfoiré, Werenoi",51.0,1.0,1,Spotify,playlist_order,50,51.0,,,NEW

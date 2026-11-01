@@ -1,0 +1,72 @@
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.eggs/
+build/
+dist/
+sdist/
+wheels/
+.venv/
+venv/
+env/
+ENV/
+pip-wheel-metadata/
+
+# ---------------------------------------------------------------------------
+# Tests, typage, lint
+# ---------------------------------------------------------------------------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# ---------------------------------------------------------------------------
+# Éditeurs / IDE
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+
+# ---------------------------------------------------------------------------
+# Système d'exploitation
+# ---------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# ---------------------------------------------------------------------------
+# Secrets / configuration locale
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# ---------------------------------------------------------------------------
+# Sorties générées par build_playlist.py
+#
+# Versionnées par défaut : ce sont les livrables du dépôt (la liste publiée et
+# le cache des liens YouTube, qui évite de refaire 50 recherches).
+# Décommenter les lignes ci-dessous pour les exclure du versionnement.
+# ---------------------------------------------------------------------------
+# PLAYLIST.md
+# playlist_spotify.csv
+# youtube_links.json
+# spotify_meta.json
+# youtube_a_verifier.txt
