@@ -61,6 +61,7 @@ DEFAULT_SPOTIFY_PLAYLIST = "37i9dQZF1DX7ZqKP81pHlu"  # Hot Hit Algeria
 DEFAULT_LIMIT = 50
 DEEZER_DELAY_SECONDS = 0.15
 DEEZER_MATCH_THRESHOLD = 0.82
+ENV_FILE = ".env"
 
 # Deezer documente ``rank`` comme un indice de popularité ; on suppose un
 # plafond de 1 000 000 (vérifié empiriquement sur des titres très écoutés).
@@ -74,6 +75,19 @@ USER_AGENT = (
 
 def log(message: str) -> None:
     print(message, file=sys.stderr)
+
+
+def env_value(name: str) -> str | None:
+    """Variable d'environnement, ou à défaut valeur du fichier .env à la racine."""
+    value = os.environ.get(name)
+    if value:
+        return value
+    try:
+        from spotify_api import load_env_file
+    except ImportError:
+        return None
+    file_values = load_env_file(Path(__file__).resolve().parent / ENV_FILE)
+    return file_values.get(name) or None
 
 
 def http_json(url: str, timeout: int = 25) -> dict:
@@ -166,13 +180,14 @@ def collect_youtube(api_key: str, limit: int, region: str = "DZ") -> list[dict]:
         entries.append(
             {
                 "position": index,
-                "title": snippet.get("title", ""),
+                "title": clean_video_title(snippet.get("title", "")),
                 "artist": clean_youtube_artist(channel),
                 "url": f"https://www.youtube.com/watch?v={item.get('id')}",
                 "source_id": item.get("id"),
                 "view_count": int(statistics.get("viewCount", 0) or 0),
                 "published_at": snippet.get("publishedAt"),
                 "channel": channel,
+                "video_title": snippet.get("title"),
             }
         )
     return entries
@@ -189,6 +204,30 @@ def clean_youtube_artist(channel: str) -> str:
         flags=re.IGNORECASE,
     )
     return artist.strip(" -–—") or channel
+
+
+VIDEO_PARENS_RE = re.compile(
+    r"[\(\[]\s*(?:official|officiel|clip|video|vidéo|audio|lyrics|paroles|"
+    r"visualizer|explicit|hd|4k)[^\)\]]*[\)\]]",
+    re.IGNORECASE,
+)
+VIDEO_SUFFIX_RE = re.compile(
+    r"\s*[-–—]\s*(?:official|officiel|clip|video|vidéo|audio|lyrics|paroles|"
+    r"visualizer).*$",
+    re.IGNORECASE,
+)
+
+
+def clean_video_title(title: str) -> str:
+    """Retire les mentions de clip d'un titre de vidéo YouTube.
+
+    « TIF - MINUIT D'APRÈS (Official Video) » doit redevenir « MINUIT D'APRÈS »
+    pour être regroupé avec la même piste vue sur Apple ou Spotify.
+    """
+    cleaned = VIDEO_PARENS_RE.sub(" ", title)
+    cleaned = VIDEO_SUFFIX_RE.sub(" ", cleaned)
+    cleaned = re.sub(r"\s+", " ", cleaned).strip(" -–—")
+    return cleaned or title
 
 
 # ---------------------------------------------------------------------------
@@ -362,7 +401,7 @@ def main(argv: list[str] | None = None) -> int:
     date_dir = out_dir / date
     date_dir.mkdir(parents=True, exist_ok=True)
 
-    youtube_key = os.environ.get("YOUTUBE_API_KEY")
+    youtube_key = env_value("YOUTUBE_API_KEY")
 
     payload = collect(date, args.limit, args.spotify_playlist, youtube_key)
 

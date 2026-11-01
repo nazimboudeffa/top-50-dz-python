@@ -75,9 +75,16 @@ class UnionFind:
 
 
 def artist_tokens(artist: str) -> set[str]:
+    """Artistes comparables : accents/espaces supprimés, pour rapprocher
+    « Djalil Palermo » de « DjalilPalermoVEVO »."""
+    parts = re.split(
+        r"[,&/]|\s+-\s+|\s+feat\.?\s+|\s+ft\.?\s+|\s+x\s+",
+        artist,
+        flags=re.IGNORECASE,
+    )
     return {
-        normalize(part)
-        for part in re.split(r"[,&/]| feat\.? | ft\.? | x ", artist, flags=re.IGNORECASE)
+        normalize(part).replace(" ", "")
+        for part in parts
         if normalize(part)
     }
 
@@ -275,6 +282,11 @@ DATE_DIR_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
 def find_previous_chart(root: Path, date: str) -> dict | None:
+    """Snapshot précédent **de même méthodologie** (multi_source).
+
+    Comparer un classement multi-source à un classement issu d'une playlist
+    produirait un mouvement qui ne veut rien dire.
+    """
     directories = sorted(
         (
             path
@@ -290,9 +302,29 @@ def find_previous_chart(root: Path, date: str) -> dict | None:
                 payload = json.loads(charts[0].read_text(encoding="utf-8"))
             except (OSError, ValueError):
                 continue
-            if payload.get("entries"):
+            if payload.get("entries") and payload.get("pipeline") == "multi_source":
                 return payload
     return None
+
+
+def overlap_matrix(candidates: list[dict]) -> dict[str, int]:
+    """Nombre de titres communs à chaque paire de sources.
+
+    Sert de diagnostic : un recouvrement proche de zéro signifie que les
+    sources ne mesurent pas le même univers.
+    """
+    names = sorted(
+        {source for candidate in candidates for source in candidate["positions"]}
+    )
+    overlaps = {}
+    for index, left in enumerate(names):
+        for right in names[index + 1:]:
+            overlaps[f"{left}|{right}"] = sum(
+                1
+                for candidate in candidates
+                if left in candidate["positions"] and right in candidate["positions"]
+            )
+    return overlaps
 
 
 def apply_movement(entries: list[dict], previous: dict | None) -> None:
@@ -325,6 +357,9 @@ def apply_movement(entries: list[dict], previous: dict | None) -> None:
 def render_markdown(chart: dict) -> str:
     entries = chart["entries"]
     date = chart["chart_date"]
+    certified = chart.get("certified", len(entries))
+    filled = len(entries) - certified
+
     lines = [
         f"# {chart['chart']} — {date}",
         "",
@@ -338,11 +373,23 @@ def render_markdown(chart: dict) -> str:
             for name, weight in chart["source_weights"].items()
         ),
         "",
+    ]
+
+    if certified < len(entries):
+        lines.append(
+            f"> **{certified}/{len(entries)}** titres seulement sont confirmés par "
+            f"au moins {chart['min_sources']} sources. Un recouvrement faible entre "
+            "sources signale qu'elles ne mesurent pas le même univers "
+            "(chart pays vs playlist éditoriale)."
+        )
+        lines.append("")
+
+    header = [
         "| # | Titre | Artiste | Évolution | Sources | Liens |",
         "|---:|---|---|:---:|---|---|",
     ]
 
-    for entry in entries:
+    def row(entry: dict) -> str:
         links = []
         for label, url in (
             ("Spotify", entry.get("spotify_url")),
@@ -352,37 +399,49 @@ def render_markdown(chart: dict) -> str:
         ):
             if url:
                 links.append(f"[{label}]({url})")
-        marker = " ¹" if entry.get("fill") else ""
-        lines.append(
-            f"| {entry['rank']} | {entry['title']}{marker} | {entry['artist']} | "
+        rank = "—" if entry.get("fill") else entry["rank"]
+        return (
+            f"| {rank} | {entry['title']} | {entry['artist']} | "
             f"{entry['movement_label']} | {entry['sources']} | {' · '.join(links)} |"
         )
 
-    filled = sum(1 for entry in entries if entry.get("fill"))
+    confirmed = [entry for entry in entries if not entry.get("fill")]
+    extra = [entry for entry in entries if entry.get("fill")]
+
+    lines.extend(header)
+    lines.extend(row(entry) for entry in confirmed)
+    if confirmed and extra:
+        lines.append("")
+        lines.append(f"**Compléments — une seule source ({len(extra)})**")
+        lines.append("")
+        lines.extend(header)
+        lines.extend(row(entry) for entry in extra)
+    elif extra:
+        lines.extend(row(entry) for entry in extra)
+
     lines.append("")
     if filled:
         lines.append(
             f"¹ {filled} titre(s) à source unique : ils complètent la liste mais ne "
-            "remplissent pas la règle des 2 sources concordantes."
+            "remplissent pas la règle des sources concordantes."
         )
     if chart["movement_available"]:
         lines.append("")
         lines.append(
-            "*Évolution calculée par rapport au snapshot précédent disponible.*"
+            "*Évolution calculée par rapport au snapshot précédent de même méthode.*"
         )
     else:
         lines.append("")
         lines.append(
-            "*Premier snapshot : toutes les évolutions sont « NEW ». Le mouvement "
-            "apparaîtra dès la deuxième collecte.*"
+            "*Premier snapshot de cette méthode : toutes les évolutions sont « NEW ». "
+            "Le mouvement apparaîtra dès la deuxième collecte.*"
         )
     lines.append("")
     return "\n".join(lines)
 
 
 def render_html(chart: dict) -> str:
-    rows = []
-    for entry in chart["entries"]:
+    def row(entry: dict) -> str:
         links = " · ".join(
             f'<a href="{html.escape(url, quote=True)}">{label}</a>'
             for label, url in (
@@ -393,11 +452,10 @@ def render_html(chart: dict) -> str:
             )
             if url
         )
-        marker = "&nbsp;¹" if entry.get("fill") else ""
-        rows.append(
+        return (
             "<tr>"
-            f'<td class="rank">{entry["rank"]}</td>'
-            f"<td><strong>{html.escape(entry['title'])}</strong>{marker}</td>"
+            f'<td class="rank">{"—" if entry.get("fill") else entry["rank"]}</td>'
+            f"<td><strong>{html.escape(entry['title'])}</strong></td>"
             f"<td>{html.escape(entry['artist'])}</td>"
             f'<td class="move">{html.escape(entry["movement_label"])}</td>'
             f"<td>{html.escape(entry['sources'])}</td>"
@@ -405,20 +463,39 @@ def render_html(chart: dict) -> str:
             "</tr>"
         )
 
+    confirmed = [entry for entry in chart["entries"] if not entry.get("fill")]
+    extra = [entry for entry in chart["entries"] if entry.get("fill")]
+    certified = len(confirmed)
+
+    body = [row(entry) for entry in confirmed]
+    if confirmed and extra:
+        body.append(
+            '<tr class="section"><td colspan="6">Compléments — une seule source '
+            f"({len(extra)})</td></tr>"
+        )
+    body.extend(row(entry) for entry in extra)
+
     sources = ", ".join(
         f"{source_label(name)} ({weight:.0%})"
         for name, weight in chart["source_weights"].items()
     )
     note = (
-        "Évolution calculée par rapport au snapshot précédent."
+        "Évolution calculée par rapport au snapshot précédent de même méthode."
         if chart["movement_available"]
-        else "Premier snapshot : le mouvement apparaîtra à la deuxième collecte."
+        else "Premier snapshot de cette méthode : le mouvement apparaîtra à la deuxième collecte."
     )
-    filled = sum(1 for entry in chart["entries"] if entry.get("fill"))
     fill_note = (
-        f"<p class=\"note\">¹ {filled} titre(s) à source unique (complément, "
-        "sous la règle des 2 sources).</p>"
-        if filled
+        f"<p class=\"note\">¹ {len(extra)} titre(s) à source unique : ils complètent "
+        "la liste mais ne remplissent pas la règle des sources concordantes.</p>"
+        if extra
+        else ""
+    )
+    warning = (
+        f'<p class="warning">⚠ {certified}/{len(chart["entries"])} titres seulement '
+        f"sont confirmés par au moins {chart['min_sources']} sources. Un recouvrement "
+        "faible signale que les sources ne mesurent pas le même univers "
+        "(chart pays vs playlist éditoriale).</p>"
+        if certified < len(chart["entries"])
         else ""
     )
 
@@ -435,6 +512,8 @@ def render_html(chart: dict) -> str:
   main {{ max-width: 68rem; margin: 0 auto; }}
   h1 {{ font-size: 1.6rem; margin: 0 0 .25rem; }}
   .meta {{ color: #777; font-size: .9rem; margin-bottom: 1.5rem; }}
+  .warning {{ background: rgba(214,158,46,.14); border-left: 3px solid #d69e2e;
+              padding: .7rem .9rem; font-size: .9rem; margin: 0 0 1rem; }}
   table {{ width: 100%; border-collapse: collapse; font-size: .95rem; }}
   th, td {{ padding: .5rem .6rem; border-bottom: 1px solid #d8d8d8;
             text-align: left; vertical-align: top; }}
@@ -443,6 +522,9 @@ def render_html(chart: dict) -> str:
   td.rank {{ font-variant-numeric: tabular-nums; font-weight: 600; width: 3rem; }}
   td.move {{ font-variant-numeric: tabular-nums; white-space: nowrap; width: 6rem; }}
   td.links {{ white-space: nowrap; font-size: .88rem; }}
+  tr.section td {{ background: rgba(127,127,127,.10); font-weight: 600;
+                   font-size: .82rem; text-transform: uppercase;
+                   letter-spacing: .04em; color: #666; }}
   tbody tr:hover {{ background: rgba(127,127,127,.10); }}
   .note {{ color: #777; font-size: .85rem; margin-top: 1rem; }}
 </style>
@@ -453,11 +535,12 @@ def render_html(chart: dict) -> str:
   <p class="meta">Pays : {chart['country']} · {len(chart['entries'])} titres ·
      période : 7 jours glissants · généré le {chart['generated_at_utc'][:10]}<br>
      Sources : {html.escape(sources)}</p>
+  {warning}
   <table>
     <thead><tr><th>#</th><th>Titre</th><th>Artiste</th><th>Évol.</th>
     <th>Sources</th><th>Liens</th></tr></thead>
     <tbody>
-{chr(10).join('      ' + row for row in rows)}
+{chr(10).join('      ' + item for item in body)}
     </tbody>
   </table>
   {fill_note}
@@ -476,6 +559,7 @@ def write_csv(path: Path, entries: list[dict]) -> None:
                 "rank",
                 "title",
                 "artist",
+                "certified",
                 "source_count",
                 "sources",
                 "score",
@@ -493,6 +577,7 @@ def write_csv(path: Path, entries: list[dict]) -> None:
                     entry["rank"],
                     entry["title"],
                     entry["artist"],
+                    "0" if entry.get("fill") else "1",
                     entry["source_count"],
                     entry["sources"],
                     entry["score"],
@@ -550,6 +635,7 @@ def merge(
     previous = find_previous_chart(root, date)
     apply_movement(selected, previous)
 
+    certified = sum(1 for entry in selected if not entry["fill"])
     chart = {
         "chart": payload.get("chart", "DZ TOP 50"),
         "version": "multi_source",
@@ -567,6 +653,8 @@ def merge(
         "metrics": "rank_fusion",
         "min_sources": min_sources,
         "count": len(selected),
+        "certified": certified,
+        "overlap": overlap_matrix(candidates),
         "movement_available": previous is not None,
         "entries": [
             {
@@ -646,6 +734,10 @@ def main(argv: list[str] | None = None) -> int:
     certified = sum(1 for entry in chart["entries"] if not entry["fill"])
     log(f"Classement {date} : {chart['count']} titres")
     log(f"  {certified} avec au moins {args.min_sources} sources concordantes")
+    if chart["overlap"]:
+        log("  recouvrement des sources :")
+        for pair, count in sorted(chart["overlap"].items()):
+            log(f"    {pair.replace('|', ' & ')} : {count} titre(s) commun(s)")
     log(f"  mouvement : {'oui' if chart['movement_available'] else 'premier snapshot'}")
     log(f"Écrit : {chart_path}")
     log(f"Écrit : {out_dir / 'CLASSEMENT.md'}")

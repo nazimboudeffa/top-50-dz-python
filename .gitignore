@@ -59,14 +59,21 @@ desktop.ini
 !.env.example
 
 # ---------------------------------------------------------------------------
-# Sorties générées par build_playlist.py
+# Sorties générées (build_playlist.py, collect.py, merge.py)
 #
-# Versionnées par défaut : ce sont les livrables du dépôt (la liste publiée et
-# le cache des liens YouTube, qui évite de refaire 50 recherches).
+# Versionnées par défaut : ce sont les livrables du dépôt (la liste publiée, le
+# classement, les snapshots quotidiens et les caches, qui évitent de refaire
+# 50 recherches à chaque exécution).
 # Décommenter les lignes ci-dessous pour les exclure du versionnement.
 # ---------------------------------------------------------------------------
 # PLAYLIST.md
+# PLAYLIST.html
 # playlist_spotify.csv
+# CLASSEMENT.md
+# CLASSEMENT.html
+# classement.csv
 # youtube_links.json
 # spotify_meta.json
 # youtube_a_verifier.txt
+# sources.json
+# DZ_TOP_50_*.json
