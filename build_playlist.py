@@ -54,6 +54,7 @@ from datetime import datetime, timezone
 from html import escape
 from pathlib import Path
 from urllib.error import URLError
+from urllib.parse import quote_plus
 from urllib.request import Request, urlopen
 
 # Playlist source du classement (Spotify — Hot Hit Algeria).
@@ -219,6 +220,12 @@ def fetch_playlist_tracks(playlist_id: str) -> list[dict]:
 
 def track_id_from_uri(uri: str) -> str:
     return uri.rsplit(":", 1)[-1]
+
+
+def track_id_from_url(url: str | None) -> str | None:
+    if not url:
+        return None
+    return url.rstrip("/").rsplit("/", 1)[-1].split("?")[0] or None
 
 
 def resolve_links(entries: list[dict], tracks: list[dict]) -> list[dict]:
@@ -434,10 +441,17 @@ def score_candidate(entry: dict, candidate: dict) -> float:
     ratio = difflib.SequenceMatcher(None, title_n, candidate_n).ratio()
     contains = bool(title_n) and (title_n in candidate_n or candidate_n in title_n)
 
-    haystack = f"{candidate.get('artist', '')} {candidate.get('title', '')}"
+    haystack = normalize(f"{candidate.get('artist', '')} {candidate.get('title', '')}")
+    # « Draganov & TIF », « Karol G, Judeline & rusowsky » : on compare chaque
+    # artiste séparément, sinon la chaîne complète ne correspond jamais.
+    artist_parts = re.split(
+        r"[,&/|]|\s+-\s+|\s+feat\.?\s+|\s+ft\.?\s+|\s+x\s+",
+        entry.get("artist", ""),
+        flags=re.IGNORECASE,
+    )
     artist_match = any(
-        token and token in normalize(haystack)
-        for token in (normalize(part) for part in entry.get("artist", "").split(","))
+        token and token in haystack
+        for token in (normalize(part) for part in artist_parts)
     )
 
     value = ratio * 60
@@ -599,6 +613,10 @@ def resolve_youtube(
 # Rendu / écriture
 # ---------------------------------------------------------------------------
 
+def spotify_search_url(title: str, artist: str) -> str:
+    return "https://open.spotify.com/search/" + quote_plus(f"{title} {artist}".strip())
+
+
 def render_markdown(
     rows: list[dict],
     chart: dict,
@@ -613,12 +631,22 @@ def render_markdown(
         header += " YouTube |"
         separator += "---------|"
 
+    if chart.get("pipeline") == "multi_source":
+        intro = (
+            "Classement multi-source ("
+            + (chart.get("sources") or "Apple, Audiomack, Spotify")
+            + "). Scores et évolution : `CLASSEMENT.md`."
+        )
+    else:
+        intro = (
+            "Classement basé sur la playlist Spotify "
+            f"[{playlist_name}]({PLAYLIST_URL.format(playlist_id=playlist_id)})."
+        )
+
     lines = [
         f"# DZ TOP 50 — {date}",
         "",
-        "Classement basé sur la playlist Spotify "
-        f"[{playlist_name}]"
-        f"({PLAYLIST_URL.format(playlist_id=playlist_id)}).",
+        intro,
         "",
         header,
         separator,
@@ -627,7 +655,9 @@ def render_markdown(
         title = str(row["title"]).replace("|", "\\|")
         artist = str(row["artist"]).replace("|", "\\|")
         spotify = (
-            f"[Écouter]({row['spotify_url']})" if row.get("spotify_url") else "—"
+            f"[Écouter]({row['spotify_url']})"
+            if row.get("spotify_url")
+            else f"[Rechercher]({spotify_search_url(row['title'], row['artist'])})"
         )
         cells = [str(row["rank"]), title, artist, spotify]
         if with_youtube:
@@ -686,7 +716,12 @@ def render_html(
             for column in HTML_COLUMNS
         ]
         if with_youtube:
-            cells.append(link_cell(row.get("spotify_url")))
+            cells.append(
+                link_cell(
+                    row.get("spotify_url"),
+                    fallback=spotify_search_url(row["title"], row["artist"]),
+                )
+            )
             cells.append(link_cell(row.get("youtube_url")))
         body.append("    <tr>\n      " + "\n      ".join(cells) + "\n    </tr>")
 
@@ -717,12 +752,17 @@ def render_html(
     )
 
 
-def link_cell(url: str | None) -> str:
+def link_cell(url: str | None, fallback: str | None = None, label: str = "Écouter") -> str:
     if not url:
+        if fallback:
+            return (
+                f'<td><a href="{escape(fallback, quote=True)}" target="_blank" '
+                f'rel="noopener">Rechercher</a></td>'
+            )
         return "<td>—</td>"
     return (
         f'<td><a href="{escape(url, quote=True)}" target="_blank" '
-        f'rel="noopener">Écouter</a></td>'
+        f'rel="noopener">{label}</a></td>'
     )
 
 
@@ -824,10 +864,23 @@ def build(
     entries = sorted(chart["entries"], key=lambda entry: entry["rank"])
     log(f"Classement : {chart_path.name} ({len(entries)} entrées)")
 
-    tracks = fetch_playlist_tracks(playlist_id)
-    log(f"Playlist {playlist_id} : {len(tracks)} titres récupérés")
+    if chart.get("pipeline") == "multi_source":
+        # Les liens viennent de la fusion : l'ordre du chart n'est plus celui de
+        # la playlist, un appariement par position serait faux.
+        log("Classement multi-source : liens Spotify fournis par merge.py")
+        rows = [
+            {
+                **entry,
+                "spotify_url": entry.get("spotify_url"),
+                "spotify_id": track_id_from_url(entry.get("spotify_url")),
+            }
+            for entry in entries
+        ]
+    else:
+        tracks = fetch_playlist_tracks(playlist_id)
+        log(f"Playlist {playlist_id} : {len(tracks)} titres récupérés")
+        rows = resolve_links(entries, tracks)
 
-    rows = resolve_links(entries, tracks)
     missing = sum(1 for row in rows if not row["spotify_url"])
     if missing:
         log(f"⚠ {missing} entrée(s) sans lien Spotify")
@@ -837,16 +890,27 @@ def build(
         log(f"ISRC : {isrc_count}/{len(rows)} titre(s) renseigné(s)")
 
     if with_youtube:
-        cache_path = out_dir / YOUTUBE_CACHE_NAME
-        rows, to_review, cache, live_calls = resolve_youtube(
-            rows, date_dir.name, cache_path, threshold, refresh_youtube
-        )
-        save_youtube_cache(cache_path, cache)
-        log(
-            f"YouTube : {len(rows) - len(to_review)}/{len(rows)} liens fiables, "
-            f"{len(to_review)} à vérifier, {live_calls} recherche(s) en direct"
-        )
-        write_report(to_review, out_dir / YOUTUBE_REPORT_NAME, threshold)
+        if any(row.get("youtube_music_url") for row in rows):
+            # Les liens ont déjà été résolus par collect.py : on évite 50 recherches.
+            for row in rows:
+                row["youtube_url"] = row.get("youtube_music_url")
+            to_review = [row for row in rows if not row.get("youtube_music_url")]
+            log(
+                f"YouTube Music : {len(rows) - len(to_review)}/{len(rows)} liens "
+                "fournis par la collecte"
+            )
+            write_report(to_review, out_dir / YOUTUBE_REPORT_NAME, threshold)
+        else:
+            cache_path = out_dir / YOUTUBE_CACHE_NAME
+            rows, to_review, cache, live_calls = resolve_youtube(
+                rows, date_dir.name, cache_path, threshold, refresh_youtube
+            )
+            save_youtube_cache(cache_path, cache)
+            log(
+                f"YouTube : {len(rows) - len(to_review)}/{len(rows)} liens fiables, "
+                f"{len(to_review)} à vérifier, {live_calls} recherche(s) en direct"
+            )
+            write_report(to_review, out_dir / YOUTUBE_REPORT_NAME, threshold)
 
     md_path, csv_path = write_outputs(
         rows,

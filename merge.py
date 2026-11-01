@@ -13,13 +13,12 @@ score de 0 à 100 ::
 
     score = 100 * (1 - (position - 1) / (N - 1))
 
-Deezer ne publie pas de chart pays : il fournit un indice de popularité
-(``rank``) converti linéairement sur un plafond de 1 000 000.
+Deezer ne publie pas de chart pays : il n'entre pas dans le score, il ne sert
+qu'à enrichir (ISRC, lien, indice de popularité informatif).
 
 Le score final est la moyenne pondérée des sources **présentes pour ce titre**
 (les sources absentes ne pénalisent pas, elles sont retirées du dénominateur).
-``source_count`` ne compte que les sources de découverte — Deezer est un
-enrichissement, pas une découverte.
+``source_count`` ne compte que les sources de découverte.
 
 Règle d'entrée : au moins ``--min-sources`` sources de découverte (défaut 2).
 Si moins de 50 titres remplissent la règle, les meilleurs titres à source
@@ -42,12 +41,12 @@ import json
 import re
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import quote_plus
 
 from build_playlist import normalize, title_key
 
 MIN_SOURCES_DEFAULT = 2
 TOP_N = 50
-DEEZER_RANK_CEILING = 1_000_000
 
 
 def log(message: str) -> None:
@@ -107,6 +106,7 @@ def flatten(payload: dict) -> list[dict]:
                     "isrc": entry.get("isrc"),
                     "deezer_rank": entry.get("deezer_rank"),
                     "deezer_url": entry.get("deezer_url"),
+                    "youtube_music_url": entry.get("youtube_music_url"),
                     "view_count": entry.get("view_count"),
                     "source_id": entry.get("source_id"),
                 }
@@ -151,8 +151,8 @@ def cluster(records: list[dict]) -> list[list[int]]:
 
 
 def pick_representative(members: list[dict]) -> dict:
-    """Choisit le libellé le plus fiable : Apple/Spotify avant YouTube."""
-    priority = {"apple_music": 0, "spotify": 1, "youtube": 2, "deezer": 3}
+    """Choisit le libellé le plus fiable : Apple/Audiomack avant Spotify/YouTube."""
+    priority = {"apple_music": 0, "audiomack": 1, "spotify": 2, "youtube": 3, "deezer": 4}
 
     def sort_key(member: dict) -> tuple:
         return (
@@ -169,6 +169,17 @@ def best_url(members: list[dict], source: str) -> str | None:
         if member["source"] == source and member["url"]:
             return member["url"]
     return None
+
+
+def first_field(members: list[dict], field: str) -> str | None:
+    for member in sorted(members, key=lambda item: item["position"]):
+        if member.get(field):
+            return member[field]
+    return None
+
+
+def youtube_music_search_url(title: str, artist: str) -> str:
+    return "https://music.youtube.com/search?q=" + quote_plus(f"{title} {artist}".strip())
 
 
 # ---------------------------------------------------------------------------
@@ -216,18 +227,13 @@ def build_candidates(payload: dict) -> list[dict]:
                     source,
                 )
             )
-        if deezer_rank is not None and weights.get("deezer"):
-            score = 100.0 * min(deezer_rank, DEEZER_RANK_CEILING) / DEEZER_RANK_CEILING
-            contributions.append((float(weights["deezer"]), score, "deezer"))
 
         weight_total = sum(weight for weight, _, _ in contributions)
         if weight_total <= 0:
             continue
 
         weighted_total = sum(weight * score for weight, score, _ in contributions) / weight_total
-        discovery_sources = sorted(
-            source for source in positions if source in counts
-        )
+        discovery_sources = sorted(positions)
 
         candidates.append(
             {
@@ -248,7 +254,9 @@ def build_candidates(payload: dict) -> list[dict]:
                 ),
                 "spotify_url": best_url(members, "spotify"),
                 "apple_url": best_url(members, "apple_music"),
+                "audiomack_url": best_url(members, "audiomack"),
                 "youtube_url": best_url(members, "youtube"),
+                "youtube_music_url": first_field(members, "youtube_music_url"),
                 "deezer_url": next(
                     (member["deezer_url"] for member in members if member.get("deezer_url")),
                     None,
@@ -268,6 +276,7 @@ def song_id(title: str, artist: str) -> str:
 def source_label(source: str) -> str:
     return {
         "apple_music": "Apple",
+        "audiomack": "Audiomack",
         "spotify": "Spotify",
         "youtube": "YouTube",
         "deezer": "Deezer",
@@ -364,8 +373,13 @@ def render_markdown(chart: dict) -> str:
         f"# {chart['chart']} — {date}",
         "",
         f"Pays : **{chart['country']}** · {len(entries)} titres · "
-        f"période : **7 jours glissants** · généré le "
-        f"{chart['generated_at_utc'][:10]}",
+        f"périodes : "
+        + ", ".join(
+            f"{source_label(name)} {period}"
+            for name, period in (chart.get("source_periods") or {}).items()
+            if period
+        )
+        + f" · généré le {chart['generated_at_utc'][:10]}",
         "",
         "Sources : "
         + ", ".join(
@@ -377,10 +391,12 @@ def render_markdown(chart: dict) -> str:
 
     if certified < len(entries):
         lines.append(
-            f"> **{certified}/{len(entries)}** titres seulement sont confirmés par "
-            f"au moins {chart['min_sources']} sources. Un recouvrement faible entre "
-            "sources signale qu'elles ne mesurent pas le même univers "
-            "(chart pays vs playlist éditoriale)."
+            f"> **{certified}/{len(entries)}** titres sont certifiés par au moins "
+            f"{chart['min_sources']} sources concordantes ; les {len(entries) - certified} "
+            "autres ne sont vus que par une seule source et figurent en compléments. "
+            "L'écoute en Algérie se partage entre la scène locale (Audiomack, playlist "
+            "éditoriale) et les titres globaux du chart Apple, deux univers qui se "
+            "recoupent très peu."
         )
         lines.append("")
 
@@ -394,11 +410,20 @@ def render_markdown(chart: dict) -> str:
         for label, url in (
             ("Spotify", entry.get("spotify_url")),
             ("Apple", entry.get("apple_url")),
+            ("Audiomack", entry.get("audiomack_url")),
             ("YouTube", entry.get("youtube_url")),
             ("Deezer", entry.get("deezer_url")),
         ):
             if url:
                 links.append(f"[{label}]({url})")
+        music_url = entry.get("youtube_music_url")
+        if music_url:
+            links.append(f"[YouTube Music]({music_url})")
+        else:
+            links.append(
+                "[YouTube Music ↗]"
+                f"({youtube_music_search_url(entry['title'], entry['artist'])})"
+            )
         rank = "—" if entry.get("fill") else entry["rank"]
         return (
             f"| {rank} | {entry['title']} | {entry['artist']} | "
@@ -420,6 +445,12 @@ def render_markdown(chart: dict) -> str:
         lines.extend(row(entry) for entry in extra)
 
     lines.append("")
+    if any(not entry.get("youtube_music_url") for entry in entries):
+        lines.append(
+            "*« YouTube Music ↗ » est un lien de **recherche** : aucune correspondance "
+            "de titre assez fiable n'a été trouvée pour ce morceau.*"
+        )
+        lines.append("")
     if filled:
         lines.append(
             f"¹ {filled} titre(s) à source unique : ils complètent la liste mais ne "
@@ -442,15 +473,30 @@ def render_markdown(chart: dict) -> str:
 
 def render_html(chart: dict) -> str:
     def row(entry: dict) -> str:
-        links = " · ".join(
-            f'<a href="{html.escape(url, quote=True)}">{label}</a>'
+        pairs = [
+            (label, url)
             for label, url in (
                 ("Spotify", entry.get("spotify_url")),
                 ("Apple", entry.get("apple_url")),
+                ("Audiomack", entry.get("audiomack_url")),
                 ("YouTube", entry.get("youtube_url")),
                 ("Deezer", entry.get("deezer_url")),
             )
             if url
+        ]
+        music_url = entry.get("youtube_music_url")
+        if music_url:
+            pairs.append(("YouTube Music", music_url))
+        else:
+            pairs.append(
+                (
+                    "YouTube Music ↗",
+                    youtube_music_search_url(entry["title"], entry["artist"]),
+                )
+            )
+        links = " · ".join(
+            f'<a href="{html.escape(url, quote=True)}">{label}</a>'
+            for label, url in pairs
         )
         return (
             "<tr>"
@@ -479,6 +525,11 @@ def render_html(chart: dict) -> str:
         f"{source_label(name)} ({weight:.0%})"
         for name, weight in chart["source_weights"].items()
     )
+    periods = ", ".join(
+        f"{source_label(name)} {period}"
+        for name, period in (chart.get("source_periods") or {}).items()
+        if period
+    )
     note = (
         "Évolution calculée par rapport au snapshot précédent de même méthode."
         if chart["movement_available"]
@@ -491,10 +542,12 @@ def render_html(chart: dict) -> str:
         else ""
     )
     warning = (
-        f'<p class="warning">⚠ {certified}/{len(chart["entries"])} titres seulement '
-        f"sont confirmés par au moins {chart['min_sources']} sources. Un recouvrement "
-        "faible signale que les sources ne mesurent pas le même univers "
-        "(chart pays vs playlist éditoriale).</p>"
+        f'<p class="warning">⚠ {certified}/{len(chart["entries"])} titres sont '
+        f"certifiés par au moins {chart['min_sources']} sources concordantes ; les "
+        f"{len(chart['entries']) - certified} autres ne sont vus que par une seule "
+        "source et figurent en compléments. L'écoute en Algérie se partage entre la "
+        "scène locale (Audiomack, playlist éditoriale) et les titres globaux du chart "
+        "Apple, deux univers qui se recoupent très peu.</p>"
         if certified < len(chart["entries"])
         else ""
     )
@@ -533,7 +586,7 @@ def render_html(chart: dict) -> str:
 <main>
   <h1>{html.escape(chart['chart'])} — {chart['chart_date']}</h1>
   <p class="meta">Pays : {chart['country']} · {len(chart['entries'])} titres ·
-     période : 7 jours glissants · généré le {chart['generated_at_utc'][:10]}<br>
+     périodes : {html.escape(periods)} · généré le {chart['generated_at_utc'][:10]}<br>
      Sources : {html.escape(sources)}</p>
   {warning}
   <table>
@@ -545,6 +598,8 @@ def render_html(chart: dict) -> str:
   </table>
   {fill_note}
   <p class="note">{note}</p>
+  <p class="note">« YouTube Music ↗ » est un lien de <strong>recherche</strong> :
+  aucune correspondance de titre assez fiable n'a été trouvée pour ce morceau.</p>
 </main>
 </body>
 </html>
@@ -567,7 +622,9 @@ def write_csv(path: Path, entries: list[dict]) -> None:
                 "isrc",
                 "spotify_url",
                 "apple_url",
+                "audiomack_url",
                 "youtube_url",
+                "youtube_music_url",
                 "deezer_url",
             ]
         )
@@ -585,7 +642,9 @@ def write_csv(path: Path, entries: list[dict]) -> None:
                     entry.get("isrc") or "",
                     entry.get("spotify_url") or "",
                     entry.get("apple_url") or "",
+                    entry.get("audiomack_url") or "",
                     entry.get("youtube_url") or "",
+                    entry.get("youtube_music_url") or "",
                     entry.get("deezer_url") or "",
                 ]
             )
@@ -650,6 +709,10 @@ def merge(
             name: source["weight"]
             for name, source in payload.get("sources", {}).items()
         },
+        "source_periods": {
+            name: source.get("period")
+            for name, source in payload.get("sources", {}).items()
+        },
         "metrics": "rank_fusion",
         "min_sources": min_sources,
         "count": len(selected),
@@ -679,7 +742,9 @@ def merge(
                 "fill": entry["fill"],
                 "spotify_url": entry["spotify_url"],
                 "apple_url": entry["apple_url"],
+                "audiomack_url": entry["audiomack_url"],
                 "youtube_url": entry["youtube_url"],
+                "youtube_music_url": entry["youtube_music_url"],
                 "deezer_url": entry["deezer_url"],
             }
             for entry in selected

@@ -1,69 +1,71 @@
 # DZ TOP 50 — 2026-11-01
 
-Pays : **DZ** · 50 titres · période : **7 jours glissants** · généré le 2026-11-01
+Pays : **DZ** · 50 titres · périodes : Apple quotidien, Audiomack hebdomadaire, Spotify éditorial · généré le 2026-11-01
 
-Sources : Apple (35%), Spotify (25%)
+Sources : Apple (35%), Audiomack (25%), Spotify (25%)
 
-> **1/50** titres seulement sont confirmés par au moins 2 sources. Un recouvrement faible entre sources signale qu'elles ne mesurent pas le même univers (chart pays vs playlist éditoriale).
-
-| # | Titre | Artiste | Évolution | Sources | Liens |
-|---:|---|---|:---:|---|---|
-| 1 | Sabran | Djalil Palermo | NEW | Apple, Spotify | [Spotify](https://open.spotify.com/track/5iQPZCQR5SBP3moPvnO8S5) · [Apple](https://music.apple.com/dz/album/sabran/6812769562?i=6812769569) · [Deezer](https://www.deezer.com/track/4290144872) |
-
-**Compléments — une seule source (49)**
+> **15/50** titres sont certifiés par au moins 2 sources concordantes ; les 35 autres ne sont vus que par une seule source et figurent en compléments. L'écoute en Algérie se partage entre la scène locale (Audiomack, playlist éditoriale) et les titres globaux du chart Apple, deux univers qui se recoupent très peu.
 
 | # | Titre | Artiste | Évolution | Sources | Liens |
 |---:|---|---|:---:|---|---|
-| — | BbY WOW | KAROL G, Judeline & rusowsky | NEW | Apple | [Apple](https://music.apple.com/dz/album/bby-wow/6796864741?i=6796864754) · [Deezer](https://www.deezer.com/track/4208859922) |
-| — | MINUIT D'APRÈS | TIF | NEW | Apple | [Apple](https://music.apple.com/dz/album/minuit-dapr%C3%A8s/1889509175?i=1889509176) · [Deezer](https://www.deezer.com/track/4007788041) |
-| — | Seknet Marseille | Soolking | NEW | Spotify | [Spotify](https://open.spotify.com/track/1Wtr4zQhkjOJ8KZWNtPDwj) · [Deezer](https://www.deezer.com/track/4064177851) |
-| — | Fille à Papa | Vacra & La Rvfleuze | NEW | Apple | [Apple](https://music.apple.com/dz/album/fille-a-papa/6809781922?i=6809781929) · [Deezer](https://www.deezer.com/track/4273247042) |
-| — | Hakka Hakka | Mohamed Benchenet | NEW | Spotify | [Spotify](https://open.spotify.com/track/5Xo8NlagOmUUBAZ0JJGOSP) · [Deezer](https://www.deezer.com/track/4126649241) |
-| — | Ayul | Amine Amirouche, Nassima Ait Ami | NEW | Spotify | [Spotify](https://open.spotify.com/track/4J4VEP5oZmSbJaNmFwuS2U) · [Deezer](https://www.deezer.com/track/3864698751) |
-| — | Boston George (feat. Maes) | Lacrim | NEW | Apple | [Apple](https://music.apple.com/dz/album/boston-george-feat-maes/1531491027?i=1531491582) · [Deezer](https://www.deezer.com/track/1107603602) |
-| — | Last Hope (Over Slowed + Reverb) | Steve Ralph | NEW | Apple | [Apple](https://music.apple.com/dz/album/last-hope-over-slowed-reverb/1726314842?i=1726314843) · [Deezer](https://www.deezer.com/track/2597466312) |
-| — | M7ayni | Didine Canon 16 | NEW | Spotify | [Spotify](https://open.spotify.com/track/7C9s5b5QqJLXSFqeisnxeY) · [Deezer](https://www.deezer.com/track/3996434061) |
-| — | 4 | Mauvais Djo | NEW | Apple | [Apple](https://music.apple.com/dz/album/4/6813131391?i=6813131762) · [Deezer](https://www.deezer.com/track/4287282492) |
-| — | Edahka | Mouh Milano | NEW | Spotify | [Spotify](https://open.spotify.com/track/38tK0ZBRTnCE0aU45NrpLE) · [Deezer](https://www.deezer.com/track/4138702211) |
-| — | Al-Baqara - Chapter 2 (Verse 1 - Verse 25) | Abdul Rahman Al-Sudais & Shaykh Saud Al-Shuraim | NEW | Apple | [Apple](https://music.apple.com/dz/album/al-baqara-chapter-2-verse-1-verse-25/431126127?i=431126154) |
-| — | Djazaïria (feat. Abdou Gambetta) | Anas, Abdou Gambetta | NEW | Spotify | [Spotify](https://open.spotify.com/track/1t5rngO6sAHcbjIQasGIn7) · [Deezer](https://www.deezer.com/track/4121286011) |
-| — | Loser | Tame Impala | NEW | Apple | [Apple](https://music.apple.com/dz/album/loser/1842957385?i=1842957386) · [Deezer](https://www.deezer.com/track/3602329332) |
-| — | Sahran lil | Cheb Momo, Djalil Palermo | NEW | Spotify | [Spotify](https://open.spotify.com/track/1wNH5iIDfcbXdG97m5Uf0H) · [Deezer](https://www.deezer.com/track/3544460971) |
-| — | 12 | Mauvais Djo | NEW | Apple | [Apple](https://music.apple.com/dz/album/12/6803864921?i=6803864930) · [Deezer](https://www.deezer.com/track/4251736251) |
-| — | Rani Maghmoum | Kader Japonais, Reda Soussia | NEW | Spotify | [Spotify](https://open.spotify.com/track/22CUf3UFJtxiJaMx6kmPXl) · [Deezer](https://www.deezer.com/track/4080637331) |
-| — | Mama Cita | Hakim Liberta | NEW | Spotify | [Spotify](https://open.spotify.com/track/63U3JxM08enhMaDqk3rqhE) · [Deezer](https://www.deezer.com/track/4129213371) |
-| — | Noche (feat. Damso) | Lacrim | NEW | Apple | [Apple](https://music.apple.com/dz/album/noche-feat-damso/1440876765?i=1440877604) · [Deezer](https://www.deezer.com/track/428974592) |
-| — | Qololo | Fouzi Torino, Mc Artisan | NEW | Spotify | [Spotify](https://open.spotify.com/track/5F7BK2CwSasvKaxD3278W0) · [Deezer](https://www.deezer.com/track/3623120942) |
-| — | Tu connais | Werenoi | NEW | Apple | [Apple](https://music.apple.com/dz/album/tu-connais/1707807239?i=1707807608) · [Deezer](https://www.deezer.com/track/2459444615) |
-| — | L'EXIL C'EST MÉCHANT | TIF | NEW | Apple | [Apple](https://music.apple.com/dz/album/lexil-cest-m%C3%A9chant/1896439557?i=6767242072) · [Deezer](https://www.deezer.com/track/4007788081) |
-| — | Rosalinda | Didine Canon 16, Flashy OTR | NEW | Spotify | [Spotify](https://open.spotify.com/track/2Ck70DwcyAnqIWkE12ZOn2) · [Deezer](https://www.deezer.com/track/3835508841) |
-| — | BILLIE JEAN 2 (feat. Mc Artisan & Dalia) | Didine Canon 16 | NEW | Apple | [Apple](https://music.apple.com/dz/album/billie-jean-2-feat-mc-artisan-dalia/6825286209?i=6825286383) · [Deezer](https://www.deezer.com/track/4359158862) |
-| — | Dai Dai | Shakira, Burna Boy | NEW | Spotify | [Spotify](https://open.spotify.com/track/0kosUz0jePvjiz4ctmR6wL) · [Deezer](https://www.deezer.com/track/4015341011) |
-| — | Huracan | Trap King | NEW | Spotify | [Spotify](https://open.spotify.com/track/6a9mGLln2rWXlKdb5PzD9r) · [Deezer](https://www.deezer.com/track/3724621122) |
-| — | Nicole Kidman | ADÉLA | NEW | Apple | [Apple](https://music.apple.com/dz/album/nicole-kidman/6807192580?i=6807192825) · [Deezer](https://www.deezer.com/track/4250696681) |
-| — | Fi Hwak (feat. Djalil Palermo) | Didine Canon 16 | NEW | Apple | [Apple](https://music.apple.com/dz/album/fi-hwak-feat-djalil-palermo/1516602135?i=1516602137) · [Deezer](https://www.deezer.com/track/979773322) |
-| — | Smaht ou Mchit | Didine Canon 16 | NEW | Spotify | [Spotify](https://open.spotify.com/track/4szzelql5n4wwot52p0rsm) · [Deezer](https://www.deezer.com/track/3443164211) |
-| — | Maladie | Mauvais Djo | NEW | Apple | [Apple](https://music.apple.com/dz/album/maladie/6804638349?i=6804638350) · [Deezer](https://www.deezer.com/track/4242078572) |
-| — | Se9si Liyam | Numidia Lezoul, Didine Canon 16 | NEW | Spotify | [Spotify](https://open.spotify.com/track/1yhawOwQm1XumUtkVHhtVP) · [Deezer](https://www.deezer.com/track/3707880462) |
-| — | Namchi Wngoul Ça va | Abdou Gambetta | NEW | Spotify | [Spotify](https://open.spotify.com/track/1py7Rjj1axmqPQtUTVELxF) · [Deezer](https://www.deezer.com/track/3648654862) |
-| — | Professionnels | SCH & SDM | NEW | Apple | [Apple](https://music.apple.com/dz/album/professionnels/6822787530?i=6822787533) · [Deezer](https://www.deezer.com/track/4362540421) |
-| — | De l'autre côté (feat. Nekfeu) | Ninho | NEW | Apple | [Apple](https://music.apple.com/dz/album/de-lautre-c%C3%B4t%C3%A9-feat-nekfeu/1302387092?i=1302388764) · [Deezer](https://www.deezer.com/track/1623327522) |
-| — | Hala Rani Fiha | Abdou Gambetta, Raouf Samourai | NEW | Spotify | [Spotify](https://open.spotify.com/track/5906V9Gvt3VJzJReUsR8cG) · [Deezer](https://www.deezer.com/track/3164646501) |
-| — | Ain't In LA | ADÉLA | NEW | Apple | [Apple](https://music.apple.com/dz/album/aint-in-la/6792883860?i=6792884101) · [Deezer](https://www.deezer.com/track/4158551132) |
-| — | Denia | Djalil Palermo, Zuma Woed | NEW | Spotify | [Spotify](https://open.spotify.com/track/1vqT1et6B9Cx8yaz56kcLp) · [Deezer](https://www.deezer.com/track/3574422631) |
-| — | SAYGA | Didine Canon 16 | NEW | Spotify | [Spotify](https://open.spotify.com/track/0sph6B02DsRCAkKpMhOT3P) · [Deezer](https://www.deezer.com/track/3318842621) |
-| — | Sur paname | Ninho | NEW | Apple | [Apple](https://music.apple.com/dz/album/sur-paname/1565400560?i=1565402015) · [Deezer](https://www.deezer.com/track/1118497762) |
-| — | VIANO | RK, Genezio | NEW | Spotify | [Spotify](https://open.spotify.com/track/5DTahoMKuix8Fi1WSXGwIW) · [Deezer](https://www.deezer.com/track/3460711121) |
-| — | Blue Lights | Jorja Smith | NEW | Apple | [Apple](https://music.apple.com/dz/album/blue-lights/1373567754?i=1373567936) · [Deezer](https://www.deezer.com/track/606754192) |
-| — | PARISIENNE | GIMS, La Mano 1.9 | NEW | Spotify | [Spotify](https://open.spotify.com/track/0wLCA75tmsos5ZcVzqHFQ1) · [Deezer](https://www.deezer.com/track/3484365861) |
-| — | سكاتي (feat. Didine Canon) | Space X Music | NEW | Apple | [Apple](https://music.apple.com/dz/album/%D8%B3%D9%83%D8%A7%D8%AA%D9%8A-feat-didine-canon/6827288991?i=6827288994) |
-| — | Match retard | Hakim Liberta | NEW | Spotify | [Spotify](https://open.spotify.com/track/5b9cobjlCZRwq8KFlv7qqC) · [Deezer](https://www.deezer.com/track/3379472721) |
-| — | kafini | TIF, ElGrandeToto | NEW | Spotify | [Spotify](https://open.spotify.com/track/6uEdcdlgbHfMx6HrhSjBgB) · [Deezer](https://www.deezer.com/track/3474648671) |
-| — | La vie qu'on mène | Ninho | NEW | Apple | [Apple](https://music.apple.com/dz/album/la-vie-quon-m%C3%A8ne/1453399177?i=1453399179) · [Deezer](https://www.deezer.com/track/652380172) |
-| — | AIR FORCE BLANCHE | GIMS, Jul | NEW | Spotify | [Spotify](https://open.spotify.com/track/6bcDH1OOwuKzfsByqsQKhH) · [Deezer](https://www.deezer.com/track/3413706011) |
-| — | Snowman | Sia | NEW | Apple | [Apple](https://music.apple.com/dz/album/snowman/1440098012?i=1440098017) · [Deezer](https://www.deezer.com/track/576178932) |
-| — | Mok ya mok | Benny Adam, Khadija El Warzazia | NEW | Spotify | [Spotify](https://open.spotify.com/track/2yQn0Y5mODyHfCk4oxBPfr) · [Deezer](https://www.deezer.com/track/3056953411) |
+| 1 | Sahran lil | Cheb Momo & Djalil Palermo | NEW | Audiomack, Spotify | [Spotify](https://open.spotify.com/track/1wNH5iIDfcbXdG97m5Uf0H) · [Audiomack](https://audiomack.com/chebmomo/song/sahran-lil) · [Deezer](https://www.deezer.com/track/3544460971) · [YouTube Music](https://music.youtube.com/watch?v=pUvGklP36Dw) |
+| 2 | Sabran | Djalil Palermo | NEW | Apple, Audiomack, Spotify | [Spotify](https://open.spotify.com/track/5iQPZCQR5SBP3moPvnO8S5) · [Apple](https://music.apple.com/dz/album/sabran/6812769562?i=6812769569) · [Audiomack](https://audiomack.com/djalilpalermo/song/sabran) · [Deezer](https://www.deezer.com/track/4290144872) · [YouTube Music](https://music.youtube.com/watch?v=2hO30MBSoI4) |
+| 3 | Hala Rani Fiha | Abdou Gambetta | NEW | Audiomack, Spotify | [Spotify](https://open.spotify.com/track/5906V9Gvt3VJzJReUsR8cG) · [Audiomack](https://audiomack.com/abdougambetta/song/hala-rani-fiha) · [Deezer](https://www.deezer.com/track/3164646501) · [YouTube Music](https://music.youtube.com/watch?v=ihB2FIthylc) |
+| 4 | Huracan | Trap King | NEW | Audiomack, Spotify | [Spotify](https://open.spotify.com/track/6a9mGLln2rWXlKdb5PzD9r) · [Audiomack](https://audiomack.com/trap-king-89/song/huracan) · [Deezer](https://www.deezer.com/track/3724621122) · [YouTube Music](https://music.youtube.com/watch?v=IOEr74fOC9Q) |
+| 5 | Ayul | Amine Amirouche, Nassima Ait Ami | NEW | Audiomack, Spotify | [Spotify](https://open.spotify.com/track/4J4VEP5oZmSbJaNmFwuS2U) · [Audiomack](https://audiomack.com/amine-amirouche-2/song/ayul) · [Deezer](https://www.deezer.com/track/3864698751) · [YouTube Music](https://music.youtube.com/watch?v=X4iz4oWYN3k) |
+| 6 | Hakka Hakka | Mohamed Benchenet | NEW | Audiomack, Spotify | [Spotify](https://open.spotify.com/track/5Xo8NlagOmUUBAZ0JJGOSP) · [Audiomack](https://audiomack.com/mohamed-benchenet/song/hakka-hakka) · [Deezer](https://www.deezer.com/track/4126649241) · [YouTube Music](https://music.youtube.com/watch?v=zpxqricfclo) |
+| 7 | Denia | Djalil Palermo, Zuma Woed | NEW | Audiomack, Spotify | [Spotify](https://open.spotify.com/track/1vqT1et6B9Cx8yaz56kcLp) · [Audiomack](https://audiomack.com/djalilpalermo/song/denia) · [Deezer](https://www.deezer.com/track/3574422631) · [YouTube Music](https://music.youtube.com/watch?v=I7a-0IPFzyM) |
+| 8 | Qololo | Fouzi Torino, Mc Artisan | NEW | Audiomack, Spotify | [Spotify](https://open.spotify.com/track/5F7BK2CwSasvKaxD3278W0) · [Audiomack](https://audiomack.com/fouzitorino/song/qololo) · [Deezer](https://www.deezer.com/track/3623120942) · [YouTube Music](https://music.youtube.com/watch?v=dL5DDjVKYWk) |
+| 9 | Mama Cita | Hakim Liberta | NEW | Audiomack, Spotify | [Spotify](https://open.spotify.com/track/63U3JxM08enhMaDqk3rqhE) · [Audiomack](https://audiomack.com/hakim-liberta/song/mama-cita) · [Deezer](https://www.deezer.com/track/4129213371) · [YouTube Music](https://music.youtube.com/watch?v=HWOF96JDrLA) |
+| 10 | Atiteha l'amour عطيتها | Cheb Momo | NEW | Audiomack, Spotify | [Spotify](https://open.spotify.com/track/0iQYnonGw7XG8m7N1tQdDz) · [Audiomack](https://audiomack.com/cheb-momo-parisien/song/atiteha-lamour-tytha) · [Deezer](https://www.deezer.com/track/3221601141) · [YouTube Music](https://music.youtube.com/watch?v=Bm1GBMDK-r4) |
+| 11 | Edahka | Mouh Milano | NEW | Audiomack, Spotify | [Spotify](https://open.spotify.com/track/38tK0ZBRTnCE0aU45NrpLE) · [Audiomack](https://audiomack.com/mouh-milano/song/edahka-5097826) · [Deezer](https://www.deezer.com/track/4138702211) · [YouTube Music](https://music.youtube.com/watch?v=Ct2oG2nOIRc) |
+| 12 | KILOWAT | Stormy | NEW | Apple, Audiomack | [Apple](https://music.apple.com/dz/album/kilowat/6769133050?i=6769134039) · [Audiomack](https://audiomack.com/stormy-music/song/kilowat) · [Deezer](https://www.deezer.com/track/4020135561) · [YouTube Music](https://music.youtube.com/watch?v=hVAFYXNcCRA) |
+| 13 | Match retard | Hakim Liberta | NEW | Audiomack, Spotify | [Spotify](https://open.spotify.com/track/5b9cobjlCZRwq8KFlv7qqC) · [Audiomack](https://audiomack.com/hakim-liberta/song/match-retard) · [Deezer](https://www.deezer.com/track/3379472721) · [YouTube Music](https://music.youtube.com/watch?v=tYAJbGTFpUw) |
+| 14 | Se9si Liyam | Numidia Lezoul | NEW | Audiomack, Spotify | [Spotify](https://open.spotify.com/track/1yhawOwQm1XumUtkVHhtVP) · [Audiomack](https://audiomack.com/numidia-lezoul/song/se9si-liyam) · [Deezer](https://www.deezer.com/track/3707880462) · [YouTube Music](https://music.youtube.com/watch?v=MA_nNv-MQlM) |
+| 15 | Couci Couca | Draganov & TIF | NEW | Apple, Audiomack | [Apple](https://music.apple.com/dz/album/couci-couca/6813315125?i=6813315127) · [Audiomack](https://audiomack.com/draganov/song/couci-couca-8608650) · [Deezer](https://www.deezer.com/track/4293166582) · [YouTube Music](https://music.youtube.com/watch?v=3RMALnRM-BE) |
 
-¹ 49 titre(s) à source unique : ils complètent la liste mais ne remplissent pas la règle des sources concordantes.
+**Compléments — une seule source (35)**
+
+| # | Titre | Artiste | Évolution | Sources | Liens |
+|---:|---|---|:---:|---|---|
+| — | BbY WOW | KAROL G, Judeline & rusowsky | NEW | Apple | [Apple](https://music.apple.com/dz/album/bby-wow/6796864741?i=6796864754) · [Deezer](https://www.deezer.com/track/4208859922) · [YouTube Music](https://music.youtube.com/watch?v=ljAH6jNaApU) |
+| — | راكي غالطة نتي لي راكي حاقدا عليا | Cheb Momo | NEW | Audiomack | [Audiomack](https://audiomack.com/chebmomo/song/raky-ghaltt-nty-ly-raky-haqda-lya) · [Deezer](https://www.deezer.com/track/4272691312) · [YouTube Music ↗](https://music.youtube.com/search?q=%D8%B1%D8%A7%D9%83%D9%8A+%D8%BA%D8%A7%D9%84%D8%B7%D8%A9+%D9%86%D8%AA%D9%8A+%D9%84%D9%8A+%D8%B1%D8%A7%D9%83%D9%8A+%D8%AD%D8%A7%D9%82%D8%AF%D8%A7+%D8%B9%D9%84%D9%8A%D8%A7+Cheb+Momo) |
+| — | MINUIT D'APRÈS | TIF | NEW | Apple | [Apple](https://music.apple.com/dz/album/minuit-dapr%C3%A8s/1889509175?i=1889509176) · [Deezer](https://www.deezer.com/track/4007788041) · [YouTube Music](https://music.youtube.com/watch?v=_6eggAVXUYc) |
+| — | Seknet Marseille | Soolking | NEW | Spotify | [Spotify](https://open.spotify.com/track/1Wtr4zQhkjOJ8KZWNtPDwj) · [Deezer](https://www.deezer.com/track/4064177851) · [YouTube Music](https://music.youtube.com/watch?v=p7UQojvWTZE) |
+| — | Galbi 3lah Hgertihe | Cheb Amine Tigre | NEW | Audiomack | [Audiomack](https://audiomack.com/chebaminetigre/song/galbi-3lah-hgertihe) · [Deezer](https://www.deezer.com/track/3455291191) · [YouTube Music](https://music.youtube.com/watch?v=PCs9Bu4VkrM) |
+| — | Fille à Papa | Vacra & La Rvfleuze | NEW | Apple | [Apple](https://music.apple.com/dz/album/fille-a-papa/6809781922?i=6809781929) · [Deezer](https://www.deezer.com/track/4273247042) · [YouTube Music](https://music.youtube.com/watch?v=IO_GLvVB5Vc) |
+| — | Kamalna Bel kahir | Cheb Aymen Sghir | Redouane Aroussi | NEW | Audiomack | [Audiomack](https://audiomack.com/cheb-aymen-sghir/song/kamalna-bel-kahir) · [Deezer](https://www.deezer.com/track/3911834941) · [YouTube Music](https://music.youtube.com/watch?v=4QnmLQD9vOI) |
+| — | Maryoula Tatmaryal (W Gay7a Tkhaf) | Cheb Nassim | NEW | Audiomack | [Audiomack](https://audiomack.com/chebnassim/song/maryoula-tatmaryal-w-gay7a-tkhaf) · [Deezer](https://www.deezer.com/track/3396120551) · [YouTube Music](https://music.youtube.com/watch?v=qRpwznVzlgw) |
+| — | Boston George (feat. Maes) | Lacrim | NEW | Apple | [Apple](https://music.apple.com/dz/album/boston-george-feat-maes/1531491027?i=1531491582) · [Deezer](https://www.deezer.com/track/1107603602) · [YouTube Music ↗](https://music.youtube.com/search?q=Boston+George+%28feat.+Maes%29+Lacrim) |
+| — | Last Hope (Over Slowed + Reverb) | Steve Ralph | NEW | Apple | [Apple](https://music.apple.com/dz/album/last-hope-over-slowed-reverb/1726314842?i=1726314843) · [Deezer](https://www.deezer.com/track/2597466312) · [YouTube Music ↗](https://music.youtube.com/search?q=Last+Hope+%28Over+Slowed+%2B+Reverb%29+Steve+Ralph) |
+| — | M7ayni | Didine Canon 16 | NEW | Spotify | [Spotify](https://open.spotify.com/track/7C9s5b5QqJLXSFqeisnxeY) · [Deezer](https://www.deezer.com/track/3996434061) · [YouTube Music](https://music.youtube.com/watch?v=ZDhMypaD254) |
+| — | خيرتك نتيا مولات داري | Cheb Mourad Sghir | NEW | Audiomack | [Audiomack](https://audiomack.com/cheb-mourad-sghir/song/khyrtk-ntya-mwlat-dary) · [Deezer](https://www.deezer.com/track/4295616502) · [YouTube Music ↗](https://music.youtube.com/search?q=%D8%AE%D9%8A%D8%B1%D8%AA%D9%83+%D9%86%D8%AA%D9%8A%D8%A7+%D9%85%D9%88%D9%84%D8%A7%D8%AA+%D8%AF%D8%A7%D8%B1%D9%8A+Cheb+Mourad+Sghir) |
+| — | Jugurtha | Trap King | NEW | Audiomack | [Audiomack](https://audiomack.com/trap-king-89/song/jugurtha) · [Deezer](https://www.deezer.com/track/4049531571) · [YouTube Music](https://music.youtube.com/watch?v=OCmC-3FWZOc) |
+| — | 4 | Mauvais Djo | NEW | Apple | [Apple](https://music.apple.com/dz/album/4/6813131391?i=6813131762) · [Deezer](https://www.deezer.com/track/4287282492) · [YouTube Music](https://music.youtube.com/watch?v=lIbXuv2zUGc) |
+| — | Tatfakrini | Cheb Momo | NEW | Audiomack | [Audiomack](https://audiomack.com/chebmomo/song/tatfakrini) · [Deezer](https://www.deezer.com/track/3824689351) · [YouTube Music](https://music.youtube.com/watch?v=86cmojHg8GI) |
+| — | Sebebi Yar | BLOK3 | NEW | Audiomack | [Audiomack](https://audiomack.com/blok3/song/sebebi-yar) · [Deezer](https://www.deezer.com/track/4046076601) · [YouTube Music](https://music.youtube.com/watch?v=WQvqf1lLQws) |
+| — | Al-Baqara - Chapter 2 (Verse 1 - Verse 25) | Abdul Rahman Al-Sudais & Shaykh Saud Al-Shuraim | NEW | Apple | [Apple](https://music.apple.com/dz/album/al-baqara-chapter-2-verse-1-verse-25/431126127?i=431126154) · [YouTube Music ↗](https://music.youtube.com/search?q=Al-Baqara+-+Chapter+2+%28Verse+1+-+Verse+25%29+Abdul+Rahman+Al-Sudais+%26+Shaykh+Saud+Al-Shuraim) |
+| — | Djazaïria (feat. Abdou Gambetta) | Anas, Abdou Gambetta | NEW | Spotify | [Spotify](https://open.spotify.com/track/1t5rngO6sAHcbjIQasGIn7) · [Deezer](https://www.deezer.com/track/4121286011) · [YouTube Music](https://music.youtube.com/watch?v=VKI6u-RombU) |
+| — | Penalty | Mc Artisan, Didine Canon 16 | NEW | Audiomack | [Audiomack](https://audiomack.com/mcartisan/song/penalty) · [Deezer](https://www.deezer.com/track/4021119871) · [YouTube Music](https://music.youtube.com/watch?v=NC-WVO1IxW4) |
+| — | Loser | Tame Impala | NEW | Apple | [Apple](https://music.apple.com/dz/album/loser/1842957385?i=1842957386) · [Deezer](https://www.deezer.com/track/3602329332) · [YouTube Music](https://music.youtube.com/watch?v=GQgL-Dk9sq0) |
+| — | Hood Love | DAK | NEW | Audiomack | [Audiomack](https://audiomack.com/dak4reall/song/hood-love) · [Deezer](https://www.deezer.com/track/1566928282) · [YouTube Music ↗](https://music.youtube.com/search?q=Hood+Love+DAK) |
+| — | 12 | Mauvais Djo | NEW | Apple | [Apple](https://music.apple.com/dz/album/12/6803864921?i=6803864930) · [Deezer](https://www.deezer.com/track/4251736251) · [YouTube Music](https://music.youtube.com/watch?v=snzJk019BPE) |
+| — | Rani Maghmoum | Kader Japonais, Reda Soussia | NEW | Spotify | [Spotify](https://open.spotify.com/track/22CUf3UFJtxiJaMx6kmPXl) · [Deezer](https://www.deezer.com/track/4080637331) · [YouTube Music](https://music.youtube.com/watch?v=dYeOlF8S1lA) |
+| — | Marche ou Crève | Djalil Palermo | NEW | Audiomack | [Audiomack](https://audiomack.com/djalilpalermo/song/marche-ou-creve) · [Deezer](https://www.deezer.com/track/4342348122) · [YouTube Music](https://music.youtube.com/watch?v=RN91hTHeChw) |
+| — | Mziya Ja Lhem Mfarket | Cheb zaki maraval | NEW | Audiomack | [Audiomack](https://audiomack.com/cheb-zaki-maraval/song/mziya-ja-lhem-mfarket) · [Deezer](https://www.deezer.com/track/3706261442) · [YouTube Music ↗](https://music.youtube.com/search?q=Mziya+Ja+Lhem+Mfarket+Cheb+zaki+maraval) |
+| — | Noche (feat. Damso) | Lacrim | NEW | Apple | [Apple](https://music.apple.com/dz/album/noche-feat-damso/1440876765?i=1440877604) · [Deezer](https://www.deezer.com/track/428974592) · [YouTube Music](https://music.youtube.com/watch?v=LuFE3YW0Epw) |
+| — | PER LA VITA | Stormy | NEW | Audiomack | [Audiomack](https://audiomack.com/stormy-music/song/per-la-vita) · [Deezer](https://www.deezer.com/track/4000360491) · [YouTube Music](https://music.youtube.com/watch?v=CJRWDwkHs5o) |
+| — | 7OLM KBIR | MA3IZ | NEW | Audiomack | [Audiomack](https://audiomack.com/ma3iz-1/song/7olm-kbir-8611437) · [Deezer](https://www.deezer.com/track/4315726482) · [YouTube Music](https://music.youtube.com/watch?v=lA3WGIaMHXo) |
+| — | Tu connais | Werenoi | NEW | Apple | [Apple](https://music.apple.com/dz/album/tu-connais/1707807239?i=1707807608) · [Deezer](https://www.deezer.com/track/2459444615) · [YouTube Music ↗](https://music.youtube.com/search?q=Tu+connais+Werenoi) |
+| — | C'était prévu | Cheb Hichem Tgv | NEW | Audiomack | [Audiomack](https://audiomack.com/chebhichemtgv/song/cetait-prevu) · [Deezer](https://www.deezer.com/track/4003290311) · [YouTube Music](https://music.youtube.com/watch?v=IMLj5Y7uI3w) |
+| — | ZOMBIE | Lazaro | NEW | Audiomack | [Audiomack](https://audiomack.com/lazaro/song/zombie-9937096) · [Deezer](https://www.deezer.com/track/4024656371) · [YouTube Music](https://music.youtube.com/watch?v=U7YmktIPxfU) |
+| — | L'EXIL C'EST MÉCHANT | TIF | NEW | Apple | [Apple](https://music.apple.com/dz/album/lexil-cest-m%C3%A9chant/1896439557?i=6767242072) · [Deezer](https://www.deezer.com/track/4007788081) · [YouTube Music](https://music.youtube.com/watch?v=btyUOpQPyZA) |
+| — | Rosalinda | Didine Canon 16, Flashy OTR | NEW | Spotify | [Spotify](https://open.spotify.com/track/2Ck70DwcyAnqIWkE12ZOn2) · [Deezer](https://www.deezer.com/track/3835508841) · [YouTube Music](https://music.youtube.com/watch?v=sZVnlDwsbTE) |
+| — | Mimi | JUL | NEW | Audiomack | [Audiomack](https://audiomack.com/jul/song/mimi) · [Deezer](https://www.deezer.com/track/3330198511) · [YouTube Music ↗](https://music.youtube.com/search?q=Mimi+JUL) |
+| — | Tsswirtek | Draganov | NEW | Audiomack | [Audiomack](https://audiomack.com/draganov/song/tsswirtek-0337379) · [Deezer](https://www.deezer.com/track/3569631561) · [YouTube Music ↗](https://music.youtube.com/search?q=Tsswirtek+Draganov) |
+
+*« YouTube Music ↗ » est un lien de **recherche** : aucune correspondance de titre assez fiable n'a été trouvée pour ce morceau.*
+
+¹ 35 titre(s) à source unique : ils complètent la liste mais ne remplissent pas la règle des sources concordantes.
 
 *Premier snapshot de cette méthode : toutes les évolutions sont « NEW ». Le mouvement apparaîtra dès la deuxième collecte.*

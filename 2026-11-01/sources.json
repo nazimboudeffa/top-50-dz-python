@@ -2,15 +2,17 @@
  "chart": "DZ TOP 50",
  "country": "DZ",
  "date": "2026-11-01",
- "generated_at_utc": "2026-11-01T18:57:49.436568+00:00",
+ "generated_at_utc": "2026-11-01T19:19:20.145081+00:00",
  "weights": {
   "apple_music": 0.35,
+  "audiomack": 0.25,
   "spotify": 0.25
  },
  "sources": {
   "apple_music": {
    "label": "Apple Music DZ",
    "weight": 0.35,
+   "period": "quotidien",
    "entries": [
     {
      "position": 1,
@@ -22,7 +24,9 @@
      "deezer_rank": 974722,
      "deezer_url": "https://www.deezer.com/track/4208859922",
      "deezer_id": 4208859922,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=ljAH6jNaApU",
+     "youtube_music_score": 101.0
     },
     {
      "position": 2,
@@ -34,7 +38,9 @@
      "deezer_rank": 838890,
      "deezer_url": "https://www.deezer.com/track/4007788041",
      "deezer_id": 4007788041,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=_6eggAVXUYc",
+     "youtube_music_score": 101.0
     },
     {
      "position": 3,
@@ -46,7 +52,9 @@
      "deezer_rank": 1000000,
      "deezer_url": "https://www.deezer.com/track/4273247042",
      "deezer_id": 4273247042,
-     "deezer_match": 1.0
+     "deezer_match": 1.0,
+     "youtube_music_url": "https://music.youtube.com/watch?v=IO_GLvVB5Vc",
+     "youtube_music_score": 101.0
     },
     {
      "position": 4,
@@ -58,7 +66,9 @@
      "deezer_rank": 806180,
      "deezer_url": "https://www.deezer.com/track/1107603602",
      "deezer_id": 1107603602,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": 81.0
     },
     {
      "position": 5,
@@ -70,7 +80,9 @@
      "deezer_rank": 431444,
      "deezer_url": "https://www.deezer.com/track/2597466312",
      "deezer_id": 2597466312,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": 70.19
     },
     {
      "position": 6,
@@ -82,7 +94,9 @@
      "deezer_rank": 997640,
      "deezer_url": "https://www.deezer.com/track/4287282492",
      "deezer_id": 4287282492,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=lIbXuv2zUGc",
+     "youtube_music_score": 101.0
     },
     {
      "position": 7,
@@ -91,7 +105,9 @@
      "url": "https://music.apple.com/dz/album/al-baqara-chapter-2-verse-1-verse-25/431126127?i=431126154",
      "source_id": "431126154",
      "isrc": null,
-     "deezer_rank": null
+     "deezer_rank": null,
+     "youtube_music_url": null,
+     "youtube_music_score": 45.38
     },
     {
      "position": 8,
@@ -103,7 +119,9 @@
      "deezer_rank": 973111,
      "deezer_url": "https://www.deezer.com/track/3602329332",
      "deezer_id": 3602329332,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=GQgL-Dk9sq0",
+     "youtube_music_score": 101.0
     },
     {
      "position": 9,
@@ -115,7 +133,9 @@
      "deezer_rank": 977877,
      "deezer_url": "https://www.deezer.com/track/4251736251",
      "deezer_id": 4251736251,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=snzJk019BPE",
+     "youtube_music_score": 101.0
     },
     {
      "position": 10,
@@ -127,7 +147,9 @@
      "deezer_rank": 794762,
      "deezer_url": "https://www.deezer.com/track/428974592",
      "deezer_id": 428974592,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=LuFE3YW0Epw",
+     "youtube_music_score": 101.0
     },
     {
      "position": 11,
@@ -139,7 +161,9 @@
      "deezer_rank": 973060,
      "deezer_url": "https://www.deezer.com/track/2459444615",
      "deezer_id": 2459444615,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": 81.0
     },
     {
      "position": 12,
@@ -151,7 +175,9 @@
      "deezer_rank": 712901,
      "deezer_url": "https://www.deezer.com/track/4007788081",
      "deezer_id": 4007788081,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=btyUOpQPyZA",
+     "youtube_music_score": 101.0
     },
     {
      "position": 13,
@@ -163,7 +189,9 @@
      "deezer_rank": 409768,
      "deezer_url": "https://www.deezer.com/track/4359158862",
      "deezer_id": 4359158862,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=a2mM4dTeUII",
+     "youtube_music_score": 101.0
     },
     {
      "position": 14,
@@ -175,7 +203,9 @@
      "deezer_rank": 990767,
      "deezer_url": "https://www.deezer.com/track/4250696681",
      "deezer_id": 4250696681,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=h-zuG75Ds-w",
+     "youtube_music_score": 101.0
     },
     {
      "position": 15,
@@ -187,7 +217,9 @@
      "deezer_rank": 486969,
      "deezer_url": "https://www.deezer.com/track/979773322",
      "deezer_id": 979773322,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=wlXdygbfVTI",
+     "youtube_music_score": 101.0
     },
     {
      "position": 16,
@@ -199,7 +231,9 @@
      "deezer_rank": 982051,
      "deezer_url": "https://www.deezer.com/track/4242078572",
      "deezer_id": 4242078572,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=cFqy4KViTcI",
+     "youtube_music_score": 101.0
     },
     {
      "position": 17,
@@ -211,7 +245,9 @@
      "deezer_rank": 993632,
      "deezer_url": "https://www.deezer.com/track/4362540421",
      "deezer_id": 4362540421,
-     "deezer_match": 1.0
+     "deezer_match": 1.0,
+     "youtube_music_url": "https://music.youtube.com/watch?v=50jELnz46UI",
+     "youtube_music_score": 101.0
     },
     {
      "position": 18,
@@ -223,7 +259,9 @@
      "deezer_rank": 858918,
      "deezer_url": "https://www.deezer.com/track/1623327522",
      "deezer_id": 1623327522,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": 81.0
     },
     {
      "position": 19,
@@ -235,7 +273,9 @@
      "deezer_rank": 988685,
      "deezer_url": "https://www.deezer.com/track/4158551132",
      "deezer_id": 4158551132,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=nyNm-dVBMoo",
+     "youtube_music_score": 101.0
     },
     {
      "position": 20,
@@ -247,7 +287,9 @@
      "deezer_rank": 856717,
      "deezer_url": "https://www.deezer.com/track/1118497762",
      "deezer_id": 1118497762,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=rDiw1CBxaQw",
+     "youtube_music_score": 101.0
     },
     {
      "position": 21,
@@ -259,7 +301,9 @@
      "deezer_rank": 386967,
      "deezer_url": "https://www.deezer.com/track/4290144872",
      "deezer_id": 4290144872,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=2hO30MBSoI4",
+     "youtube_music_score": 101.0
     },
     {
      "position": 22,
@@ -271,7 +315,9 @@
      "deezer_rank": 966903,
      "deezer_url": "https://www.deezer.com/track/606754192",
      "deezer_id": 606754192,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=elo0JRnl00s",
+     "youtube_music_score": 101.0
     },
     {
      "position": 23,
@@ -280,7 +326,9 @@
      "url": "https://music.apple.com/dz/album/%D8%B3%D9%83%D8%A7%D8%AA%D9%8A-feat-didine-canon/6827288991?i=6827288994",
      "source_id": "6827288994",
      "isrc": null,
-     "deezer_rank": null
+     "deezer_rank": null,
+     "youtube_music_url": null,
+     "youtube_music_score": 42.58
     },
     {
      "position": 24,
@@ -292,7 +340,9 @@
      "deezer_rank": 969796,
      "deezer_url": "https://www.deezer.com/track/652380172",
      "deezer_id": 652380172,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": 81.0
     },
     {
      "position": 25,
@@ -304,7 +354,9 @@
      "deezer_rank": 810275,
      "deezer_url": "https://www.deezer.com/track/576178932",
      "deezer_id": 576178932,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=ZSRzCbpIxZo",
+     "youtube_music_score": 101.0
     },
     {
      "position": 26,
@@ -316,7 +368,9 @@
      "deezer_rank": 510338,
      "deezer_url": "https://www.deezer.com/track/62051163",
      "deezer_id": 62051163,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=ByN64hQIe2A",
+     "youtube_music_score": 85.65
     },
     {
      "position": 27,
@@ -328,7 +382,9 @@
      "deezer_rank": 915146,
      "deezer_url": "https://www.deezer.com/track/2561982012",
      "deezer_id": 2561982012,
-     "deezer_match": 1.0
+     "deezer_match": 1.0,
+     "youtube_music_url": "https://music.youtube.com/watch?v=pB9fqHFYRuQ",
+     "youtube_music_score": 101.0
     },
     {
      "position": 28,
@@ -340,7 +396,9 @@
      "deezer_rank": 594253,
      "deezer_url": "https://www.deezer.com/track/4141156441",
      "deezer_id": 4141156441,
-     "deezer_match": 1.0
+     "deezer_match": 1.0,
+     "youtube_music_url": "https://music.youtube.com/watch?v=jAaIhKJ77KU",
+     "youtube_music_score": 101.0
     },
     {
      "position": 29,
@@ -352,7 +410,9 @@
      "deezer_rank": 991868,
      "deezer_url": "https://www.deezer.com/track/4359211132",
      "deezer_id": 4359211132,
-     "deezer_match": 1.0
+     "deezer_match": 1.0,
+     "youtube_music_url": "https://music.youtube.com/watch?v=_R7tIqtsWV8",
+     "youtube_music_score": 101.0
     },
     {
      "position": 30,
@@ -364,7 +424,9 @@
      "deezer_rank": 733133,
      "deezer_url": "https://www.deezer.com/track/621314502",
      "deezer_id": 621314502,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=cLUKGyMaMgo",
+     "youtube_music_score": 101.0
     },
     {
      "position": 31,
@@ -376,7 +438,9 @@
      "deezer_rank": 653790,
      "deezer_url": "https://www.deezer.com/track/4007788061",
      "deezer_id": 4007788061,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=jh7cPVPFQIE",
+     "youtube_music_score": 101.0
     },
     {
      "position": 32,
@@ -388,7 +452,9 @@
      "deezer_rank": 523101,
      "deezer_url": "https://www.deezer.com/track/75300042",
      "deezer_id": 75300042,
-     "deezer_match": 0.903
+     "deezer_match": 0.903,
+     "youtube_music_url": null,
+     "youtube_music_score": 68.86
     },
     {
      "position": 33,
@@ -400,7 +466,9 @@
      "deezer_rank": 646507,
      "deezer_url": "https://www.deezer.com/track/4020135561",
      "deezer_id": 4020135561,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=hVAFYXNcCRA",
+     "youtube_music_score": 101.0
     },
     {
      "position": 34,
@@ -412,7 +480,9 @@
      "deezer_rank": 420738,
      "deezer_url": "https://www.deezer.com/track/4372942371",
      "deezer_id": 4372942371,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": 81.0
     },
     {
      "position": 35,
@@ -424,7 +494,9 @@
      "deezer_rank": 659091,
      "deezer_url": "https://www.deezer.com/track/2773576671",
      "deezer_id": 2773576671,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=txxkp-mf1Eo",
+     "youtube_music_score": 101.0
     },
     {
      "position": 36,
@@ -436,7 +508,9 @@
      "deezer_rank": 891153,
      "deezer_url": "https://www.deezer.com/track/1572268732",
      "deezer_id": 1572268732,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": 81.0
     },
     {
      "position": 37,
@@ -448,7 +522,9 @@
      "deezer_rank": 816133,
      "deezer_url": "https://www.deezer.com/track/2620778722",
      "deezer_id": 2620778722,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=5BsF0Q7uimI",
+     "youtube_music_score": 89.55
     },
     {
      "position": 38,
@@ -460,7 +536,9 @@
      "deezer_rank": 1000000,
      "deezer_url": "https://www.deezer.com/track/3862146511",
      "deezer_id": 3862146511,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": 81.0
     },
     {
      "position": 39,
@@ -472,7 +550,9 @@
      "deezer_rank": 668829,
      "deezer_url": "https://www.deezer.com/track/1742208227",
      "deezer_id": 1742208227,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=q-RqSTI1Z1E",
+     "youtube_music_score": 101.0
     },
     {
      "position": 40,
@@ -484,7 +564,9 @@
      "deezer_rank": 998094,
      "deezer_url": "https://www.deezer.com/track/4350411742",
      "deezer_id": 4350411742,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=FXk4oLgkKL0",
+     "youtube_music_score": 101.0
     },
     {
      "position": 41,
@@ -496,7 +578,9 @@
      "deezer_rank": 684869,
      "deezer_url": "https://www.deezer.com/track/4293166582",
      "deezer_id": 4293166582,
-     "deezer_match": 1.0
+     "deezer_match": 1.0,
+     "youtube_music_url": "https://music.youtube.com/watch?v=3RMALnRM-BE",
+     "youtube_music_score": 101.0
     },
     {
      "position": 42,
@@ -508,7 +592,9 @@
      "deezer_rank": 695437,
      "deezer_url": "https://www.deezer.com/track/2386586195",
      "deezer_id": 2386586195,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=Fl2BBVSniGA",
+     "youtube_music_score": 101.0
     },
     {
      "position": 43,
@@ -517,7 +603,9 @@
      "url": "https://music.apple.com/dz/album/hold-on-were-going-home-feat-majid-jordan/1440829462?i=1440829630",
      "source_id": "1440829630",
      "isrc": null,
-     "deezer_rank": null
+     "deezer_rank": null,
+     "youtube_music_url": "https://music.youtube.com/watch?v=x6W_7wkoFYs",
+     "youtube_music_score": 101.0
     },
     {
      "position": 44,
@@ -529,7 +617,9 @@
      "deezer_rank": 713346,
      "deezer_url": "https://www.deezer.com/track/2830311322",
      "deezer_id": 2830311322,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": 81.0
     },
     {
      "position": 45,
@@ -541,7 +631,9 @@
      "deezer_rank": 862434,
      "deezer_url": "https://www.deezer.com/track/1121729702",
      "deezer_id": 1121729702,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=mchzqoOeh0s",
+     "youtube_music_score": 101.0
     },
     {
      "position": 46,
@@ -553,7 +645,9 @@
      "deezer_rank": 795566,
      "deezer_url": "https://www.deezer.com/track/4007788071",
      "deezer_id": 4007788071,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=jhlQR7vyZHs",
+     "youtube_music_score": 101.0
     },
     {
      "position": 47,
@@ -565,7 +659,9 @@
      "deezer_rank": 104383,
      "deezer_url": "https://www.deezer.com/track/4098248071",
      "deezer_id": 4098248071,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=J_YJcu9IneI",
+     "youtube_music_score": 101.0
     },
     {
      "position": 48,
@@ -577,7 +673,9 @@
      "deezer_rank": 365751,
      "deezer_url": "https://www.deezer.com/track/3723538072",
      "deezer_id": 3723538072,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": 76.94
     },
     {
      "position": 49,
@@ -589,7 +687,9 @@
      "deezer_rank": 999415,
      "deezer_url": "https://www.deezer.com/track/3837291721",
      "deezer_id": 3837291721,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": 83.39
     },
     {
      "position": 50,
@@ -601,13 +701,1621 @@
      "deezer_rank": 679190,
      "deezer_url": "https://www.deezer.com/track/3532574951",
      "deezer_id": 3532574951,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=_pqiY9FbWd8",
+     "youtube_music_score": 101.0
+    }
+   ]
+  },
+  "audiomack": {
+   "label": "Audiomack DZ",
+   "weight": 0.25,
+   "period": "hebdomadaire",
+   "chart_url": "https://audiomack.com/geo-charts/playlist/algeria",
+   "entries": [
+    {
+     "position": 1,
+     "title": "Sabran",
+     "artist": "Djalil Palermo",
+     "url": "https://audiomack.com/djalilpalermo/song/sabran",
+     "source_id": "104929106",
+     "isrc": "FRX762674605",
+     "duration_seconds": 198,
+     "genre": "arabic",
+     "deezer_rank": 386967,
+     "deezer_url": "https://www.deezer.com/track/4290144872",
+     "deezer_id": 4290144872,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=2hO30MBSoI4",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 2,
+     "title": "راكي غالطة نتي لي راكي حاقدا عليا",
+     "artist": "Cheb Momo",
+     "url": "https://audiomack.com/chebmomo/song/raky-ghaltt-nty-ly-raky-haqda-lya",
+     "source_id": "104299512",
+     "isrc": "FRX762642705",
+     "duration_seconds": 309,
+     "genre": "arabic",
+     "deezer_rank": 396329,
+     "deezer_url": "https://www.deezer.com/track/4272691312",
+     "deezer_id": 4272691312,
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": null
+    },
+    {
+     "position": 3,
+     "title": "KILOWAT",
+     "artist": "Stormy",
+     "url": "https://audiomack.com/stormy-music/song/kilowat",
+     "source_id": "96955555",
+     "isrc": "FRIDO2613504",
+     "duration_seconds": 164,
+     "genre": "rap",
+     "deezer_rank": 646507,
+     "deezer_url": "https://www.deezer.com/track/4020135561",
+     "deezer_id": 4020135561,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=hVAFYXNcCRA",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 4,
+     "title": "Galbi 3lah Hgertihe",
+     "artist": "Cheb Amine Tigre",
+     "url": "https://audiomack.com/chebaminetigre/song/galbi-3lah-hgertihe",
+     "source_id": "71604786",
+     "isrc": "FRX762520702",
+     "duration_seconds": 538,
+     "genre": "arabic",
+     "deezer_rank": 107676,
+     "deezer_url": "https://www.deezer.com/track/3455291191",
+     "deezer_id": 3455291191,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=PCs9Bu4VkrM",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 5,
+     "title": "Sahran lil",
+     "artist": "Cheb Momo & Djalil Palermo",
+     "url": "https://audiomack.com/chebmomo/song/sahran-lil",
+     "source_id": "74255742",
+     "isrc": "DZA102501685",
+     "duration_seconds": 162,
+     "genre": "other",
+     "deezer_rank": 449424,
+     "deezer_url": "https://www.deezer.com/track/3544460971",
+     "deezer_id": 3544460971,
+     "deezer_match": 1.0,
+     "youtube_music_url": "https://music.youtube.com/watch?v=pUvGklP36Dw",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 6,
+     "title": "Kamalna Bel kahir",
+     "artist": "Cheb Aymen Sghir | Redouane Aroussi",
+     "url": "https://audiomack.com/cheb-aymen-sghir/song/kamalna-bel-kahir",
+     "source_id": "89028764",
+     "isrc": "EGA252604430",
+     "duration_seconds": 252,
+     "genre": "folk",
+     "deezer_rank": 290526,
+     "deezer_url": "https://www.deezer.com/track/3911834941",
+     "deezer_id": 3911834941,
+     "deezer_match": 1.0,
+     "youtube_music_url": "https://music.youtube.com/watch?v=4QnmLQD9vOI",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 7,
+     "title": "Maryoula Tatmaryal (W Gay7a Tkhaf)",
+     "artist": "Cheb Nassim",
+     "url": "https://audiomack.com/chebnassim/song/maryoula-tatmaryal-w-gay7a-tkhaf",
+     "source_id": "69151656",
+     "isrc": "FRX282589130",
+     "duration_seconds": 523,
+     "genre": "arabic",
+     "deezer_rank": 317831,
+     "deezer_url": "https://www.deezer.com/track/3396120551",
+     "deezer_id": 3396120551,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=qRpwznVzlgw",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 8,
+     "title": "Hala Rani Fiha",
+     "artist": "Abdou Gambetta",
+     "url": "https://audiomack.com/abdougambetta/song/hala-rani-fiha",
+     "source_id": "56913434",
+     "isrc": "DGA0T2454260",
+     "duration_seconds": 291,
+     "genre": "arabic",
+     "deezer_rank": 404921,
+     "deezer_url": "https://www.deezer.com/track/3164646501",
+     "deezer_id": 3164646501,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=ihB2FIthylc",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 9,
+     "title": "Atiteha l'amour عطيتها",
+     "artist": "Cheb Momo",
+     "url": "https://audiomack.com/cheb-momo-parisien/song/atiteha-lamour-tytha",
+     "source_id": "60164423",
+     "isrc": "DZA102500326",
+     "duration_seconds": 176,
+     "genre": "other",
+     "deezer_rank": 420752,
+     "deezer_url": "https://www.deezer.com/track/3221601141",
+     "deezer_id": 3221601141,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=Bm1GBMDK-r4",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 10,
+     "title": "خيرتك نتيا مولات داري",
+     "artist": "Cheb Mourad Sghir",
+     "url": "https://audiomack.com/cheb-mourad-sghir/song/khyrtk-ntya-mwlat-dary",
+     "source_id": "105242675",
+     "isrc": "FRX762686313",
+     "duration_seconds": 188,
+     "genre": "arabic",
+     "deezer_rank": 184817,
+     "deezer_url": "https://www.deezer.com/track/4295616502",
+     "deezer_id": 4295616502,
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": null
+    },
+    {
+     "position": 11,
+     "title": "Jugurtha",
+     "artist": "Trap King",
+     "url": "https://audiomack.com/trap-king-89/song/jugurtha",
+     "source_id": "99641946",
+     "isrc": "QT6652634568",
+     "duration_seconds": 182,
+     "genre": "arabic",
+     "deezer_rank": 416695,
+     "deezer_url": "https://www.deezer.com/track/4049531571",
+     "deezer_id": 4049531571,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=OCmC-3FWZOc",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 12,
+     "title": "Tatfakrini",
+     "artist": "Cheb Momo",
+     "url": "https://audiomack.com/chebmomo/song/tatfakrini",
+     "source_id": "83785381",
+     "isrc": "FR2X42600308",
+     "duration_seconds": 273,
+     "genre": "arabic",
+     "deezer_rank": 337428,
+     "deezer_url": "https://www.deezer.com/track/3824689351",
+     "deezer_id": 3824689351,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=86cmojHg8GI",
+     "youtube_music_score": 93.17
+    },
+    {
+     "position": 13,
+     "title": "Sebebi Yar",
+     "artist": "BLOK3",
+     "url": "https://audiomack.com/blok3/song/sebebi-yar",
+     "source_id": "98537927",
+     "isrc": "FRX202644890",
+     "duration_seconds": 187,
+     "genre": "rap",
+     "deezer_rank": 714270,
+     "deezer_url": "https://www.deezer.com/track/4046076601",
+     "deezer_id": 4046076601,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=WQvqf1lLQws",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 14,
+     "title": "Denia",
+     "artist": "Djalil Palermo, Zuma Woed",
+     "url": "https://audiomack.com/djalilpalermo/song/denia",
+     "source_id": "75273869",
+     "isrc": "DGA052587919",
+     "duration_seconds": 195,
+     "genre": "arabic",
+     "deezer_rank": 277439,
+     "deezer_url": "https://www.deezer.com/track/3574422631",
+     "deezer_id": 3574422631,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=I7a-0IPFzyM",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 15,
+     "title": "Penalty",
+     "artist": "Mc Artisan, Didine Canon 16",
+     "url": "https://audiomack.com/mcartisan/song/penalty",
+     "source_id": "96401335",
+     "isrc": "FRX202605129",
+     "duration_seconds": 218,
+     "genre": "rap",
+     "deezer_rank": 379450,
+     "deezer_url": "https://www.deezer.com/track/4021119871",
+     "deezer_id": 4021119871,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=NC-WVO1IxW4",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 16,
+     "title": "Hood Love",
+     "artist": "DAK",
+     "url": "https://audiomack.com/dak4reall/song/hood-love",
+     "source_id": "95299234",
+     "isrc": "ITUM72101579",
+     "duration_seconds": 215,
+     "genre": "rap",
+     "deezer_rank": 218659,
+     "deezer_url": "https://www.deezer.com/track/1566928282",
+     "deezer_id": 1566928282,
+     "deezer_match": 1.0,
+     "youtube_music_url": null,
+     "youtube_music_score": 84.09
+    },
+    {
+     "position": 17,
+     "title": "Huracan",
+     "artist": "Trap King",
+     "url": "https://audiomack.com/trap-king-89/song/huracan",
+     "source_id": "98497570",
+     "isrc": "QT6662540224",
+     "duration_seconds": 193,
+     "genre": "rap",
+     "deezer_rank": 433599,
+     "deezer_url": "https://www.deezer.com/track/3724621122",
+     "deezer_id": 3724621122,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=IOEr74fOC9Q",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 18,
+     "title": "Marche ou Crève",
+     "artist": "Djalil Palermo",
+     "url": "https://audiomack.com/djalilpalermo/song/marche-ou-creve",
+     "source_id": "106795527",
+     "isrc": "FRX872665825",
+     "duration_seconds": 230,
+     "genre": "arabic",
+     "deezer_rank": 368166,
+     "deezer_url": "https://www.deezer.com/track/4342348122",
+     "deezer_id": 4342348122,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=RN91hTHeChw",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 19,
+     "title": "Mziya Ja Lhem Mfarket",
+     "artist": "Cheb zaki maraval",
+     "url": "https://audiomack.com/cheb-zaki-maraval/song/mziya-ja-lhem-mfarket",
+     "source_id": "79244153",
+     "isrc": "DGA082530142",
+     "duration_seconds": 603,
+     "genre": "arabic",
+     "deezer_rank": 302617,
+     "deezer_url": "https://www.deezer.com/track/3706261442",
+     "deezer_id": 3706261442,
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": 46.49
+    },
+    {
+     "position": 20,
+     "title": "PER LA VITA",
+     "artist": "Stormy",
+     "url": "https://audiomack.com/stormy-music/song/per-la-vita",
+     "source_id": "96026262",
+     "isrc": "FRIDO2613250",
+     "duration_seconds": 192,
+     "genre": "rap",
+     "deezer_rank": 600530,
+     "deezer_url": "https://www.deezer.com/track/4000360491",
+     "deezer_id": 4000360491,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=CJRWDwkHs5o",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 21,
+     "title": "7OLM KBIR",
+     "artist": "MA3IZ",
+     "url": "https://audiomack.com/ma3iz-1/song/7olm-kbir-8611437",
+     "source_id": "105737465",
+     "isrc": "LBA0H2014584",
+     "duration_seconds": 218,
+     "genre": "rap",
+     "deezer_rank": 520087,
+     "deezer_url": "https://www.deezer.com/track/4315726482",
+     "deezer_id": 4315726482,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=lA3WGIaMHXo",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 22,
+     "title": "C'était prévu",
+     "artist": "Cheb Hichem Tgv",
+     "url": "https://audiomack.com/chebhichemtgv/song/cetait-prevu",
+     "source_id": "95818164",
+     "isrc": "DZA102601187",
+     "duration_seconds": 278,
+     "genre": "other",
+     "deezer_rank": 359142,
+     "deezer_url": "https://www.deezer.com/track/4003290311",
+     "deezer_id": 4003290311,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=IMLj5Y7uI3w",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 23,
+     "title": "ZOMBIE",
+     "artist": "Lazaro",
+     "url": "https://audiomack.com/lazaro/song/zombie-9937096",
+     "source_id": "96550221",
+     "isrc": "LBA0H2013860",
+     "duration_seconds": 179,
+     "genre": "pop",
+     "deezer_rank": 646823,
+     "deezer_url": "https://www.deezer.com/track/4024656371",
+     "deezer_id": 4024656371,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=U7YmktIPxfU",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 24,
+     "title": "Mimi",
+     "artist": "JUL",
+     "url": "https://audiomack.com/jul/song/mimi",
+     "source_id": "66758861",
+     "isrc": "FR59R2594915",
+     "duration_seconds": 220,
+     "genre": "rap",
+     "deezer_rank": 924828,
+     "deezer_url": "https://www.deezer.com/track/3330198511",
+     "deezer_id": 3330198511,
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": 75.0
+    },
+    {
+     "position": 25,
+     "title": "Tsswirtek",
+     "artist": "Draganov",
+     "url": "https://audiomack.com/draganov/song/tsswirtek-0337379",
+     "source_id": "75094591",
+     "isrc": "LBA0H2012429",
+     "duration_seconds": 148,
+     "genre": "rap",
+     "deezer_rank": 476322,
+     "deezer_url": "https://www.deezer.com/track/3569631561",
+     "deezer_id": 3569631561,
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": 81.0
+    },
+    {
+     "position": 26,
+     "title": "Ya Hbibi",
+     "artist": "Cheb Amine 31",
+     "url": "https://audiomack.com/chebamine31/song/ya-hbibi",
+     "source_id": "94711631",
+     "isrc": "EGA1K1906260",
+     "duration_seconds": 336,
+     "genre": "arabic",
+     "deezer_rank": 147685,
+     "deezer_url": "https://www.deezer.com/track/3878998841",
+     "deezer_id": 3878998841,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=HqGwY4r4NRE",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 27,
+     "title": "Ma fahla Ma fik Lfal (La Poubelle)",
+     "artist": "Habib Himoune",
+     "url": "https://audiomack.com/habib-himoune/song/ma-fahla-ma-fik-lfal-la-poubelle",
+     "source_id": "98237127",
+     "isrc": "FRX202690746",
+     "duration_seconds": 343,
+     "genre": "arabic",
+     "deezer_rank": 410962,
+     "deezer_url": "https://www.deezer.com/track/4080450171",
+     "deezer_id": 4080450171,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=tSPfk7TN6Qo",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 28,
+     "title": "Cheb Hamidou Marani Nestghal Regda (Studio)",
+     "artist": "Cheb Hamidou",
+     "url": "https://audiomack.com/chebhamidou/song/cheb-hamidou-marani-nestghal-regda-studio",
+     "source_id": "100868396",
+     "isrc": "FRX452605381",
+     "duration_seconds": 243,
+     "genre": "arabic",
+     "deezer_rank": 117708,
+     "deezer_url": "https://www.deezer.com/track/4169666352",
+     "deezer_id": 4169666352,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=NGXqhue8oAY",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 29,
+     "title": "Rani out",
+     "artist": "Abdou Gambetta, Raouf Samourai",
+     "url": "https://audiomack.com/abdougambetta/song/rani-out",
+     "source_id": "68591632",
+     "isrc": "FRX282558402",
+     "duration_seconds": 273,
+     "genre": "arabic",
+     "deezer_rank": 413169,
+     "deezer_url": "https://www.deezer.com/track/3380938781",
+     "deezer_id": 3380938781,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=mpw0owYWQ70",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 30,
+     "title": "Kayıp Kalp",
+     "artist": "BLOK3",
+     "url": "https://audiomack.com/blok3/song/kayip-kalp",
+     "source_id": "98537926",
+     "isrc": "FRX202644889",
+     "duration_seconds": 154,
+     "genre": "rap",
+     "deezer_rank": 701588,
+     "deezer_url": "https://www.deezer.com/track/4046076591",
+     "deezer_id": 4046076591,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=nKHGXOdJlNc",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 31,
+     "title": "Kırgınım",
+     "artist": "BLOK3",
+     "url": "https://audiomack.com/blok3/song/kirginim",
+     "source_id": "98537933",
+     "isrc": "FRX202644892",
+     "duration_seconds": 161,
+     "genre": "rap",
+     "deezer_rank": 709370,
+     "deezer_url": "https://www.deezer.com/track/4046076631",
+     "deezer_id": 4046076631,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=OfAtAceHQTI",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 32,
+     "title": "Dare Daya",
+     "artist": "Naziru Sarkin Waka",
+     "url": "https://audiomack.com/sarkinwaka_/song/dare-daya",
+     "source_id": "106262734",
+     "isrc": "QZNJY2636556",
+     "duration_seconds": 231,
+     "genre": "afrobeats",
+     "deezer_rank": 181143,
+     "deezer_url": "https://www.deezer.com/track/4331814462",
+     "deezer_id": 4331814462,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=D3ZKz4LSAyg",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 33,
+     "title": "كلمه",
+     "artist": "Ramy Sabry",
+     "url": "https://audiomack.com/ramysabry8/song/klmh-5616433",
+     "source_id": "86653395",
+     "isrc": "EGA1K2501602",
+     "duration_seconds": 304,
+     "genre": "pop",
+     "deezer_rank": 195304,
+     "deezer_url": "https://www.deezer.com/track/3731227792",
+     "deezer_id": 3731227792,
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": null
+    },
+    {
+     "position": 34,
+     "title": "2 OF ALGERIAZ MOST WANTED",
+     "artist": "YOUPPI, TRAPKING",
+     "url": "https://audiomack.com/youppi/song/2-of-algeriaz-most-wanted",
+     "source_id": "67607815",
+     "isrc": "FRX202597541",
+     "duration_seconds": 197,
+     "genre": "arabic",
+     "deezer_rank": 286187,
+     "deezer_url": "https://www.deezer.com/track/3352959831",
+     "deezer_id": 3352959831,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=QWn_FdmF6gc",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 35,
+     "title": "Garee2a Awy - A COLORS SHOW",
+     "artist": "TUL8TE and COLORS",
+     "url": "https://audiomack.com/tul8te/song/garee2a-awy-a-colors-show",
+     "source_id": "98519605",
+     "isrc": "DEXC82600064",
+     "duration_seconds": 159,
+     "genre": "pop",
+     "deezer_rank": 560455,
+     "deezer_url": "https://www.deezer.com/track/4090326081",
+     "deezer_id": 4090326081,
+     "deezer_match": 1.0,
+     "youtube_music_url": null,
+     "youtube_music_score": 81.0
+    },
+    {
+     "position": 36,
+     "title": "Phantom",
+     "artist": "Didine Canon 16",
+     "url": "https://audiomack.com/didine-canon-16/song/phantom",
+     "source_id": "101223534",
+     "isrc": "FRX452613372",
+     "duration_seconds": 206,
+     "genre": "arabic",
+     "deezer_rank": 156519,
+     "deezer_url": "https://www.deezer.com/track/4174964772",
+     "deezer_id": 4174964772,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=lspa22mBAk0",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 37,
+     "title": "Gelb Safi",
+     "artist": "DAK",
+     "url": "https://audiomack.com/dak4reall/song/gelb-safi",
+     "source_id": "106251473",
+     "isrc": "QT66A2684472",
+     "duration_seconds": 209,
+     "genre": "rap",
+     "deezer_rank": 203392,
+     "deezer_url": "https://www.deezer.com/track/4330368562",
+     "deezer_id": 4330368562,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=xtadwXp16BE",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 38,
+     "title": "Win Raki Zayda biha Hyati Damartiha",
+     "artist": "Cheb hakim",
+     "url": "https://audiomack.com/cheb-hakim/song/win-raki-zayda-biha-hyati-damartiha",
+     "source_id": "76234289",
+     "isrc": "DGA062542880",
+     "duration_seconds": 524,
+     "genre": "arabic",
+     "deezer_rank": 246960,
+     "deezer_url": "https://www.deezer.com/track/3603397952",
+     "deezer_id": 3603397952,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=eTEEBMCqWpM",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 39,
+     "title": "Qololo",
+     "artist": "Fouzi Torino, Mc Artisan",
+     "url": "https://audiomack.com/fouzitorino/song/qololo",
+     "source_id": "76876373",
+     "isrc": "DGA062573168",
+     "duration_seconds": 240,
+     "genre": "arabic",
+     "deezer_rank": 317044,
+     "deezer_url": "https://www.deezer.com/track/3623120942",
+     "deezer_id": 3623120942,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=dL5DDjVKYWk",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 40,
+     "title": "Ayul",
+     "artist": "Amine Amirouche, Nassima Ait Ami",
+     "url": "https://audiomack.com/amine-amirouche-2/song/ayul",
+     "source_id": "85128630",
+     "isrc": "FRIDO2611133",
+     "duration_seconds": 206,
+     "genre": "other",
+     "deezer_rank": 359300,
+     "deezer_url": "https://www.deezer.com/track/3864698751",
+     "deezer_id": 3864698751,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=X4iz4oWYN3k",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 41,
+     "title": "Histoire Qdima",
+     "artist": "Cheb Akil",
+     "url": "https://audiomack.com/cheb-akil/song/histoire-qdima",
+     "source_id": "94685559",
+     "isrc": "EGA1K2301065",
+     "duration_seconds": 358,
+     "genre": "arabic",
+     "deezer_rank": 124037,
+     "deezer_url": "https://www.deezer.com/track/3896977111",
+     "deezer_id": 3896977111,
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": 81.0
+    },
+    {
+     "position": 42,
+     "title": "عمري زوجوها",
+     "artist": "Cheb Amine Tigre",
+     "url": "https://audiomack.com/chebaminetigre/song/mry-zwjwha-1",
+     "source_id": "100711546",
+     "isrc": "FRX282695298",
+     "duration_seconds": 572,
+     "genre": "arabic",
+     "deezer_rank": 52654,
+     "deezer_url": "https://www.deezer.com/track/4160806422",
+     "deezer_id": 4160806422,
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": null
+    },
+    {
+     "position": 43,
+     "title": "Mama Cita",
+     "artist": "Hakim Liberta",
+     "url": "https://audiomack.com/hakim-liberta/song/mama-cita",
+     "source_id": "99647638",
+     "isrc": "FRX282657032",
+     "duration_seconds": 187,
+     "genre": "arabic",
+     "deezer_rank": 223458,
+     "deezer_url": "https://www.deezer.com/track/4129213371",
+     "deezer_id": 4129213371,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=HWOF96JDrLA",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 44,
+     "title": "Dori Dori",
+     "artist": "Bilel Tacchini & Houssem Magic",
+     "url": "https://audiomack.com/bileltacchini/song/dori-dori",
+     "source_id": "95383009",
+     "isrc": "DZA102601110",
+     "duration_seconds": 175,
+     "genre": "other",
+     "deezer_rank": 358889,
+     "deezer_url": "https://www.deezer.com/track/3990407901",
+     "deezer_id": 3990407901,
+     "deezer_match": 1.0,
+     "youtube_music_url": "https://music.youtube.com/watch?v=SXk3nRQy_n8",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 45,
+     "title": "Hakka Hakka",
+     "artist": "Mohamed Benchenet",
+     "url": "https://audiomack.com/mohamed-benchenet/song/hakka-hakka",
+     "source_id": "99557082",
+     "isrc": "FRX282652876",
+     "duration_seconds": 282,
+     "genre": "arabic",
+     "deezer_rank": 421584,
+     "deezer_url": "https://www.deezer.com/track/4126649241",
+     "deezer_id": 4126649241,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=zpxqricfclo",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 46,
+     "title": "Ana 3liha nma3ni",
+     "artist": "Abdou Gambetta",
+     "url": "https://audiomack.com/abdougambetta/song/ana-3liha-nma3ni",
+     "source_id": "73822538",
+     "isrc": "FRX872585477",
+     "duration_seconds": 291,
+     "genre": "arabic",
+     "deezer_rank": 372009,
+     "deezer_url": "https://www.deezer.com/track/3529933961",
+     "deezer_id": 3529933961,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=eGVGnJaUXeg",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 47,
+     "title": "A.E.M - Khabato حب و عقلية - خباطو",
+     "artist": "El Bobina",
+     "url": "https://audiomack.com/el-bobina/song/aem-khabato-hb-w-qlyt-khbatw",
+     "source_id": "107762336",
+     "isrc": "DZA102602565",
+     "duration_seconds": 274,
+     "genre": "other",
+     "deezer_rank": 408466,
+     "deezer_url": "https://www.deezer.com/track/4369446211",
+     "deezer_id": 4369446211,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=uNGC70ILQQs",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 48,
+     "title": "WB III - A COLORS SHOW",
+     "artist": "Flenn and COLORS",
+     "url": "https://audiomack.com/flennofficiel/song/wb-iii-a-colors-show",
+     "source_id": "64859075",
+     "isrc": "DEXC82500039",
+     "duration_seconds": 169,
+     "genre": "rap",
+     "deezer_rank": 321407,
+     "deezer_url": "https://www.deezer.com/track/3293362261",
+     "deezer_id": 3293362261,
+     "deezer_match": 1.0,
+     "youtube_music_url": null,
+     "youtube_music_score": 81.0
+    },
+    {
+     "position": 49,
+     "title": "Match retard",
+     "artist": "Hakim Liberta",
+     "url": "https://audiomack.com/hakim-liberta/song/match-retard",
+     "source_id": "68523443",
+     "isrc": "FRX282556493",
+     "duration_seconds": 284,
+     "genre": "arabic",
+     "deezer_rank": 244821,
+     "deezer_url": "https://www.deezer.com/track/3379472721",
+     "deezer_id": 3379472721,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=tYAJbGTFpUw",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 50,
+     "title": "Saragossa",
+     "artist": "RDB",
+     "url": "https://audiomack.com/rdb-11/song/saragossa-1",
+     "source_id": "102915025",
+     "isrc": "FRX452680875",
+     "duration_seconds": 167,
+     "genre": "arabic",
+     "deezer_rank": 282095,
+     "deezer_url": "https://www.deezer.com/track/4232655702",
+     "deezer_id": 4232655702,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=6vbaBBWZkoU",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 51,
+     "title": "Bali maak",
+     "artist": "Amine Farsi & Stormy",
+     "url": "https://audiomack.com/amine-farsi/song/bali-maak-9306962",
+     "source_id": "76528227",
+     "isrc": "FREAZ2500002",
+     "duration_seconds": 160,
+     "genre": "rap",
+     "deezer_rank": 617376,
+     "deezer_url": "https://www.deezer.com/track/3578375701",
+     "deezer_id": 3578375701,
+     "deezer_match": 1.0,
+     "youtube_music_url": "https://music.youtube.com/watch?v=bTqUQL443so",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 52,
+     "title": "Moteur 40",
+     "artist": "Hakim Liberta",
+     "url": "https://audiomack.com/hakim-liberta/song/moteur-40",
+     "source_id": "60512646",
+     "isrc": "FR2X42549615",
+     "duration_seconds": 265,
+     "genre": "arabic",
+     "deezer_rank": 290706,
+     "deezer_url": "https://www.deezer.com/track/3232238281",
+     "deezer_id": 3232238281,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=9Y3UmnORzA0",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 53,
+     "title": "HAKI BAGAJEK",
+     "artist": "Cheb Amine tiger",
+     "url": "https://audiomack.com/cheb-amine-tiger-1/song/haki-bagajek",
+     "source_id": "77116610",
+     "isrc": "DGA072501199",
+     "duration_seconds": 249,
+     "genre": "arabic",
+     "deezer_rank": 254128,
+     "deezer_url": "https://www.deezer.com/track/3631178932",
+     "deezer_id": 3631178932,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=t_1OAS_D6qo",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 54,
+     "title": "Khatfatli mon cœur",
+     "artist": "Cheb Aymen Sghir",
+     "url": "https://audiomack.com/cheb-aymen-sghir/song/khatfatli-mon-coeur",
+     "source_id": "98433350",
+     "isrc": "EGA252611237",
+     "duration_seconds": 265,
+     "genre": "country",
+     "deezer_rank": 321870,
+     "deezer_url": "https://www.deezer.com/track/4086346131",
+     "deezer_id": 4086346131,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=L3vbh5R-bPA",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 55,
+     "title": "Yemma Le3ziza",
+     "artist": "Djam & TiMoh & Fouzi Torino",
+     "url": "https://audiomack.com/djamel-sghir/song/yemma-le3ziza",
+     "source_id": "69921132",
+     "isrc": "DZA102501050",
+     "duration_seconds": 244,
+     "genre": "other",
+     "deezer_rank": 313684,
+     "deezer_url": "https://www.deezer.com/track/3416403271",
+     "deezer_id": 3416403271,
+     "deezer_match": 1.0,
+     "youtube_music_url": "https://music.youtube.com/watch?v=bVqNmnfuOKQ",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 56,
+     "title": "GTA",
+     "artist": "Seyi Vibez",
+     "url": "https://audiomack.com/seyivibezmusic/song/gta-5130466",
+     "source_id": "98653891",
+     "isrc": "USUYG1818927",
+     "duration_seconds": 156,
+     "genre": "afrobeats",
+     "deezer_rank": 409551,
+     "deezer_url": "https://www.deezer.com/track/4094734851",
+     "deezer_id": 4094734851,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=kCYL8kjNfDA",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 57,
+     "title": "رصاصكم ما يقدي والو",
+     "artist": "Mohamed Benchenet",
+     "url": "https://audiomack.com/mohamed-benchenet/song/rsaskm-ma-yqdy-walw",
+     "source_id": "104905425",
+     "isrc": "FRX762671553",
+     "duration_seconds": 286,
+     "genre": "arabic",
+     "deezer_rank": 370072,
+     "deezer_url": "https://www.deezer.com/track/4289492032",
+     "deezer_id": 4289492032,
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": null
+    },
+    {
+     "position": 58,
+     "title": "A.E.M - 3ICHI W ZIDI - حب وعقلية - عيشي و زيدي",
+     "artist": "El Bobina",
+     "url": "https://audiomack.com/el-bobina/song/aem-3ichi-w-zidi-hb-wqlyt-yshy-w-zydy",
+     "source_id": "99492017",
+     "isrc": "DZA102601731",
+     "duration_seconds": 264,
+     "genre": "other",
+     "deezer_rank": 269083,
+     "deezer_url": "https://www.deezer.com/track/4124723251",
+     "deezer_id": 4124723251,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=aE8-RyG3K4w",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 59,
+     "title": "Kolyom Ghayes We Talfetli",
+     "artist": "Cheb Amine Tigre",
+     "url": "https://audiomack.com/chebaminetigre/song/kolyom-ghayes-we-talfetli",
+     "source_id": "71604770",
+     "isrc": "FRX762520697",
+     "duration_seconds": 314,
+     "genre": "arabic",
+     "deezer_rank": 17978,
+     "deezer_url": "https://www.deezer.com/track/3455291161",
+     "deezer_id": 3455291161,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=h9cLpN7oWuA",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 60,
+     "title": "عيطت تبكي و قاتلي مكتوبي أنا و نتا",
+     "artist": "Cheb Zaki, Cheb Ramzi 31",
+     "url": "https://audiomack.com/cheb-zaki-1/song/ytt-tbky-w-qatly-mktwby-ana-w-nta",
+     "source_id": "106954737",
+     "isrc": "FRX872681456",
+     "duration_seconds": 142,
+     "genre": "arabic",
+     "deezer_rank": 400967,
+     "deezer_url": "https://www.deezer.com/track/4347646362",
+     "deezer_id": 4347646362,
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": null
+    },
+    {
+     "position": 61,
+     "title": "Self Aware",
+     "artist": "Temper City",
+     "url": "https://audiomack.com/tempercity/song/self-aware",
+     "source_id": "99585727",
+     "isrc": "QZHN52696246",
+     "duration_seconds": 181,
+     "genre": "rock",
+     "deezer_rank": 981001,
+     "deezer_url": "https://www.deezer.com/track/3848530521",
+     "deezer_id": 3848530521,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=R-hYM3BqTbA",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 62,
+     "title": "Nouveau Riche",
+     "artist": "DAK",
+     "url": "https://audiomack.com/dak4reall/song/nouveau-riche",
+     "source_id": "59421333",
+     "isrc": "QZFYY2423581",
+     "duration_seconds": 188,
+     "genre": "arabic",
+     "deezer_rank": 217402,
+     "deezer_url": "https://www.deezer.com/track/2793282722",
+     "deezer_id": 2793282722,
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": 81.0
+    },
+    {
+     "position": 63,
+     "title": "Edahka",
+     "artist": "Mouh Milano",
+     "url": "https://audiomack.com/mouh-milano/song/edahka-5097826",
+     "source_id": "99930576",
+     "isrc": "LBA0H2014191",
+     "duration_seconds": 188,
+     "genre": "pop",
+     "deezer_rank": 309417,
+     "deezer_url": "https://www.deezer.com/track/4138702211",
+     "deezer_id": 4138702211,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=Ct2oG2nOIRc",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 64,
+     "title": "الحب عيبنا",
+     "artist": "Ramy Sabry",
+     "url": "https://audiomack.com/ramysabry8/song/alhb-ybna-5312936",
+     "source_id": "86653164",
+     "isrc": "EGA1K2501602",
+     "duration_seconds": 331,
+     "genre": "pop",
+     "deezer_rank": 195304,
+     "deezer_url": "https://www.deezer.com/track/3731227792",
+     "deezer_id": 3731227792,
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": null
+    },
+    {
+     "position": 65,
+     "title": "Matakdouch",
+     "artist": "RDB",
+     "url": "https://audiomack.com/rdb-11/song/matakdouch",
+     "source_id": "94735787",
+     "isrc": "FR96X2632699",
+     "duration_seconds": 176,
+     "genre": "rap",
+     "deezer_rank": 302864,
+     "deezer_url": "https://www.deezer.com/track/3971739631",
+     "deezer_id": 3971739631,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=OfWbfFKMbHA",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 66,
+     "title": "أجمل فرحة",
+     "artist": "Maha Ftouni",
+     "url": "https://audiomack.com/maha-ftouni/song/ajml-frht-2002220",
+     "source_id": "70207075",
+     "isrc": "LBA0H2012041",
+     "duration_seconds": 221,
+     "genre": "pop",
+     "deezer_rank": 318743,
+     "deezer_url": "https://www.deezer.com/track/3422457511",
+     "deezer_id": 3422457511,
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": null
+    },
+    {
+     "position": 67,
+     "title": "Machi Hata Ngolo Bow",
+     "artist": "Cheb Hichem TGV",
+     "url": "https://audiomack.com/hichem-tgv/song/machi-hata-ngolo-bow",
+     "source_id": "99797052",
+     "isrc": "DZA102601738",
+     "duration_seconds": 271,
+     "genre": "arabic",
+     "deezer_rank": 268377,
+     "deezer_url": "https://www.deezer.com/track/4134047561",
+     "deezer_id": 4134047561,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=VMe88ZfOGRw",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 68,
+     "title": "Se9si Liyam",
+     "artist": "Numidia Lezoul",
+     "url": "https://audiomack.com/numidia-lezoul/song/se9si-liyam",
+     "source_id": "79271277",
+     "isrc": "DGA082532425",
+     "duration_seconds": 225,
+     "genre": "rap",
+     "deezer_rank": 264824,
+     "deezer_url": "https://www.deezer.com/track/3707880462",
+     "deezer_id": 3707880462,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=MA_nNv-MQlM",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 69,
+     "title": "Li Mrid Bina Rabbi Ychafih",
+     "artist": "Mazouzi Sghir",
+     "url": "https://audiomack.com/mazouzi-sghir/song/li-mrid-bina-rabbi-ychafih",
+     "source_id": "76264564",
+     "isrc": "DGA052595703",
+     "duration_seconds": 292,
+     "genre": "arabic",
+     "deezer_rank": 357997,
+     "deezer_url": "https://www.deezer.com/track/3578215701",
+     "deezer_id": 3578215701,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=vkaTS0C2KvI",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 70,
+     "title": "Baghi Naskar Sakra M3a Sahbi (3ach9ak Mon Traitement)",
+     "artist": "Cheb Nassim",
+     "url": "https://audiomack.com/chebnassim/song/baghi-naskar-sakra-m3a-sahbi-3ach9ak-mon-traitement",
+     "source_id": "65364131",
+     "isrc": "FR96X2567695",
+     "duration_seconds": 406,
+     "genre": "arabic",
+     "deezer_rank": 254824,
+     "deezer_url": "https://www.deezer.com/track/3305583711",
+     "deezer_id": 3305583711,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=-j70A4Ivxkg",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 71,
+     "title": "UNETHICAL",
+     "artist": "Faouzia",
+     "url": "https://audiomack.com/faouziaofficial/song/unethical",
+     "source_id": "71700971",
+     "isrc": "QM24S2504240",
+     "duration_seconds": 220,
+     "genre": "pop",
+     "deezer_rank": 973180,
+     "deezer_url": "https://www.deezer.com/track/3458894481",
+     "deezer_id": 3458894481,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=JBbSlADtG-g",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 72,
+     "title": "JANITOU",
+     "artist": "Mouh Milano feat. Cheb Hichem TGV",
+     "url": "https://audiomack.com/mouh-milano/song/janitou-3866684",
+     "source_id": "106295932",
+     "isrc": "LBA0H2014615",
+     "duration_seconds": 156,
+     "genre": "pop",
+     "deezer_rank": 359195,
+     "deezer_url": "https://www.deezer.com/track/4328714322",
+     "deezer_id": 4328714322,
+     "deezer_match": 1.0,
+     "youtube_music_url": "https://music.youtube.com/watch?v=6MrF3JNJE4E",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 73,
+     "title": "دابزنا وماتفارقناش",
+     "artist": "Cheb Nassim",
+     "url": "https://audiomack.com/chebnassim/song/dabzna-wmatfarqnash",
+     "source_id": "79029217",
+     "isrc": "DGA082519045",
+     "duration_seconds": 243,
+     "genre": "arabic",
+     "deezer_rank": 338043,
+     "deezer_url": "https://www.deezer.com/track/3698385562",
+     "deezer_id": 3698385562,
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": null
+    },
+    {
+     "position": 74,
+     "title": "SATA 9TTALA",
+     "artist": "Stormy, Manal",
+     "url": "https://audiomack.com/stormy-music/song/sata-9ttala",
+     "source_id": "96955549",
+     "isrc": "FRIDO2613482",
+     "duration_seconds": 214,
+     "genre": "rap",
+     "deezer_rank": 567575,
+     "deezer_url": "https://www.deezer.com/track/4020135521",
+     "deezer_id": 4020135521,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=gprVYa-HaU8",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 75,
+     "title": "Pansa",
+     "artist": "Seyi Vibez",
+     "url": "https://audiomack.com/seyivibezmusic/song/pansa-4709430",
+     "source_id": "103102540",
+     "isrc": "USUYG1831370",
+     "duration_seconds": 156,
+     "genre": "afrobeats",
+     "deezer_rank": 291681,
+     "deezer_url": "https://www.deezer.com/track/4250594651",
+     "deezer_id": 4250594651,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=eCFKo7BsEeM",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 76,
+     "title": "A.E.M - YA SALAM - حب و عقلية - يا سلام",
+     "artist": "El Bobina",
+     "url": "https://audiomack.com/el-bobina/song/aem-ya-salam-hb-w-qlyt-ya-slam",
+     "source_id": "97833520",
+     "isrc": "DZA102601608",
+     "duration_seconds": 447,
+     "genre": "other",
+     "deezer_rank": 214615,
+     "deezer_url": "https://www.deezer.com/track/4062786211",
+     "deezer_id": 4062786211,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=E6BkzjNDpvs",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 77,
+     "title": "Ana Sahbak Lantim",
+     "artist": "Cheb Hamidou, Ali Rio",
+     "url": "https://audiomack.com/chebhamidou/song/ana-sahbak-lantim",
+     "source_id": "104720933",
+     "isrc": "FRX762662039",
+     "duration_seconds": 219,
+     "genre": "arabic",
+     "deezer_rank": 197089,
+     "deezer_url": "https://www.deezer.com/track/4284212792",
+     "deezer_id": 4284212792,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=z7qLBx5vXiI",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 78,
+     "title": "Pilé (Gospel)",
+     "artist": "Mauvais Djo & Kano Choir",
+     "url": "https://audiomack.com/mauvaisdjo/song/pile-gospel",
+     "source_id": "96435023",
+     "isrc": "QZPJ32548144",
+     "duration_seconds": 124,
+     "genre": "gospel",
+     "deezer_rank": 983341,
+     "deezer_url": "https://www.deezer.com/track/4020979891",
+     "deezer_id": 4020979891,
+     "deezer_match": 1.0,
+     "youtube_music_url": "https://music.youtube.com/watch?v=grRKZU-s3Ps",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 79,
+     "title": "Fatou Liyam",
+     "artist": "Cheb Hichem Tgv",
+     "url": "https://audiomack.com/chebhichemtgv/song/fatou-liyam",
+     "source_id": "29426177",
+     "isrc": "QZZ662423293",
+     "duration_seconds": 325,
+     "genre": "other",
+     "deezer_rank": 368908,
+     "deezer_url": "https://www.deezer.com/track/2642234432",
+     "deezer_id": 2642234432,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=oV83a26VKII",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 80,
+     "title": "Poney",
+     "artist": "Werenoi",
+     "url": "https://audiomack.com/werenoi/song/poney",
+     "source_id": "67442358",
+     "isrc": "FR59R2576686",
+     "duration_seconds": 231,
+     "genre": "rap",
+     "deezer_rank": 951654,
+     "deezer_url": "https://www.deezer.com/track/3340400051",
+     "deezer_id": 3340400051,
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": 67.15
+    },
+    {
+     "position": 81,
+     "title": "DADI",
+     "artist": "Umar M Shareef",
+     "url": "https://audiomack.com/umar-m-shareef/song/dadi-0179706",
+     "source_id": "102828341",
+     "isrc": "ZA56E2639671",
+     "duration_seconds": 204,
+     "genre": "pop",
+     "deezer_rank": 27072,
+     "deezer_url": "https://www.deezer.com/track/4201092122",
+     "deezer_id": 4201092122,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=WjjsjgEZ2Uo",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 82,
+     "title": "Za3ma Ana Li Bghitek",
+     "artist": "Cheb Nadir 22",
+     "url": "https://audiomack.com/cheb-nadir-22/song/za3ma-ana-li-bghitek",
+     "source_id": "60900031",
+     "isrc": "FR2X42566282",
+     "duration_seconds": 973,
+     "genre": "arabic",
+     "deezer_rank": 115711,
+     "deezer_url": "https://www.deezer.com/track/3238102241",
+     "deezer_id": 3238102241,
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": 45.71
+    },
+    {
+     "position": 83,
+     "title": "Nmout w Naarf Ki Rak Nawini",
+     "artist": "Cheba Warda",
+     "url": "https://audiomack.com/chebawarda/song/nmout-w-naarf-ki-rak-nawini",
+     "source_id": "89238740",
+     "isrc": "FR59R2658671",
+     "duration_seconds": 310,
+     "genre": "arabic",
+     "deezer_rank": 481769,
+     "deezer_url": "https://www.deezer.com/track/3919105901",
+     "deezer_id": 3919105901,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=G5-E5STWieY",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 84,
+     "title": "راني ناسي خليني ناسي",
+     "artist": "Mohamed Marsaoui",
+     "url": "https://audiomack.com/mohamed-marsaoui/song/rany-nasy-khlyny-nasy",
+     "source_id": "101413199",
+     "isrc": "FRX452627214",
+     "duration_seconds": 192,
+     "genre": "arabic",
+     "deezer_rank": 136331,
+     "deezer_url": "https://www.deezer.com/track/4190767222",
+     "deezer_id": 4190767222,
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": null
+    },
+    {
+     "position": 85,
+     "title": "Couci Couca",
+     "artist": "Draganov, TIF",
+     "url": "https://audiomack.com/draganov/song/couci-couca-8608650",
+     "source_id": "105068048",
+     "isrc": "LBA0H2014494",
+     "duration_seconds": 186,
+     "genre": "rap",
+     "deezer_rank": 684869,
+     "deezer_url": "https://www.deezer.com/track/4293166582",
+     "deezer_id": 4293166582,
+     "deezer_match": 1.0,
+     "youtube_music_url": "https://music.youtube.com/watch?v=3RMALnRM-BE",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 86,
+     "title": "Tauraruwar Mata",
+     "artist": "SAGY GEE",
+     "url": "https://audiomack.com/sagygee/song/tauraruwar-mata",
+     "source_id": "106525632",
+     "isrc": "QTA2Z2665290",
+     "duration_seconds": 190,
+     "genre": "afrobeats",
+     "deezer_rank": 25547,
+     "deezer_url": "https://www.deezer.com/track/4334027262",
+     "deezer_id": 4334027262,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=FYKy2ywp6KA",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 87,
+     "title": "Kina Ji",
+     "artist": "Hamisu Breaker",
+     "url": "https://audiomack.com/hamisu-breaker/song/kina-ji",
+     "source_id": "89548843",
+     "isrc": "QT6622676293",
+     "duration_seconds": 201,
+     "genre": "afrobeats",
+     "deezer_rank": 22003,
+     "deezer_url": "https://www.deezer.com/track/3924608361",
+     "deezer_id": 3924608361,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=xIayhpd19AQ",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 88,
+     "title": "7 Domino",
+     "artist": "Cheb Nadir",
+     "url": "https://audiomack.com/cheb-nadir/song/7-domino",
+     "source_id": "59196383",
+     "isrc": "FR10S2559476",
+     "duration_seconds": 258,
+     "genre": "arabic",
+     "deezer_rank": 343754,
+     "deezer_url": "https://www.deezer.com/track/3194926611",
+     "deezer_id": 3194926611,
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": 81.0
+    },
+    {
+     "position": 89,
+     "title": "Makhasnich L'Ordonnance (3chqna Dar Tendance)",
+     "artist": "cheb sofiane 31",
+     "url": "https://audiomack.com/cheb-sofiane-31/song/makhasnich-lordonnance-3chqna-dar-tendance",
+     "source_id": "80135056",
+     "isrc": "DGA082586789",
+     "duration_seconds": 570,
+     "genre": "arabic",
+     "deezer_rank": 215322,
+     "deezer_url": "https://www.deezer.com/track/3743404812",
+     "deezer_id": 3743404812,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=ngaDjZCIlTY",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 90,
+     "title": "Huracan",
+     "artist": "Trapking",
+     "url": "https://audiomack.com/trapkingmusic/song/huracan",
+     "source_id": "79821320",
+     "isrc": "QZW9M2517442",
+     "duration_seconds": 193,
+     "genre": "rap",
+     "deezer_rank": 31556,
+     "deezer_url": "https://www.deezer.com/track/3727146082",
+     "deezer_id": 3727146082,
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": 81.0
+    },
+    {
+     "position": 91,
+     "title": "Telephoni Hassitah Tafi (Live)",
+     "artist": "Km Milieu (feat. Cheb Lotfi & Manini Sahar)",
+     "url": "https://audiomack.com/km-milieu/song/telephoni-hassitah-tafi-live",
+     "source_id": "67039212",
+     "isrc": "QZP7F2567321",
+     "duration_seconds": 241,
+     "genre": "other",
+     "deezer_rank": null,
+     "youtube_music_url": null,
+     "youtube_music_score": 76.4
+    },
+    {
+     "position": 92,
+     "title": "Tfakart Bkite",
+     "artist": "Amine Choupot",
+     "url": "https://audiomack.com/amine-choupot/song/tfakart-bkite",
+     "source_id": "84416145",
+     "isrc": "FR2X42639706",
+     "duration_seconds": 291,
+     "genre": "arabic",
+     "deezer_rank": 379905,
+     "deezer_url": "https://www.deezer.com/track/3842702701",
+     "deezer_id": 3842702701,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=KYNbmW8h0es",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 93,
+     "title": "Back 2 U",
+     "artist": "Seyi Vibez",
+     "url": "https://audiomack.com/seyivibezmusic/song/back-2-u-7482677",
+     "source_id": "102821235",
+     "isrc": "USUYG1830608",
+     "duration_seconds": 163,
+     "genre": "afrobeats",
+     "deezer_rank": 450679,
+     "deezer_url": "https://www.deezer.com/track/4229884152",
+     "deezer_id": 4229884152,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=9dHpikz48KY",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 94,
+     "title": "Nano",
+     "artist": "TUL8TE, Saint Levant",
+     "url": "https://audiomack.com/tul8te/song/nano",
+     "source_id": "96735593",
+     "isrc": "FRX202616740",
+     "duration_seconds": 217,
+     "genre": "arabic",
+     "deezer_rank": 682471,
+     "deezer_url": "https://www.deezer.com/track/4030957121",
+     "deezer_id": 4030957121,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=S-urQoIzKvs",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 95,
+     "title": "Tabare",
+     "artist": "Ado Gwanja",
+     "url": "https://audiomack.com/adogwanja/song/6a9fe349533ea",
+     "source_id": "104306571",
+     "isrc": "QT6692631086",
+     "duration_seconds": 303,
+     "genre": "pop",
+     "deezer_rank": 38731,
+     "deezer_url": "https://www.deezer.com/track/4271065812",
+     "deezer_id": 4271065812,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=HQsrc7tjD68",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 96,
+     "title": "AN BAKI NI",
+     "artist": "Auta mg boii",
+     "url": "https://audiomack.com/autamgboy/song/auta-mg-an-baki-ni",
+     "source_id": "95976990",
+     "isrc": "QZZ772630376",
+     "duration_seconds": 187,
+     "genre": "pop",
+     "deezer_rank": 21482,
+     "deezer_url": "https://www.deezer.com/track/4005798041",
+     "deezer_id": 4005798041,
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": 81.0
+    },
+    {
+     "position": 97,
+     "title": "Chadani Njareb",
+     "artist": "cheb sofiane 31",
+     "url": "https://audiomack.com/cheb-sofiane-31/song/chadani-njareb",
+     "source_id": "83913527",
+     "isrc": "FR2X42611519",
+     "duration_seconds": 784,
+     "genre": "arabic",
+     "deezer_rank": 108313,
+     "deezer_url": "https://www.deezer.com/track/3827927351",
+     "deezer_id": 3827927351,
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": 75.0
+    },
+    {
+     "position": 98,
+     "title": "Baba",
+     "artist": "Hotkeed feat. Zlatan",
+     "url": "https://audiomack.com/hotkiidfire/song/baba-1",
+     "source_id": "96797490",
+     "isrc": "QT8BV2675955",
+     "duration_seconds": 163,
+     "genre": "pop",
+     "deezer_rank": 407712,
+     "deezer_url": "https://www.deezer.com/track/4032472471",
+     "deezer_id": 4032472471,
+     "deezer_match": 1.0,
+     "youtube_music_url": "https://music.youtube.com/watch?v=v_x4W_S2Ckc",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 99,
+     "title": "Fi Khatri Sekra Ta3 3am",
+     "artist": "jilali boumelah",
+     "url": "https://audiomack.com/jilali-boumelah/song/fi-khatri-sekra-ta3-3am",
+     "source_id": "96374209",
+     "isrc": "FRX202600029",
+     "duration_seconds": 272,
+     "genre": "arabic",
+     "deezer_rank": 332183,
+     "deezer_url": "https://www.deezer.com/track/4019519651",
+     "deezer_id": 4019519651,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=kl7ReHDO6sg",
+     "youtube_music_score": 101.0
+    },
+    {
+     "position": 100,
+     "title": "Sexy Nana",
+     "artist": "Aya Nakamura, La Rvfleuze",
+     "url": "https://audiomack.com/aya-nakamura/song/sexy-nana-4243079",
+     "source_id": "95891502",
+     "isrc": "FXR792600001",
+     "duration_seconds": 157,
+     "genre": "rap",
+     "deezer_rank": 995879,
+     "deezer_url": "https://www.deezer.com/track/3995047821",
+     "deezer_id": 3995047821,
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=ygyno6J_AyQ",
+     "youtube_music_score": 101.0
     }
    ]
   },
   "spotify": {
    "label": "Spotify (playlist)",
    "weight": 0.25,
+   "period": "éditorial",
    "playlist_id": "37i9dQZF1DX7ZqKP81pHlu",
    "entries": [
     {
@@ -620,7 +2328,9 @@
      "deezer_rank": 386967,
      "deezer_url": "https://www.deezer.com/track/4290144872",
      "deezer_id": 4290144872,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=2hO30MBSoI4",
+     "youtube_music_score": 101.0
     },
     {
      "position": 2,
@@ -632,7 +2342,9 @@
      "deezer_rank": 658926,
      "deezer_url": "https://www.deezer.com/track/4064177851",
      "deezer_id": 4064177851,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=p7UQojvWTZE",
+     "youtube_music_score": 101.0
     },
     {
      "position": 3,
@@ -644,7 +2356,9 @@
      "deezer_rank": 421584,
      "deezer_url": "https://www.deezer.com/track/4126649241",
      "deezer_id": 4126649241,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=zpxqricfclo",
+     "youtube_music_score": 101.0
     },
     {
      "position": 4,
@@ -656,7 +2370,9 @@
      "deezer_rank": 359300,
      "deezer_url": "https://www.deezer.com/track/3864698751",
      "deezer_id": 3864698751,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=X4iz4oWYN3k",
+     "youtube_music_score": 101.0
     },
     {
      "position": 5,
@@ -668,7 +2384,9 @@
      "deezer_rank": 455542,
      "deezer_url": "https://www.deezer.com/track/3996434061",
      "deezer_id": 3996434061,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=ZDhMypaD254",
+     "youtube_music_score": 101.0
     },
     {
      "position": 6,
@@ -680,7 +2398,9 @@
      "deezer_rank": 309417,
      "deezer_url": "https://www.deezer.com/track/4138702211",
      "deezer_id": 4138702211,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=Ct2oG2nOIRc",
+     "youtube_music_score": 101.0
     },
     {
      "position": 7,
@@ -692,7 +2412,9 @@
      "deezer_rank": 578329,
      "deezer_url": "https://www.deezer.com/track/4121286011",
      "deezer_id": 4121286011,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=VKI6u-RombU",
+     "youtube_music_score": 101.0
     },
     {
      "position": 8,
@@ -704,7 +2426,9 @@
      "deezer_rank": 449424,
      "deezer_url": "https://www.deezer.com/track/3544460971",
      "deezer_id": 3544460971,
-     "deezer_match": 1.1
+     "deezer_match": 1.0,
+     "youtube_music_url": "https://music.youtube.com/watch?v=pUvGklP36Dw",
+     "youtube_music_score": 101.0
     },
     {
      "position": 9,
@@ -716,7 +2440,9 @@
      "deezer_rank": 320976,
      "deezer_url": "https://www.deezer.com/track/4080637331",
      "deezer_id": 4080637331,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=dYeOlF8S1lA",
+     "youtube_music_score": 101.0
     },
     {
      "position": 10,
@@ -728,7 +2454,9 @@
      "deezer_rank": 223458,
      "deezer_url": "https://www.deezer.com/track/4129213371",
      "deezer_id": 4129213371,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=HWOF96JDrLA",
+     "youtube_music_score": 101.0
     },
     {
      "position": 11,
@@ -740,7 +2468,9 @@
      "deezer_rank": 317044,
      "deezer_url": "https://www.deezer.com/track/3623120942",
      "deezer_id": 3623120942,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=dL5DDjVKYWk",
+     "youtube_music_score": 101.0
     },
     {
      "position": 12,
@@ -752,7 +2482,9 @@
      "deezer_rank": 472325,
      "deezer_url": "https://www.deezer.com/track/3835508841",
      "deezer_id": 3835508841,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=sZVnlDwsbTE",
+     "youtube_music_score": 101.0
     },
     {
      "position": 13,
@@ -764,7 +2496,9 @@
      "deezer_rank": 990618,
      "deezer_url": "https://www.deezer.com/track/4015341011",
      "deezer_id": 4015341011,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=lFQdcPTTzSg",
+     "youtube_music_score": 101.0
     },
     {
      "position": 14,
@@ -776,7 +2510,9 @@
      "deezer_rank": 433599,
      "deezer_url": "https://www.deezer.com/track/3724621122",
      "deezer_id": 3724621122,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=IOEr74fOC9Q",
+     "youtube_music_score": 101.0
     },
     {
      "position": 15,
@@ -788,7 +2524,9 @@
      "deezer_rank": 383600,
      "deezer_url": "https://www.deezer.com/track/3443164211",
      "deezer_id": 3443164211,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=fkxCfkLn00k",
+     "youtube_music_score": 101.0
     },
     {
      "position": 16,
@@ -800,7 +2538,9 @@
      "deezer_rank": 264824,
      "deezer_url": "https://www.deezer.com/track/3707880462",
      "deezer_id": 3707880462,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=MA_nNv-MQlM",
+     "youtube_music_score": 101.0
     },
     {
      "position": 17,
@@ -812,7 +2552,9 @@
      "deezer_rank": 269322,
      "deezer_url": "https://www.deezer.com/track/3648654862",
      "deezer_id": 3648654862,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=yybeOkSRxmw",
+     "youtube_music_score": 101.0
     },
     {
      "position": 18,
@@ -824,7 +2566,9 @@
      "deezer_rank": 404921,
      "deezer_url": "https://www.deezer.com/track/3164646501",
      "deezer_id": 3164646501,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=ihB2FIthylc",
+     "youtube_music_score": 101.0
     },
     {
      "position": 19,
@@ -836,7 +2580,9 @@
      "deezer_rank": 277439,
      "deezer_url": "https://www.deezer.com/track/3574422631",
      "deezer_id": 3574422631,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=I7a-0IPFzyM",
+     "youtube_music_score": 101.0
     },
     {
      "position": 20,
@@ -848,7 +2594,9 @@
      "deezer_rank": 432501,
      "deezer_url": "https://www.deezer.com/track/3318842621",
      "deezer_id": 3318842621,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=kZ-0BxGocHI",
+     "youtube_music_score": 101.0
     },
     {
      "position": 21,
@@ -860,7 +2608,9 @@
      "deezer_rank": 952580,
      "deezer_url": "https://www.deezer.com/track/3460711121",
      "deezer_id": 3460711121,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=yv81of-8awE",
+     "youtube_music_score": 101.0
     },
     {
      "position": 22,
@@ -872,7 +2622,9 @@
      "deezer_rank": 998975,
      "deezer_url": "https://www.deezer.com/track/3484365861",
      "deezer_id": 3484365861,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=ERk4Lx-mOqQ",
+     "youtube_music_score": 101.0
     },
     {
      "position": 23,
@@ -884,7 +2636,9 @@
      "deezer_rank": 244821,
      "deezer_url": "https://www.deezer.com/track/3379472721",
      "deezer_id": 3379472721,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=tYAJbGTFpUw",
+     "youtube_music_score": 101.0
     },
     {
      "position": 24,
@@ -896,7 +2650,9 @@
      "deezer_rank": 668494,
      "deezer_url": "https://www.deezer.com/track/3474648671",
      "deezer_id": 3474648671,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=TAlgdtUIZSs",
+     "youtube_music_score": 101.0
     },
     {
      "position": 25,
@@ -908,7 +2664,9 @@
      "deezer_rank": 936915,
      "deezer_url": "https://www.deezer.com/track/3413706011",
      "deezer_id": 3413706011,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=xmYFbKVJyGg",
+     "youtube_music_score": 101.0
     },
     {
      "position": 26,
@@ -920,7 +2678,9 @@
      "deezer_rank": 540849,
      "deezer_url": "https://www.deezer.com/track/3056953411",
      "deezer_id": 3056953411,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=2GAygAAxJeE",
+     "youtube_music_score": 101.0
     },
     {
      "position": 27,
@@ -932,7 +2692,9 @@
      "deezer_rank": 420752,
      "deezer_url": "https://www.deezer.com/track/3221601141",
      "deezer_id": 3221601141,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=Bm1GBMDK-r4",
+     "youtube_music_score": 101.0
     },
     {
      "position": 28,
@@ -944,7 +2706,9 @@
      "deezer_rank": 466092,
      "deezer_url": "https://www.deezer.com/track/3217079541",
      "deezer_id": 3217079541,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=Y9xMvR8pb7g",
+     "youtube_music_score": 101.0
     },
     {
      "position": 29,
@@ -956,7 +2720,9 @@
      "deezer_rank": 551821,
      "deezer_url": "https://www.deezer.com/track/2927537251",
      "deezer_id": 2927537251,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=7wk19OEZf6s",
+     "youtube_music_score": 101.0
     },
     {
      "position": 30,
@@ -968,7 +2734,9 @@
      "deezer_rank": 968136,
      "deezer_url": "https://www.deezer.com/track/3330178491",
      "deezer_id": 3330178491,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=fpTKm2jd6O8",
+     "youtube_music_score": 101.0
     },
     {
      "position": 31,
@@ -980,7 +2748,9 @@
      "deezer_rank": 300195,
      "deezer_url": "https://www.deezer.com/track/2942919601",
      "deezer_id": 2942919601,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=TMbuPYE4TQ8",
+     "youtube_music_score": 101.0
     },
     {
      "position": 32,
@@ -992,7 +2762,9 @@
      "deezer_rank": 963312,
      "deezer_url": "https://www.deezer.com/track/3242688291",
      "deezer_id": 3242688291,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=KJtOTXqaW9w",
+     "youtube_music_score": 101.0
     },
     {
      "position": 33,
@@ -1004,7 +2776,9 @@
      "deezer_rank": 826371,
      "deezer_url": "https://www.deezer.com/track/3133916441",
      "deezer_id": 3133916441,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=LsCM5oit_V0",
+     "youtube_music_score": 101.0
     },
     {
      "position": 34,
@@ -1016,7 +2790,9 @@
      "deezer_rank": 802362,
      "deezer_url": "https://www.deezer.com/track/3189240561",
      "deezer_id": 3189240561,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=Xu_ILmDLS8Y",
+     "youtube_music_score": 101.0
     },
     {
      "position": 35,
@@ -1028,7 +2804,9 @@
      "deezer_rank": 614711,
      "deezer_url": "https://www.deezer.com/track/3048394151",
      "deezer_id": 3048394151,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=B-SyTbR7ec4",
+     "youtube_music_score": 101.0
     },
     {
      "position": 36,
@@ -1040,7 +2818,9 @@
      "deezer_rank": 328836,
      "deezer_url": "https://www.deezer.com/track/2927415291",
      "deezer_id": 2927415291,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=CZiZ3tU2sec",
+     "youtube_music_score": 101.0
     },
     {
      "position": 37,
@@ -1052,7 +2832,9 @@
      "deezer_rank": 899729,
      "deezer_url": "https://www.deezer.com/track/3059764391",
      "deezer_id": 3059764391,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=s3UsdqMO9gI",
+     "youtube_music_score": 101.0
     },
     {
      "position": 38,
@@ -1064,7 +2846,9 @@
      "deezer_rank": 936834,
      "deezer_url": "https://www.deezer.com/track/2781673612",
      "deezer_id": 2781673612,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=su8lPj0PFKI",
+     "youtube_music_score": 101.0
     },
     {
      "position": 39,
@@ -1076,7 +2860,9 @@
      "deezer_rank": 908271,
      "deezer_url": "https://www.deezer.com/track/2846025562",
      "deezer_id": 2846025562,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=MIcXitTzq0I",
+     "youtube_music_score": 101.0
     },
     {
      "position": 40,
@@ -1088,7 +2874,9 @@
      "deezer_rank": 323351,
      "deezer_url": "https://www.deezer.com/track/1215446082",
      "deezer_id": 1215446082,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": 81.0
     },
     {
      "position": 41,
@@ -1097,7 +2885,9 @@
      "url": "https://open.spotify.com/track/5C9lvIZ8QZaCP39a69D3uf",
      "source_id": "5C9lvIZ8QZaCP39a69D3uf",
      "isrc": null,
-     "deezer_rank": null
+     "deezer_rank": null,
+     "youtube_music_url": null,
+     "youtube_music_score": 81.0
     },
     {
      "position": 42,
@@ -1109,7 +2899,9 @@
      "deezer_rank": 371794,
      "deezer_url": "https://www.deezer.com/track/2687660012",
      "deezer_id": 2687660012,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=tx0OMNzAHr8",
+     "youtube_music_score": 101.0
     },
     {
      "position": 43,
@@ -1121,7 +2913,9 @@
      "deezer_rank": 921431,
      "deezer_url": "https://www.deezer.com/track/3102004051",
      "deezer_id": 3102004051,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=sxDWEwG4hYk",
+     "youtube_music_score": 101.0
     },
     {
      "position": 44,
@@ -1133,7 +2927,9 @@
      "deezer_rank": 411299,
      "deezer_url": "https://www.deezer.com/track/2646026212",
      "deezer_id": 2646026212,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=8CiyK4RJtmU",
+     "youtube_music_score": 101.0
     },
     {
      "position": 45,
@@ -1145,7 +2941,9 @@
      "deezer_rank": 238589,
      "deezer_url": "https://www.deezer.com/track/3215495211",
      "deezer_id": 3215495211,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=MreR4fImNKw",
+     "youtube_music_score": 101.0
     },
     {
      "position": 46,
@@ -1157,7 +2955,9 @@
      "deezer_rank": 793076,
      "deezer_url": "https://www.deezer.com/track/3264852691",
      "deezer_id": 3264852691,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=nd2Axc66GCE",
+     "youtube_music_score": 101.0
     },
     {
      "position": 47,
@@ -1169,7 +2969,9 @@
      "deezer_rank": 974820,
      "deezer_url": "https://www.deezer.com/track/2843641482",
      "deezer_id": 2843641482,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": 83.0
     },
     {
      "position": 48,
@@ -1181,7 +2983,9 @@
      "deezer_rank": 283350,
      "deezer_url": "https://www.deezer.com/track/2876272872",
      "deezer_id": 2876272872,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": null,
+     "youtube_music_score": 75.0
     },
     {
      "position": 49,
@@ -1193,7 +2997,9 @@
      "deezer_rank": 287619,
      "deezer_url": "https://www.deezer.com/track/2661451242",
      "deezer_id": 2661451242,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=lJW4ICWLnhw",
+     "youtube_music_score": 101.0
     },
     {
      "position": 50,
@@ -1205,7 +3011,9 @@
      "deezer_rank": 907782,
      "deezer_url": "https://www.deezer.com/track/2778994151",
      "deezer_id": 2778994151,
-     "deezer_match": 1.1
+     "deezer_match": 1.1,
+     "youtube_music_url": "https://music.youtube.com/watch?v=cXahNlWzijw",
+     "youtube_music_score": 101.0
     }
    ]
   }

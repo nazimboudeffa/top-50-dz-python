@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-11-01T18:35:12.902671+00:00",
+ "generated_at_utc": "2026-11-01T19:30:20.851487+00:00",
  "entries": {
   "2026-10-30|sabran|djalil palermo": {
    "video_id": "2hO30MBSoI4",
@@ -400,6 +400,406 @@
    "artist": "Heuss L'enfoiré",
    "video_type": "MUSIC_VIDEO_TYPE_ATV",
    "query": "Mélanine Heuss L'enfoiré, Werenoi"
+  },
+  "2026-11-01|sahran lil|cheb momo djalil palermo": {
+   "video_id": "pUvGklP36Dw",
+   "score": 101.0,
+   "title": "Sahran lil",
+   "artist": "Cheb Momo",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Sahran lil Cheb Momo & Djalil Palermo"
+  },
+  "2026-11-01|sabran|djalil palermo": {
+   "video_id": "2hO30MBSoI4",
+   "score": 101.0,
+   "title": "Sabran",
+   "artist": "Djalil Palermo",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Sabran Djalil Palermo"
+  },
+  "2026-11-01|hala rani fiha|abdou gambetta": {
+   "video_id": "ihB2FIthylc",
+   "score": 101.0,
+   "title": "Hala Rani Fiha (avec Raouf Samourai)",
+   "artist": "Abdou Gambetta",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Hala Rani Fiha Abdou Gambetta"
+  },
+  "2026-11-01|huracan|trap king": {
+   "video_id": "IOEr74fOC9Q",
+   "score": 101.0,
+   "title": "Huracan",
+   "artist": "Trap king",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Huracan Trap King"
+  },
+  "2026-11-01|ayul|amine amirouche nassima ait ami": {
+   "video_id": "X4iz4oWYN3k",
+   "score": 101.0,
+   "title": "Ayul",
+   "artist": "Nassima Ait Ami",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Ayul Amine Amirouche, Nassima Ait Ami"
+  },
+  "2026-11-01|hakka hakka|mohamed benchenet": {
+   "video_id": "zpxqricfclo",
+   "score": 101.0,
+   "title": "Hakka Hakka",
+   "artist": "Mohamed Benchenet",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Hakka Hakka Mohamed Benchenet"
+  },
+  "2026-11-01|denia|djalil palermo zuma woed": {
+   "video_id": "I7a-0IPFzyM",
+   "score": 101.0,
+   "title": "Denia",
+   "artist": "Zuma Woed",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Denia Djalil Palermo, Zuma Woed"
+  },
+  "2026-11-01|qololo|fouzi torino mc artisan": {
+   "video_id": "dL5DDjVKYWk",
+   "score": 101.0,
+   "title": "Qololo",
+   "artist": "Mc Artisan",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Qololo Fouzi Torino, Mc Artisan"
+  },
+  "2026-11-01|mama cita|hakim liberta": {
+   "video_id": "HWOF96JDrLA",
+   "score": 101.0,
+   "title": "Mama Cita",
+   "artist": "Hakim Liberta",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Mama Cita Hakim Liberta"
+  },
+  "2026-11-01|atiteha l amour|cheb momo": {
+   "video_id": "Bm1GBMDK-r4",
+   "score": 101.0,
+   "title": "Atiteha l'amour عطيتها",
+   "artist": "Cheb Momo",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Atiteha l'amour عطيتها Cheb Momo"
+  },
+  "2026-11-01|edahka|mouh milano": {
+   "video_id": "Ct2oG2nOIRc",
+   "score": 101.0,
+   "title": "Edahka",
+   "artist": "Mouh Milano",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Edahka Mouh Milano"
+  },
+  "2026-11-01|kilowat|stormy": {
+   "video_id": "hVAFYXNcCRA",
+   "score": 101.0,
+   "title": "KILOWAT",
+   "artist": "Stormy",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "KILOWAT Stormy"
+  },
+  "2026-11-01|match retard|hakim liberta": {
+   "video_id": "tYAJbGTFpUw",
+   "score": 101.0,
+   "title": "Match retard",
+   "artist": "Hakim Liberta",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Match retard Hakim Liberta"
+  },
+  "2026-11-01|se9si liyam|numidia lezoul": {
+   "video_id": "MA_nNv-MQlM",
+   "score": 101.0,
+   "title": "Se9si Liyam (avec Didine Canon 16)",
+   "artist": "Numidia Lezoul",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Se9si Liyam Numidia Lezoul"
+  },
+  "2026-11-01|couci couca|draganov tif": {
+   "video_id": "3RMALnRM-BE",
+   "score": 101.0,
+   "title": "Couci Couca",
+   "artist": "TIF",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Couci Couca Draganov & TIF"
+  },
+  "2026-11-01|bby wow|karol g judeline rusowsky": {
+   "video_id": "ljAH6jNaApU",
+   "score": 101.0,
+   "title": "BbY WOW",
+   "artist": "rusowsky",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "BbY WOW KAROL G, Judeline & rusowsky"
+  },
+  "2026-11-01||cheb momo": {
+   "video_id": "GJAKSFeswv4",
+   "score": 66.0,
+   "title": "غالطة ستعرفي غالطة",
+   "artist": "cheb kader babilon",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "راكي غالطة نتي لي راكي حاقدا عليا Cheb Momo | راكي غالطة نتي لي راكي حاقدا عليا"
+  },
+  "2026-11-01|minuit d apres|tif": {
+   "video_id": "_6eggAVXUYc",
+   "score": 101.0,
+   "title": "MINUIT D'APRÈS",
+   "artist": "TIF",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "MINUIT D'APRÈS TIF"
+  },
+  "2026-11-01|seknet marseille|soolking": {
+   "video_id": "p7UQojvWTZE",
+   "score": 101.0,
+   "title": "Seknet Marseille",
+   "artist": "Soolking",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Seknet Marseille Soolking"
+  },
+  "2026-11-01|galbi 3lah hgertihe|cheb amine tigre": {
+   "video_id": "PCs9Bu4VkrM",
+   "score": 101.0,
+   "title": "Galbi 3lah Hgertihe",
+   "artist": "Cheb Amine Tigre",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Galbi 3lah Hgertihe Cheb Amine Tigre"
+  },
+  "2026-11-01|fille a papa|vacra la rvfleuze": {
+   "video_id": "IO_GLvVB5Vc",
+   "score": 101.0,
+   "title": "Fille à Papa",
+   "artist": "La Rvfleuze",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Fille à Papa Vacra & La Rvfleuze"
+  },
+  "2026-11-01|kamalna bel kahir|cheb aymen sghir redouane aroussi": {
+   "video_id": "4QnmLQD9vOI",
+   "score": 101.0,
+   "title": "Kamalna Bel kahir (avec Redouane Aroussi)",
+   "artist": "Cheb Aymen Sghir",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Kamalna Bel kahir Cheb Aymen Sghir | Redouane Aroussi"
+  },
+  "2026-11-01|maryoula tatmaryal w gay7a tkhaf|cheb nassim": {
+   "video_id": "qRpwznVzlgw",
+   "score": 101.0,
+   "title": "Maryoula Tatmaryal [W Gay7a Tkhaf] (avec Manini Sahar)",
+   "artist": "Cheb Nassim",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Maryoula Tatmaryal (W Gay7a Tkhaf) Cheb Nassim"
+  },
+  "2026-11-01|boston george feat maes|lacrim": {
+   "video_id": "jcSmg3-K89g",
+   "score": 81.0,
+   "title": "Boston George",
+   "artist": "Maes",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Boston George (feat. Maes) Lacrim | Boston George (feat. Maes)"
+  },
+  "2026-11-01|last hope over slowed reverb|steve ralph": {
+   "video_id": "gUooJZHjnWk",
+   "score": 70.2,
+   "title": "Last Hope",
+   "artist": "Steve Ralph",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Last Hope (Over Slowed + Reverb) Steve Ralph | Last Hope (Over Slowed + Reverb)"
+  },
+  "2026-11-01|m7ayni|didine canon 16": {
+   "video_id": "ZDhMypaD254",
+   "score": 101.0,
+   "title": "M7ayni",
+   "artist": "Didine Canon 16",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "M7ayni Didine Canon 16"
+  },
+  "2026-11-01||cheb mourad sghir": {
+   "video_id": "qbfzLhoJryg",
+   "score": 66.0,
+   "title": "عمري زوجوها",
+   "artist": "Cheb Amine Tigre",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "خيرتك نتيا مولات داري Cheb Mourad Sghir | خيرتك نتيا مولات داري"
+  },
+  "2026-11-01|jugurtha|trap king": {
+   "video_id": "OCmC-3FWZOc",
+   "score": 101.0,
+   "title": "Jugurtha",
+   "artist": "Trap king",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Jugurtha Trap King"
+  },
+  "2026-11-01|4|mauvais djo": {
+   "video_id": "lIbXuv2zUGc",
+   "score": 101.0,
+   "title": "4",
+   "artist": "Mauvais djo",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "4 Mauvais Djo"
+  },
+  "2026-11-01|tatfakrini|cheb momo": {
+   "video_id": "86cmojHg8GI",
+   "score": 93.2,
+   "title": "Ki Tatfakrini",
+   "artist": "Cheb Momo",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Tatfakrini Cheb Momo"
+  },
+  "2026-11-01|sebebi yar|blok3": {
+   "video_id": "WQvqf1lLQws",
+   "score": 101.0,
+   "title": "Sebebi Yar",
+   "artist": "BLOK3",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Sebebi Yar BLOK3"
+  },
+  "2026-11-01|al baqara chapter 2 verse 1 verse 25|abdul rahman al sudais shaykh saud al shuraim": {
+   "video_id": "16_q2m1aUgw",
+   "score": 49.1,
+   "title": "Surah Al-Baqarah",
+   "artist": "Sheikh Abdul Rahman Al Sudais",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Al-Baqara - Chapter 2 (Verse 1 - Verse 25) Abdul Rahman Al-Sudais & Shaykh Saud Al-Shuraim | Al-Baqara - Chapter 2 (Verse 1 - Verse 25)"
+  },
+  "2026-11-01|djazairia feat abdou gambetta|anas abdou gambetta": {
+   "video_id": "VKI6u-RombU",
+   "score": 101.0,
+   "title": "Djazaïria (avec Abdou Gambetta)",
+   "artist": "Anas",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Djazaïria (feat. Abdou Gambetta) Anas, Abdou Gambetta"
+  },
+  "2026-11-01|penalty|mc artisan didine canon 16": {
+   "video_id": "NC-WVO1IxW4",
+   "score": 101.0,
+   "title": "Penalty",
+   "artist": "Didine Canon 16",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Penalty Mc Artisan, Didine Canon 16"
+  },
+  "2026-11-01|loser|tame impala": {
+   "video_id": "GQgL-Dk9sq0",
+   "score": 101.0,
+   "title": "Loser",
+   "artist": "Tame Impala",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Loser Tame Impala"
+  },
+  "2026-11-01|hood love|dak": {
+   "video_id": "cXJLKYiIwmM",
+   "score": 84.1,
+   "title": "Dak HooD love",
+   "artist": "1,4 k vues",
+   "video_type": "MUSIC_VIDEO_TYPE_UGC",
+   "query": "Hood Love DAK | Hood Love"
+  },
+  "2026-11-01|12|mauvais djo": {
+   "video_id": "snzJk019BPE",
+   "score": 101.0,
+   "title": "12",
+   "artist": "Mauvais djo",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "12 Mauvais Djo"
+  },
+  "2026-11-01|rani maghmoum|kader japonais reda soussia": {
+   "video_id": "dYeOlF8S1lA",
+   "score": 101.0,
+   "title": "Rani Maghmoum",
+   "artist": "Reda Soussia",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Rani Maghmoum Kader Japonais, Reda Soussia"
+  },
+  "2026-11-01|marche ou creve|djalil palermo": {
+   "video_id": "RN91hTHeChw",
+   "score": 101.0,
+   "title": "Marche ou Crève",
+   "artist": "Djalil Palermo",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Marche ou Crève Djalil Palermo"
+  },
+  "2026-11-01|mziya ja lhem mfarket|cheb zaki maraval": {
+   "video_id": "GLGk0mlCeEs",
+   "score": 46.5,
+   "title": "Madiroch M3ana L3ayb (avec Dib El3ajib)",
+   "artist": "Cheb zaki maraval",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Mziya Ja Lhem Mfarket Cheb zaki maraval | Mziya Ja Lhem Mfarket"
+  },
+  "2026-11-01|noche feat damso|lacrim": {
+   "video_id": "LuFE3YW0Epw",
+   "score": 101.0,
+   "title": "Noche (avec Damso)",
+   "artist": "Lacrim",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Noche (feat. Damso) Lacrim"
+  },
+  "2026-11-01|per la vita|stormy": {
+   "video_id": "CJRWDwkHs5o",
+   "score": 101.0,
+   "title": "PER LA VITA",
+   "artist": "Stormy",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "PER LA VITA Stormy"
+  },
+  "2026-11-01|7olm kbir|ma3iz": {
+   "video_id": "lA3WGIaMHXo",
+   "score": 101.0,
+   "title": "7OLM KBIR",
+   "artist": "MA3IZ",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "7OLM KBIR MA3IZ"
+  },
+  "2026-11-01|tu connais|werenoi": {
+   "video_id": "XjeCFXwx9j8",
+   "score": 81.0,
+   "title": "TU CONNAIS",
+   "artist": "Hös Copperfield",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Tu connais Werenoi | Tu connais"
+  },
+  "2026-11-01|c etait prevu|cheb hichem tgv": {
+   "video_id": "IMLj5Y7uI3w",
+   "score": 101.0,
+   "title": "C'était prévu",
+   "artist": "Cheb Hichem Tgv",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "C'était prévu Cheb Hichem Tgv"
+  },
+  "2026-11-01|zombie|lazaro": {
+   "video_id": "U7YmktIPxfU",
+   "score": 101.0,
+   "title": "ZOMBIE",
+   "artist": "LAZARO",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "ZOMBIE Lazaro"
+  },
+  "2026-11-01|l exil c est mechant|tif": {
+   "video_id": "btyUOpQPyZA",
+   "score": 101.0,
+   "title": "L'EXIL C'EST MÉCHANT",
+   "artist": "TIF",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "L'EXIL C'EST MÉCHANT TIF"
+  },
+  "2026-11-01|rosalinda|didine canon 16 flashy otr": {
+   "video_id": "sZVnlDwsbTE",
+   "score": 101.0,
+   "title": "Rosalinda (avec Flashy OTR)",
+   "artist": "Didine Canon 16",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Rosalinda Didine Canon 16, Flashy OTR"
+  },
+  "2026-11-01|mimi|jul": {
+   "video_id": "f6gp2hBA9zw",
+   "score": 75.0,
+   "title": "JUL - Mimi",
+   "artist": "2:43",
+   "video_type": "MUSIC_VIDEO_TYPE_UGC",
+   "query": "Mimi JUL | Mimi"
+  },
+  "2026-11-01|tsswirtek|draganov": {
+   "video_id": "1StT5qe6AO4",
+   "score": 81.0,
+   "title": "Tsswirtek",
+   "artist": "Noctra Arabica",
+   "video_type": "MUSIC_VIDEO_TYPE_ATV",
+   "query": "Tsswirtek Draganov | Tsswirtek"
   }
  }
 }
