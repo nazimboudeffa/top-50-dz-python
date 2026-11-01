@@ -25,6 +25,23 @@ python build_playlist.py --youtube --html --html-update-source
 
 Aucune dépendance externe : uniquement la bibliothèque standard.
 
+Documentation complète : [`doc/`](doc/README.md) — démarrage, méthodologie,
+architecture, sources, exploitation.
+
+Diagnostic des plateformes (sans rien écrire) :
+
+```bash
+python check_sources.py
+```
+
+Tests (hors ligne) :
+
+```bash
+python tests/test_merge.py
+python tests/test_collect.py
+python tests/test_spotify_api.py
+```
+
 ### Automatiser une collecte par jour
 
 Une collecte quotidienne est ce qui fait vivre l'évolution (`▲`, `▼`, `=`) :
@@ -151,6 +168,9 @@ YouTube publique ne fournit un chart DZ sans elle.
 | `spotify_api.py` | Authentification Spotify + ISRC/durée (`--isrc`) |
 | `collect.py` | Collecte par plateforme + enrichissement Deezer |
 | `merge.py` | Fusion, score, historique, rendu du classement |
+| `check_sources.py` | Diagnostic des sources (aucune écriture) |
+| `doc/` | Documentation : démarrage, méthode, architecture, sources, exploitation |
+| `tests/` | 3 suites de vérifications hors ligne |
 | `<date>/sources.json` | Snapshot brut du jour (positions par source) |
 | `<date>/DZ_TOP_50_<date>.json` | Classement du jour, schéma du dépôt |
 | `CLASSEMENT.md` / `.html` / `classement.csv` | Livrables du dernier classement |
