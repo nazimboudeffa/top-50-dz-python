@@ -1,0 +1,22 @@
+{
+ "iteration": 1,
+ "collected_at_utc": "2026-11-22T17:15:09.415435+00:00",
+ "source_counts": {
+  "audiomack": 100,
+  "spotify": 50
+ },
+ "count": 50,
+ "files": {
+  "json": "iteration_1_DZ_TOP_50_20261127.json",
+  "md": "iteration_1_DZ_TOP_50_20261127.md",
+  "html": "iteration_1_DZ_TOP_50_20261127.html",
+  "csv": "iteration_1_DZ_TOP_50_20261127.csv"
+ },
+ "sha256": {
+  "json": "abee4370d5b27f78a85c077cd3375d15dba3280d22d281c831d9edbfc4d8015e",
+  "md": "e46b095afe7f572716914d8be1da760607b37b73b726eda09772e0a257328eb4",
+  "html": "9e855420205e19c09eebab8019b36051d3229aea3ea9decc14ca22369eed3516",
+  "csv": "49ee5adf494bad6c03d2f053363639de0d713f95e842aca60c2b4d36fc1e694b"
+ },
+ "sources_sha256": "2c36d4cb79024f9a3a5f520d8671baa902d1dd794582f2d8134eb00658f8bb0a"
+}

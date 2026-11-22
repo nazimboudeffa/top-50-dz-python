@@ -1,0 +1,82 @@
+{
+ "target_date": "2026-11-27",
+ "retained_collection_utc": "2026-11-22T17:18:07.016613+00:00",
+ "source_counts": {
+  "apple_music": 50,
+  "audiomack": 100,
+  "spotify": 50
+ },
+ "count": 50,
+ "iterations": [
+  {
+   "iteration": 1,
+   "collected_at_utc": "2026-11-22T17:15:09.415435+00:00",
+   "source_counts": {
+    "audiomack": 100,
+    "spotify": 50
+   },
+   "count": 50,
+   "files": {
+    "json": "iteration_1_DZ_TOP_50_20261127.json",
+    "md": "iteration_1_DZ_TOP_50_20261127.md",
+    "html": "iteration_1_DZ_TOP_50_20261127.html",
+    "csv": "iteration_1_DZ_TOP_50_20261127.csv"
+   },
+   "sha256": {
+    "json": "abee4370d5b27f78a85c077cd3375d15dba3280d22d281c831d9edbfc4d8015e",
+    "md": "e46b095afe7f572716914d8be1da760607b37b73b726eda09772e0a257328eb4",
+    "html": "9e855420205e19c09eebab8019b36051d3229aea3ea9decc14ca22369eed3516",
+    "csv": "49ee5adf494bad6c03d2f053363639de0d713f95e842aca60c2b4d36fc1e694b"
+   },
+   "sources_sha256": "2c36d4cb79024f9a3a5f520d8671baa902d1dd794582f2d8134eb00658f8bb0a",
+   "directory": "versions/20261122T171509Z"
+  },
+  {
+   "iteration": 2,
+   "collected_at_utc": "2026-11-22T17:16:07.397293+00:00",
+   "source_counts": {
+    "audiomack": 100,
+    "spotify": 50
+   },
+   "count": 50,
+   "files": {
+    "json": "iteration_2_DZ_TOP_50_20261127.json",
+    "md": "iteration_2_DZ_TOP_50_20261127.md",
+    "html": "iteration_2_DZ_TOP_50_20261127.html",
+    "csv": "iteration_2_DZ_TOP_50_20261127.csv"
+   },
+   "sha256": {
+    "json": "585d513da13dd6cd974cf7e8beb52ba7cb8ebaec57c16a1ce0b4b8a09d44a6d9",
+    "md": "7de097f48f7857095dd2cecb7543961e2d138de03a402d29663869c0bbc5aeb7",
+    "html": "38e4e1ba82b94293b5d0522eb8d85ea0beba094b6265bdb69a9995e6e7bd5cfa",
+    "csv": "b3f268b5cf40590ee7002bc3cf2d2f2b80afc590787fbc47ec6d4a2610e1ac10"
+   },
+   "sources_sha256": "d99e81ac884f9d267bb238454e8d3167f1119f9e4e83c4d5be3bb6fcef19368f",
+   "directory": "versions/20261122T171607Z"
+  },
+  {
+   "iteration": 3,
+   "collected_at_utc": "2026-11-22T17:18:07.016613+00:00",
+   "source_counts": {
+    "apple_music": 50,
+    "audiomack": 100,
+    "spotify": 50
+   },
+   "count": 50,
+   "files": {
+    "json": "iteration_3_DZ_TOP_50_20261127.json",
+    "md": "iteration_3_DZ_TOP_50_20261127.md",
+    "html": "iteration_3_DZ_TOP_50_20261127.html",
+    "csv": "iteration_3_DZ_TOP_50_20261127.csv"
+   },
+   "sha256": {
+    "json": "7b1fb836897d5e86188d7942ab3a1a3e924c9dd7e832d0a8f5b31b30476d9286",
+    "md": "c627282172dc8059310026395bf559818cb08a57b42a5c192b5788e150e81072",
+    "html": "268c89ef2863145cdf13ba6b1bfe7c7a81cfb910e634a79b5edd9ce93338491c",
+    "csv": "7cb936fd1a52eda2fbc80d67374d9002363b6026efb2dd6b92d2c11ec9e3fafa"
+   },
+   "sources_sha256": "8f17ef083ede9f5bb105c90fe46ac1ed60a5ab530c252a4785dbbd68913bc7dd",
+   "directory": "versions/20261122T171807Z"
+  }
+ ]
+}
