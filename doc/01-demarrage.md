@@ -60,6 +60,7 @@ Options utiles :
 | `--no-youtube-music` | saute l'enrichissement YouTube Music |
 | `--youtube-music-refresh` | ignore le cache et relance les recherches |
 | `--youtube-music-threshold 85` | seuil de confiance des correspondances |
+| `--deezer-cache-refresh` | ignore le cache ISRC/Deezer et relance les recherches |
 | `--output-dir .` | dossier racine des snapshots |
 
 ## Étape 2 — Fusionner et classer
@@ -72,7 +73,8 @@ Le script ne fait **aucun appel réseau** : il lit le `sources.json` le plus
 récent (ou `--date`), regroupe les versions d'un même morceau, calcule les
 scores, applique l'évolution, puis écrit :
 
-- `<date>/DZ_TOP_50_<AAAAMMJJ>.json` — le snapshot de classement (schéma de référence) ;
+- `<date>/DZ_TOP_50_<AAAAMMJJ>.json` — le snapshot de classement (schéma de référence,
+  avec `chart_date` = date cible et `collected_at_utc` = collecte réelle) ;
 - `CLASSEMENT.md` — tableau Markdown ;
 - `CLASSEMENT.html` — même tableau, autonome (CSS inclus) ;
 - `classement.csv` — une ligne par titre, colonne `youtube_music_url` incluse.
@@ -96,6 +98,7 @@ Options :
 | `--date AAAA-MM-JJ` | classe un snapshot précis |
 | `--min-sources 2` | seuil de certification (défaut 2) |
 | `--no-fill` | ne garde que les titres certifiés (< 50 lignes possibles) |
+| `--date-dir-only` | écrit seulement le JSON daté, sans remplacer les livrables racine |
 | `--output-dir .` | racine des snapshots |
 
 ## Étape 3 — Générer les tableaux de liens

@@ -199,5 +199,79 @@ finally:
     collect.urlopen = real_urlopen
     collect.time.sleep = real_sleep
 
+print("[8] cache ISRC persistant")
+real_lookup = collect.deezer_lookup
+real_sleep = collect.time.sleep
+collect.time.sleep = lambda seconds: None
+lookup_calls = {"n": 0}
+
+
+def fake_lookup(title, artist):
+    lookup_calls["n"] += 1
+    return {
+        "isrc": "DZA123456789",
+        "deezer_rank": 42,
+        "deezer_url": "https://deezer/1",
+        "deezer_id": 1,
+        "deezer_match": 0.9,
+    }
+
+
+collect.deezer_lookup = fake_lookup
+isrc_path = Path(tempfile.mkdtemp()) / "isrc_cache.json"
+
+
+def sample_sources():
+    return {
+        "apple_music": {
+            "entries": [{"title": "Sabran", "artist": "Djalil Palermo"}]
+        },
+        "spotify": {
+            "entries": [{"title": "SABRAN", "artist": "djalil palermo"}]
+        },
+    }
+
+
+try:
+    first = sample_sources()
+    calls = collect.enrich_with_deezer(first, isrc_path)
+    check("2 entrées -> 1 recherche", calls == 1 and lookup_calls["n"] == 1, (calls, lookup_calls))
+    check("cache ISRC écrit", isrc_path.exists())
+    check(
+        "ISRC propagé aux 2 entrées",
+        all(e["isrc"] == "DZA123456789" for s in first.values() for e in s["entries"]),
+    )
+
+    second = sample_sources()
+    calls_again = collect.enrich_with_deezer(second, isrc_path)
+    check(
+        "2e passage sans réseau",
+        calls_again == 0 and lookup_calls["n"] == 1,
+        (calls_again, lookup_calls),
+    )
+
+    refreshed = sample_sources()
+    calls_refresh = collect.enrich_with_deezer(refreshed, isrc_path, refresh=True)
+    check(
+        "refresh relance la recherche",
+        calls_refresh == 1 and lookup_calls["n"] == 2,
+        (calls_refresh, lookup_calls),
+    )
+
+    miss_calls = {"n": 0}
+
+    def never_found(title, artist):
+        miss_calls["n"] += 1
+        return None
+
+    collect.deezer_lookup = never_found
+    missing = {"x": {"entries": [{"title": "Introuvable", "artist": "X"}]}}
+    collect.enrich_with_deezer(missing, isrc_path)
+    collect.enrich_with_deezer(missing, isrc_path)
+    check("absence aussi mise en cache", miss_calls["n"] == 1, miss_calls)
+finally:
+    collect.deezer_lookup = real_lookup
+    collect.time.sleep = real_sleep
+
 print(f"\n{ok} verifications OK, {ko} echec(s)")
 sys.exit(1 if ko else 0)

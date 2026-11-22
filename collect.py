@@ -79,6 +79,7 @@ YOUTUBE_MUSIC_URL = "https://music.youtube.com/watch?v={video_id}"
 YOUTUBE_MUSIC_THRESHOLD = 85.0
 YOUTUBE_MUSIC_CACHE_NAME = "youtube_music_links.json"
 YOUTUBE_MUSIC_DELAY_SECONDS = 0.2
+ISRC_CACHE_NAME = "isrc_cache.json"
 
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -421,9 +422,39 @@ def deezer_lookup(title: str, artist: str) -> dict | None:
     }
 
 
-def enrich_with_deezer(sources: dict) -> int:
-    """Ajoute ISRC et rang Deezer aux entrées de toutes les sources."""
+def load_isrc_cache(path: Path) -> dict:
+    """Charge le cache Deezer/ISRC ; un résultat négatif y est aussi utile."""
+    if not path.exists():
+        return {}
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        log(f"  ⚠ cache ISRC illisible, il sera reconstruit : {path}")
+        return {}
+    entries = payload.get("entries")
+    return entries if isinstance(entries, dict) else {}
+
+
+def save_isrc_cache(path: Path, entries: dict) -> None:
+    payload = {
+        "generated_at_utc": datetime.now(timezone.utc).isoformat(),
+        "entries": entries,
+    }
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
+def enrich_with_deezer(
+    sources: dict, cache_path: Path | None = None, refresh: bool = False
+) -> int:
+    """Ajoute ISRC et rang Deezer aux entrées de toutes les sources.
+
+    Sans ``cache_path``, le cache reste en mémoire comme avant. Avec un chemin,
+    les correspondances sont persistées — y compris les absences — pour ne pas
+    refaire les mêmes recherches à chaque collecte. ``refresh`` les ignore.
+    """
     cache: dict[str, dict | None] = {}
+    if cache_path is not None and not refresh:
+        cache = load_isrc_cache(cache_path)
     requests_count = 0
 
     for source in sources.values():
@@ -445,6 +476,8 @@ def enrich_with_deezer(sources: dict) -> int:
                 entry.setdefault("isrc", None)
                 entry["deezer_rank"] = None
 
+    if cache_path is not None:
+        save_isrc_cache(cache_path, cache)
     return requests_count
 
 
@@ -587,6 +620,7 @@ def collect(
     youtube_music: bool = True,
     youtube_music_refresh: bool = False,
     youtube_music_threshold: float = YOUTUBE_MUSIC_THRESHOLD,
+    deezer_cache_refresh: bool = False,
 ) -> dict:
     sources: dict[str, dict] = {}
     notes: list[str] = []
@@ -660,7 +694,10 @@ def collect(
         raise SystemExit("Aucune source disponible : impossible de collecter.")
 
     log("Enrichissement Deezer (ISRC, popularité)…")
-    requests_count = enrich_with_deezer(sources)
+    deezer_cache_path = Path(__file__).resolve().parent / ISRC_CACHE_NAME
+    requests_count = enrich_with_deezer(
+        sources, cache_path=deezer_cache_path, refresh=deezer_cache_refresh
+    )
     with_isrc = sum(
         1 for source in sources.values() for entry in source["entries"] if entry.get("isrc")
     )
@@ -733,6 +770,11 @@ def main(argv: list[str] | None = None) -> int:
         default=YOUTUBE_MUSIC_THRESHOLD,
         help=f"Score minimal pour retenir un lien (défaut : {YOUTUBE_MUSIC_THRESHOLD:.0f}).",
     )
+    parser.add_argument(
+        "--deezer-cache-refresh",
+        action="store_true",
+        help="Ignore le cache ISRC/Deezer et relance toutes les recherches.",
+    )
     parser.add_argument("--output-dir", default=".")
     args = parser.parse_args(argv)
 
@@ -752,6 +794,7 @@ def main(argv: list[str] | None = None) -> int:
         youtube_music=args.youtube_music,
         youtube_music_refresh=args.youtube_music_refresh,
         youtube_music_threshold=args.youtube_music_threshold,
+        deezer_cache_refresh=args.deezer_cache_refresh,
     )
 
     target = date_dir / "sources.json"

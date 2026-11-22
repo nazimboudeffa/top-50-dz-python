@@ -120,5 +120,73 @@ second = merge.song_id("minuit d'apres", "TIF")
 check("insensible aux accents/casse", first == second, (first, second))
 check("format 12 hex", len(first) == 12 and all(c in "0123456789abcdef" for c in first))
 
+print("[5] traceabilité et isolement des livrables")
+import json
+import tempfile
+
+tmp_root = Path(tempfile.mkdtemp())
+tmp_date = "2026-12-01"
+tmp_dir = tmp_root / tmp_date
+tmp_dir.mkdir()
+tmp_sources = {
+    "chart": "DZ TOP 50",
+    "country": "DZ",
+    "generated_at_utc": "2026-12-01T10:00:00Z",
+    "collected_at_utc": "2026-11-29T08:00:00Z",
+    "weights": {"apple_music": 0.35, "audiomack": 0.25},
+    "sources": {
+        "apple_music": {
+            "label": "Apple Music DZ",
+            "weight": 0.35,
+            "period": "quotidien",
+            "entries": [{"position": 1, "title": "Sabran", "artist": "Djalil Palermo"}],
+        },
+        "audiomack": {
+            "label": "Audiomack DZ",
+            "weight": 0.25,
+            "period": "hebdomadaire",
+            "entries": [{"position": 1, "title": "Sabran", "artist": "Djalil Palermo"}],
+        },
+    },
+}
+(tmp_dir / "sources.json").write_text(
+    json.dumps(tmp_sources, ensure_ascii=False), encoding="utf-8"
+)
+tmp_chart = merge.merge(tmp_root, tmp_date, 2, True)
+check(
+    "collected_at_utc distinct de chart_date",
+    tmp_chart["collected_at_utc"] == "2026-11-29T08:00:00Z"
+    and tmp_chart["chart_date"] == tmp_date,
+    (tmp_chart["collected_at_utc"], tmp_chart["chart_date"]),
+)
+tmp_sources.pop("collected_at_utc")
+(tmp_dir / "sources.json").write_text(
+    json.dumps(tmp_sources, ensure_ascii=False), encoding="utf-8"
+)
+fallback_chart = merge.merge(tmp_root, tmp_date, 2, True)
+check(
+    "repli sur generated_at_utc",
+    fallback_chart["collected_at_utc"] == "2026-12-01T10:00:00Z",
+    fallback_chart["collected_at_utc"],
+)
+
+merge.main(["--date", tmp_date, "--date-dir-only", "--output-dir", str(tmp_root)])
+check(
+    "--date-dir-only : JSON daté écrit",
+    (tmp_dir / "DZ_TOP_50_20261201.json").exists(),
+)
+written = json.loads((tmp_dir / "DZ_TOP_50_20261201.json").read_text(encoding="utf-8"))
+check(
+    "--date-dir-only : classement non vide",
+    written["count"] == 1 and written["entries"][0]["title"] == "Sabran",
+    (written["count"], written["entries"][:1]),
+)
+check(
+    "--date-dir-only : livrables racine intacts",
+    not (tmp_root / "CLASSEMENT.md").exists()
+    and not (tmp_root / "CLASSEMENT.html").exists()
+    and not (tmp_root / "classement.csv").exists(),
+)
+
 print(f"\n{ok} verifications OK, {ko} echec(s)")
 sys.exit(1 if ko else 0)

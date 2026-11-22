@@ -60,7 +60,7 @@ Séparation stricte :
 | `collect_spotify(playlist_id, limit)` | page `open.spotify.com/embed/playlist/…`, bloc `__NEXT_DATA__` |
 | `collect_youtube(key, limit)` | YouTube Data API v3, `chart=mostPopular&regionCode=DZ` (si clé) |
 | `clean_video_title` / `clean_youtube_artist` | normalisent les libellés YouTube |
-| `deezer_lookup` / `enrich_with_deezer` | ISRC + lien + `rank` par titre (cache mémoire) |
+| `deezer_lookup` / `enrich_with_deezer` | ISRC + lien + `rank` par titre (cache mémoire puis disque dans `isrc_cache.json`) |
 | `enrich_with_youtube_music` | lien d'écoute, seuil 85, cache persistant |
 | `collect()` | orchestration, `notes`, renormalisation implicite |
 | `main()` | CLI, écriture de `<date>/sources.json` |

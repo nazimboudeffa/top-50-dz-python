@@ -699,6 +699,8 @@ def merge(
         "chart": payload.get("chart", "DZ TOP 50"),
         "version": "multi_source",
         "chart_date": date,
+        "collected_at_utc": payload.get("collected_at_utc")
+        or payload.get("generated_at_utc"),
         "country": payload.get("country", "DZ"),
         "generated_at_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "pipeline": "multi_source",
@@ -765,6 +767,11 @@ def main(argv: list[str] | None = None) -> int:
         action="store_false",
         help="Ne pas compléter avec des titres à source unique.",
     )
+    parser.add_argument(
+        "--date-dir-only",
+        action="store_true",
+        help="Écrit seulement le JSON daté, sans remplacer les livrables racine.",
+    )
     parser.add_argument("--output-dir", default=".")
     args = parser.parse_args(argv)
 
@@ -792,9 +799,10 @@ def main(argv: list[str] | None = None) -> int:
         json.dumps(chart, ensure_ascii=False, indent=1), encoding="utf-8"
     )
 
-    (out_dir / "CLASSEMENT.md").write_text(render_markdown(chart), encoding="utf-8")
-    (out_dir / "CLASSEMENT.html").write_text(render_html(chart), encoding="utf-8")
-    write_csv(out_dir / "classement.csv", chart["entries"])
+    if not args.date_dir_only:
+        (out_dir / "CLASSEMENT.md").write_text(render_markdown(chart), encoding="utf-8")
+        (out_dir / "CLASSEMENT.html").write_text(render_html(chart), encoding="utf-8")
+        write_csv(out_dir / "classement.csv", chart["entries"])
 
     certified = sum(1 for entry in chart["entries"] if not entry["fill"])
     log(f"Classement {date} : {chart['count']} titres")
@@ -805,9 +813,12 @@ def main(argv: list[str] | None = None) -> int:
             log(f"    {pair.replace('|', ' & ')} : {count} titre(s) commun(s)")
     log(f"  mouvement : {'oui' if chart['movement_available'] else 'premier snapshot'}")
     log(f"Écrit : {chart_path}")
-    log(f"Écrit : {out_dir / 'CLASSEMENT.md'}")
-    log(f"Écrit : {out_dir / 'CLASSEMENT.html'}")
-    log(f"Écrit : {out_dir / 'classement.csv'}")
+    if not args.date_dir_only:
+        log(f"Écrit : {out_dir / 'CLASSEMENT.md'}")
+        log(f"Écrit : {out_dir / 'CLASSEMENT.html'}")
+        log(f"Écrit : {out_dir / 'classement.csv'}")
+    else:
+        log("Livrables racine : non modifiés (--date-dir-only)")
     return 0
 
 
