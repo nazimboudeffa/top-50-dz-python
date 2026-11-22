@@ -85,6 +85,30 @@ USER_AGENT = (
     "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
 )
 
+# Certaines plateformes (Apple RSS notamment) répondent par intermittence
+# avec un timeout ou un 5xx. On retente uniquement les erreurs transitoires,
+# sans jamais réinventer de donnée ni réessayer un 4xx définitif.
+HTTP_RETRY_ATTEMPTS = 3
+HTTP_RETRY_BASE_DELAY = 0.8
+HTTP_TRANSIENT_CODES = {408, 425, 429, 500, 502, 503, 504}
+
+
+def configure_utf8_output() -> None:
+    """Évite les UnicodeEncodeError sur les consoles Windows en cp1252.
+
+    Le projet s'exécute sans environnement virtuel et sans dépendance : on
+    configure les flux au démarrage plutôt que de demander une variable
+    d'environnement à l'utilisateur.
+    """
+    for stream in (sys.stdout, sys.stderr):
+        reconfigure = getattr(stream, "reconfigure", None)
+        if reconfigure is None:
+            continue
+        try:
+            reconfigure(encoding="utf-8")
+        except (ValueError, OSError):
+            pass
+
 
 def log(message: str) -> None:
     print(message, file=sys.stderr)
@@ -103,26 +127,49 @@ def env_value(name: str) -> str | None:
     return file_values.get(name) or None
 
 
+def _http_retry(call, url: str):
+    """Exécute un appel HTTP en retentant les erreurs transitoires seulement."""
+    last_error: Exception | None = None
+    for attempt in range(1, HTTP_RETRY_ATTEMPTS + 1):
+        try:
+            return call()
+        except HTTPError as exc:
+            last_error = exc
+            if exc.code not in HTTP_TRANSIENT_CODES or attempt == HTTP_RETRY_ATTEMPTS:
+                raise RuntimeError(f"HTTP {exc.code} sur {url}") from exc
+        except (URLError, OSError) as exc:
+            last_error = exc
+            if attempt == HTTP_RETRY_ATTEMPTS:
+                raise RuntimeError(f"injoignable : {url} ({exc})") from exc
+        except ValueError as exc:
+            raise RuntimeError(f"réponse illisible : {url}") from exc
+        delay = HTTP_RETRY_BASE_DELAY * (2 ** (attempt - 1))
+        log(
+            f"  ↻ {url} : tentative {attempt}/{HTTP_RETRY_ATTEMPTS} échouée "
+            f"({last_error}), nouvel essai dans {delay:.1f}s"
+        )
+        time.sleep(delay)
+    raise RuntimeError(f"injoignable : {url}") from last_error
+
+
 def http_json(url: str, timeout: int = 25) -> dict:
     request = Request(url, headers={"User-Agent": USER_AGENT})
-    try:
+
+    def call() -> dict:
         with urlopen(request, timeout=timeout) as response:
             return json.loads(response.read().decode("utf-8"))
-    except HTTPError as exc:
-        raise RuntimeError(f"HTTP {exc.code} sur {url}") from exc
-    except (URLError, OSError) as exc:
-        raise RuntimeError(f"injoignable : {url} ({exc})") from exc
-    except ValueError as exc:
-        raise RuntimeError(f"réponse illisible : {url}") from exc
+
+    return _http_retry(call, url)
 
 
 def http_text(url: str, timeout: int = 30) -> str:
     request = Request(url, headers={"User-Agent": USER_AGENT})
-    try:
+
+    def call() -> str:
         with urlopen(request, timeout=timeout) as response:
             return response.read().decode("utf-8", errors="replace")
-    except (HTTPError, URLError, OSError) as exc:
-        raise RuntimeError(f"injoignable : {url} ({exc})") from exc
+
+    return _http_retry(call, url)
 
 
 # ---------------------------------------------------------------------------
@@ -655,6 +702,7 @@ def collect(
 
 
 def main(argv: list[str] | None = None) -> int:
+    configure_utf8_output()
     parser = argparse.ArgumentParser(
         description="Collecte les signaux de classement DZ par plateforme."
     )

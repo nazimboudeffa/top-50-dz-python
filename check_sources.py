@@ -20,6 +20,7 @@ def first_entry_line(entries: list[dict]) -> str:
 
 
 def main(argv: list[str] | None = None) -> int:
+    collect.configure_utf8_output()
     parser = argparse.ArgumentParser(description="Vérifie l'état des sources DZ.")
     parser.add_argument(
         "--youtube",

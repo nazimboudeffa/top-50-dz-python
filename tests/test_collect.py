@@ -2,6 +2,7 @@
 """Verifications finales du collecteur (sans consommer de quota)."""
 import sys
 from pathlib import Path
+from urllib.error import HTTPError
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -157,6 +158,45 @@ try:
     )
 finally:
     collect.build_playlist.ytm_search = real_search
+    collect.time.sleep = real_sleep
+
+print("[7] retry HTTP : erreurs transitoires vs permanentes")
+import io
+
+real_urlopen = collect.urlopen
+real_sleep = collect.time.sleep
+collect.time.sleep = lambda seconds: None
+try:
+    state = {"n": 0}
+
+    def flaky(request, timeout=None):
+        state["n"] += 1
+        if state["n"] <= 2:
+            raise HTTPError("https://exemple", 502, "Bad Gateway", {}, None)
+        return io.BytesIO(b'{"ok": true}')
+
+    collect.urlopen = flaky
+    payload = collect.http_json("https://exemple")
+    check("2 x 502 puis succès", payload == {"ok": True} and state["n"] == 3, state)
+
+    denied = {"n": 0}
+
+    def forbidden(request, timeout=None):
+        denied["n"] += 1
+        raise HTTPError("https://exemple", 403, "Forbidden", {}, None)
+
+    collect.urlopen = forbidden
+    try:
+        collect.http_json("https://exemple")
+        check("403 : RuntimeError immédiat", False, "aucune erreur")
+    except RuntimeError as exc:
+        check(
+            "403 : RuntimeError immédiat",
+            "HTTP 403" in str(exc) and denied["n"] == 1,
+            (str(exc), denied),
+        )
+finally:
+    collect.urlopen = real_urlopen
     collect.time.sleep = real_sleep
 
 print(f"\n{ok} verifications OK, {ko} echec(s)")

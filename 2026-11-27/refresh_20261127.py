@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """Actualiser le classement DZ TOP 50 ciblé sur 2026-11-27."""
 from __future__ import annotations
-import csv, io, json, sys, time
+import csv, io, json, sys
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -15,21 +15,6 @@ import collect, merge
 TARGET = "2026-11-27"
 STAMP = "20261127"
 BASE = f"DZ_TOP_50_{STAMP}"
-
-
-def retries(func, label, attempts=3, delay=1.0):
-    def wrapper(*args, **kwargs):
-        error = None
-        for try_no in range(1, attempts + 1):
-            try:
-                return func(*args, **kwargs)
-            except RuntimeError as exc:
-                error = exc
-                if try_no < attempts:
-                    print(f"  ↻ {label} : essai {try_no}/{attempts} ({exc})", file=sys.stderr)
-                    time.sleep(delay)
-        raise error
-    return wrapper
 
 
 def write_json(path, value):
@@ -74,15 +59,8 @@ def main():
                 reconfigure(encoding="utf-8")
             except (ValueError, OSError):
                 pass
-    names = ("collect_apple", "collect_audiomack", "collect_spotify")
-    originals = {name: getattr(collect, name) for name in names}
-    for name in names:
-        setattr(collect, name, retries(originals[name], name))
-    try:
-        collect.main(["--date", TARGET, "--output-dir", "."])
-    finally:
-        for name, original in originals.items():
-            setattr(collect, name, original)
+    # Le retry HTTP est désormais centralisé dans collect.py.
+    collect.main(["--date", TARGET, "--output-dir", "."])
 
     path = D / "sources.json"
     payload = json.loads(path.read_text(encoding="utf-8-sig"))
