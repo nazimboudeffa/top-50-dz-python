@@ -23,6 +23,7 @@ Aucune dépendance externe, aucune clé API obligatoire (Python 3.9+).
 | [03 — Architecture](03-architecture.md) | flux de données, modules, schémas JSON, conventions | tu veux modifier le code |
 | [04 — Sources](04-sources.md) | chaque plateforme, accès, période, sources écartées et preuves | tu veux ajouter/remplacer une source |
 | [05 — Exploitation](05-exploitation.md) | automatisation, tests, dépannage, quotas, FAQ | tu veux le faire tourner tous les jours |
+| [06 — Feuille de route](06-feuille-de-route.md) | versions `v0.1.0` à `v0.3.0`, travaux prévus, décisions en attente | tu veux savoir ce qui vient ensuite |
 
 ## Ce que produit le pipeline
 
@@ -54,3 +55,6 @@ Aucune dépendance externe, aucune clé API obligatoire (Python 3.9+).
 - 40/50 liens YouTube Music directs, 10 liens de recherche.
 - Pas encore d'évolution : il n'existe qu'un seul snapshot `multi_source`.
   Le dossier `2026-10-30/` provient de l'ancien notebook et n'est pas comparable.
+
+Pour l'état après cette date et les prochaines versions, voir
+[06 — Feuille de route](06-feuille-de-route.md).
